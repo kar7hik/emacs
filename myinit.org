@@ -6,7 +6,6 @@
 (tool-bar-mode -1)
 
 (fset 'yes-or-no-p 'y-or-n-p)
-;; (global-set-key (kbd "f5") 'revert-buffer)
 
 #+END_SRC
 
@@ -19,7 +18,7 @@
 
 
 #+END_SRC
-
+  
 
 * Which-key
   Brings up some help
@@ -33,17 +32,28 @@
 
 
 * org-mode
-#+BEGIN_SRC emacs-lisp
-(use-package org-bullets
-  :ensure t
-  :config
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  #+BEGIN_SRC emacs-lisp
+    (use-package org-bullets
+      :ensure t
+      :config
+      (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
+    (setq ido-enable-flex-matching t)
+    (setq ido-everywhere t)
+    (ido-mode 1)
 
-#+END_SRC
+
+    (custom-set-variables
+     '(org-directory "~/BlackBox/orgfiles")
+     '(org-default-notes-file (concat org-directory "/notes.org"))
+     '(org-export-html-postamble nil)
+     '(org-hide-leading-stars t)
+     '(org-startup-folded (quote overwrite))
+     '(org-startup-indented t)
+     )
+
+
+  #+END_SRC
 
 
 * ace-window
@@ -75,9 +85,12 @@
 
 * counsel
 #+BEGIN_SRC emacs-lisp
-(use-package counsel
-  :ensure t
-  )
+  (use-package counsel
+    :ensure t
+    :bind
+    (("M-y" . counsel-yank-pop)
+     :map ivy-minibuffer-map
+     ("M-y" . ivy-next-line)))
 #+END_SRC
 
 
@@ -126,9 +139,26 @@
 * Themes
   Loading Themes
 #+BEGIN_SRC emacs-lisp
-(use-package monokai-theme
-  :ensure t
-  :config (load-theme 'monokai t))
+  ;; (use-package monokai-theme
+  ;;  :ensure t
+  ;;  :config (load-theme 'monokai t))
+
+  (use-package base16-theme
+    :ensure t
+    )
+
+  (use-package moe-theme
+    :ensure t)
+
+  (moe-dark)
+  (use-package powerline
+    :ensure t
+    :config
+    (powerline-moe-theme)
+    )
+
+
+
 #+END_SRC
 
 
@@ -140,7 +170,7 @@
       (global-flycheck-mode t))
   #+END_SRC
 
-
+  
 * Python
   #+BEGIN_SRC emacs-lisp
     (use-package jedi
@@ -153,8 +183,15 @@
       :ensure t
       :config
       (elpy-enable))
+
+    (use-package virtualenvwrapper
+      :ensure t
+      :config
+      (venv-initialize-interactive-shells)
+      (venv-initialize-eshell))
   #+END_SRC
 
+  
 
 * Yasnippet
 #+BEGIN_SRC emacs-lisp
@@ -173,7 +210,7 @@
       (global-undo-tree-mode))
 
   #+END_SRC
-
+  
 
 * Misc Packages
   #+BEGIN_SRC emacs-lisp
@@ -202,4 +239,33 @@
 
     (use-package iedit
       :ensure t)
+
+    (global-auto-revert-mode 1)
+    (setq auto-revert-verbose nil)
+    (global-set-key (kbd "<f5>") 'revert-buffer) 
+
+  #+END_SRC
+
+
+* Emmet
+  #+BEGIN_SRC emacs-lisp
+
+  #+END_SRC
+
+
+* Hydra
+
+* Better Shell
+
+* C++ 
+  #+BEGIN_SRC emacs-lisp
+    (use-package ggtags
+      :ensure t
+      :config
+      (add-hook 'c-mode-common-hook
+                (lambda ()
+                  (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+                    (ggtags-mode 1))))
+      )
+      
   #+END_SRC
