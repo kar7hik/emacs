@@ -4,8 +4,16 @@
 #+BEGIN_SRC emacs-lisp
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
+(display-time-mode 1)
 
 (fset 'yes-or-no-p 'y-or-n-p)
+
+#+END_SRC
+
+* Personal Information
+#+BEGIN_SRC emacs-lisp
+  (setq user-full-name "Karthik Kumar"
+        user-mail-address "karthikkumar.s@protonmail.com)
 
 #+END_SRC
 
@@ -15,8 +23,6 @@
 
 (use-package try
   :ensure t)
-
-
 #+END_SRC
   
 
@@ -242,7 +248,14 @@
 
     (global-auto-revert-mode 1)
     (setq auto-revert-verbose nil)
-    (global-set-key (kbd "<f5>") 'revert-buffer) 
+    (global-set-key (kbd "<f5>") 'revert-buffer)
+
+    (use-package speed-type
+      :ensure t)
+
+    (use-package origami
+      :ensure t)
+
 
   #+END_SRC
 
@@ -269,3 +282,54 @@
       )
       
   #+END_SRC
+
+* PDF-tools
+#+BEGIN_SRC emacs-lisp
+  (use-package pdf-tools
+    :ensure t
+    ) 
+
+#+END_SRC
+
+* Stack exchange
+#+BEGIN_SRC emacs-lisp
+  (use-package sx
+    :ensure t
+    :config
+    (bind-keys :prefix "C-c s"
+               :prefix-map my-sx-map
+               :prefix-docstring "Global keymap for SX."
+               ("q" . sx-tab-all-questions)
+               ("i" . sx-inbox)
+               ("o" . sx-open-link)
+               ("u" . sx-tab-unanswered-my-tags)
+               ("a" . sx-ask)
+               ("s" . sx-search)))
+#+END_SRC
+
+* Mode-Icons
+#+BEGIN_SRC emacs-lisp
+  (use-package mode-icons
+    :ensure t
+    :config
+    (mode-icons-mode))
+
+#+END_SRC
+
+* Help-guide-key 
+keyboard shortcuts
+#+BEGIN_SRC emacs-lisp
+  (use-package guide-key
+    :defer t
+    :diminish guide-key-mode
+    :config
+    (progn
+      (setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-c"))
+      (guide-key-mode 1)))  ; Enable guide-key-mode
+#+END_SRC
+
+* Tab-width 
+#+BEGIN_SRC emacs-lisp
+  (setq-default tabwidth 4)
+#+END_SRC
+
