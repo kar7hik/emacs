@@ -258,6 +258,15 @@
     (use-package origami
       :ensure t)
 
+    ;; Auto close bracket insertion.
+    (electric-pair-mode 1)
+
+    ;; File path auto complete
+    (global-set-key (kbd "M-/")
+                    (make-hippie-expand-function
+                     '(try-expand-dabbrev-visible
+                       try-expand-dabbrev
+                       try-expand-dabbrev-all-buffers) t))
 
   #+END_SRC
 
