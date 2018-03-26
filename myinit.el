@@ -1,7 +1,7 @@
+
 (setq inhibit-startup-message t)
 (tool-bar-mode -1)
 (display-time-mode 1)
-
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq user-full-name "Karthik Kumar"
@@ -62,10 +62,10 @@
 (use-package swiper
   :ensure t
   :bind (("C-s" . swiper)
-	 ("C-c C-r" . ivy-resume)
-	 ("M-x" . counsel-M-x)
-	 ("C-x C-f" . counsel-find-file)
-	 ("C-x l" . counsel-locate))
+     ("C-c C-r" . ivy-resume)
+     ("M-x" . counsel-M-x)
+     ("C-x C-f" . counsel-find-file)
+     ("C-x l" . counsel-locate))
   :config
   (progn
     (ivy-mode 1)
@@ -78,47 +78,135 @@
   :ensure t
   :bind ("M-s" . avy-goto-char))
 
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)
-    ))
+;; (use-package auto-complete
+;;   :ensure t
+;;   :init
+;;   (progn
+;;     (ac-config-default)
+;;     (global-auto-complete-mode t)
+;;     ))
 
-;; (use-package monokai-theme
+;; (use-package auto-complete-c-headers
+;;   :ensure t)
+
+;; (defun my:ac-c-headers-init ()
+;;   "initializes the c/c++ headers"
+;;   (require 'auto-complete-c-headers)
+;;   (add-to-list 'ac-sources 'ac-source-c-headers)
+;;   (add-to-list 'achead:include-directories '"/usr/include/")
+;;   )
+
+;; (add-hook 'c++-mode-hook 'my:ac-c-headers-init)
+;; (add-hook 'c-mode-hook 'my:ac-c-headers-init)
+
+(semantic-mode 1)
+(defun my:add-semantic-to-autocomplete() 
+  (add-to-list 'ac-sources 'ac-source-semantic)
+  )
+(add-hook 'c-mode-common-hook 'my:add-semantic-to-autocomplete)
+(global-semantic-idle-scheduler-mode 1)
+(global-semanticdb-minor-mode 1)
+
+
+;; How about jumping to system include headers
+(semantic-add-system-include "/usr/include")
+(semantic-add-system-include "/usr/local/include")
+
+(global-ede-mode 1)
+
+;; (use-package color-theme-modern
+;;  :ensure t)
+
+;; (use-package zenburn-theme
+;;   :ensure t
+;;   :config (load-theme 'zenburn t))
+
+;; (use-package spacemacs-theme
+;;   :ensure t
+;;   :init
+;;   (load-theme 'spacemacs-dark t)
+;;   )
+;;(use-package base16-theme
 ;;  :ensure t
-;;  :config (load-theme 'monokai t))
+;;  )
+;;(use-package moe-theme
+;;  :ensure t)
 
-(use-package base16-theme
-  :ensure t
-  )
 
-(use-package moe-theme
+;; (use-package alect-themes
+;;   :ensure t)
+
+;; (use-package zerodark-theme
+;;   :ensure t)
+
+;; (load-theme 'zerodark t)
+;; (zerodark-setup-modeline-format)
+
+;; (load-theme 'base16-flat t)              ;
+;; (moe-dark)
+
+
+;; (custom-set-variables
+;;  '(tab-width 4))
+;; (setq-default c-basic-offset 4 c-default-style "linux")
+
+
+
+;; (use-package powerline
+;;   :ensure t
+;;   :config
+;;   (powerline-moe-theme)
+;;   )
+
+(use-package atom-one-dark-theme
   :ensure t)
+(load-theme 'atom-one-dark t)
 
-(moe-dark)
-(use-package powerline
-  :ensure t
-  :config
-  (powerline-moe-theme)
-  )
+
+
+(setq-default indicate-empty-lines t)
+(when (not indicate-empty-lines)
+  (toggle-indicate-empty-lines))
+  
+(setq-default c-basic-offset 4)
 
 (use-package flycheck
   :ensure t
+  :defer t
   :init
-  (global-flycheck-mode t))
-
-(use-package jedi
+  (global-flycheck-mode t)
+  ;; There are issues with company mode and flycheck in terminal mode.
+  ;; This is outlined at:
+  ;; https://github.com/abingham/emacs-ycmd
+  ;; (when (not (display-graphic-p))
+  ;;  (setq flycheck-indication-mode nil))
+  )
+(use-package flycheck-pyflakes
   :ensure t
-  :init
-  (add-hook 'python-mode-hook 'jedi:setup)
-  (add-hook 'python-mode-hook 'jedi:ac-setup))
+  :after python)
 
-(use-package elpy
+(use-package json-mode
   :ensure t
-  :config
-  (elpy-enable))
+  :mode (".json"))
+
+(use-package yaml-mode
+  :ensure t
+  :mode (".yml" ".yaml"))
+
+;(setq py-python-command "python3")
+;(setq python-shell-interpreter "python3")
+
+  (use-package jedi
+    :ensure t
+    :init
+    (add-hook 'python-mode-hook 'jedi:setup)
+    (setq jedi:complete-on-dot t)
+    (add-hook 'python-mode-hook 'jedi:ac-setup))
+
+    (use-package elpy
+    :ensure t
+    :config 
+    (elpy-enable))
 
 (use-package virtualenvwrapper
   :ensure t
@@ -128,8 +216,25 @@
 
 (use-package yasnippet
   :ensure t
-  :init
-  (yas-global-mode 1))
+  :functions yas-global-mode yas-expand
+  :defer 5
+  :config
+  (yas-global-mode t)
+  (yas-reload-all))
+
+(use-package yasnippet-snippets
+  :ensure t
+  :after yasnippet
+  :config
+  (yas-reload-all))
+
+;; Apparently the company-yasnippet backend shadows all backends that
+;; come after it. To work around this we assign yasnippet to a different
+;; keybind since actual source completion is vital.
+(use-package company-yasnippet
+  :bind ("C-M-y" . company-yasnippet)
+  :after (yasnippet)
+  )
 
 (use-package undo-tree
   :ensure t
@@ -172,6 +277,27 @@
 (use-package origami
   :ensure t)
 
+;; Auto close bracket insertion.
+(electric-pair-mode 1)
+
+;; File path auto complete
+(global-set-key (kbd "M-/")
+                (make-hippie-expand-function
+                 '(try-expand-dabbrev-visible
+                   try-expand-dabbrev
+                   try-expand-dabbrev-all-buffers) t))
+
+(setq-default truncate-lines t)
+
+(use-package magit
+  :ensure t
+  :init
+  (progn
+    (bind-key "C-x g" 'magit-status)
+    ))
+
+(scroll-bar-mode -1)
+
 (use-package emmet-mode
   :ensure t
   :config
@@ -180,14 +306,65 @@
   (add-hook 'css-mode-hook 'emmet-mode)
   )
 
+(setenv "ESHELL" (expand-file-name "~/.oh-my-zsh/bin/eshell"))
+
+(use-package multi-term
+  :ensure t)
+(setq multi-term-program "bin/zsh")
+
+(load "/usr/local/include/clang/tools/clang-format/clang-format.el")
+;; (use-package clang-format
+;;   :ensure t
+;;   :bind (("C-c C-f" . clang-format-region))
+;;   )
+
+(global-set-key [C-c C-f] 'clang-format-region)
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Modern C++ code highlighting
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(use-package modern-cpp-font-lock
+  :ensure t
+  :config
+  (modern-c++-font-lock-global-mode t)
+  )
+
+(use-package whitespace
+  :ensure t
+  :config
+  (setq whitespace-style '(tabs tab-mark))
+  ;; Turn on whitespace mode globally.
+  (global-whitespace-mode t)
+  )
+
 (use-package ggtags
   :ensure t
   :config
   (add-hook 'c-mode-common-hook
             (lambda ()
-              (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
-                (ggtags-mode 1))))
+              (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
+                (Ggtags-mode 1)))))
+
+(use-package company
+  :ensure t
+  :config
+  ;; Zero delay when pressing tab
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 3)
+  '("SPC" . company-abort)
+  (add-hook 'after-init-hook 'global-company-mode)
+  ;; remove unused backends
+  (setq company-backends (delete 'company-semantic company-backends))
+  (setq company-backends (delete 'company-eclim company-backends))
+  (setq company-backends (delete 'company-xcode company-backends))
+  (setq company-backends (delete 'company-clang company-backends))
+  (setq company-backends (delete 'company-bbdb company-backends))
+  (setq company-backends (delete 'company-oddmuse company-backends))
   )
+
+(setq default-process-coding-system '(utf-8-unix . utf-8-unix))
 
 (use-package pdf-tools
   :ensure t
@@ -225,7 +402,7 @@
   :ensure t)
 
 ;; eclim
-;; (require 'eclim)			
+;; (require 'eclim)           
 ;; (require 'eclimd)
 ;; (global-eclim-mode)
 
@@ -251,3 +428,162 @@
     (next-line)))
 
 (global-set-key (kbd "<C-kp-divide>") 'comment-or-uncomment-region-or-line)
+
+(use-package golden-ratio
+  :ensure t)
+(golden-ratio-mode 1)
+
+(setq golden-ratio-exclude-modes '("ediff-mode"
+                                   "eshell-mode"
+                                   "dired-mode"))
+(setq split-width-threshold nil)
+
+(add-to-list 'load-path "~/.emacs.d/stm32")
+
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+(use-package slime
+  :ensure t)
+
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
+
+;;(use-package evil-leader
+;;  :ensure t)
+
+;; Emacs key bindings
+;;(global-set-key (kbd "M-;") 'evilnc-comment-or-uncomment-lines)
+;;(global-set-key (kbd "C-c l") 'evilnc-quick-comment-or-uncomment-to-the-line)
+;;(global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
+;;(global-set-key (kbd "C-c p") 'evilnc-comment-or-uncomment-paragraphs)
+
+(use-package powerline
+  :ensure t
+  :config
+  (defun powerline-right-theme ()
+    "Setup a mode-line with major and minor modes on the right side."
+    (interactive)
+    (setq-default mode-line-format
+                  '("%e"
+                    (:eval
+                     (let* ((active (powerline-selected-window-active))
+                            (mode-line-buffer-id (if active 'mode-line-buffer-id 'mode-line-buffer-id-inactive))
+                            (mode-line (if active 'mode-line 'mode-line-inactive))
+                            (face0 (if active 'powerline-active0 'powerline-inactive0))
+                            (face1 (if active 'powerline-active1 'powerline-inactive1))
+                            (face2 (if active 'powerline-active2 'powerline-inactive2))
+                            (separator-left (intern (format "powerline-%s-%s"
+                                                            (powerline-current-separator)
+                                                            (car powerline-default-separator-dir))))
+                            (separator-right (intern (format "powerline-%s-%s"
+                                                             (powerline-current-separator)
+                                                             (cdr powerline-default-separator-dir))))
+                            (lhs (list (powerline-raw "%*" face0 'l)
+                                       (powerline-buffer-size face0 'l)
+                                       (powerline-buffer-id `(mode-line-buffer-id ,face0) 'l)
+                                       (powerline-raw " ")
+                                       (funcall separator-left face0 face1)
+                                       (powerline-narrow face1 'l)
+                                       (powerline-vc face1)))
+                            (center (list (powerline-raw global-mode-string face1 'r)
+                                          (powerline-raw "%4l" face1 'r)
+                                          (powerline-raw ":" face1)
+                                          (powerline-raw "%3c" face1 'r)
+                                          (funcall separator-right face1 face0)
+                                          (powerline-raw " ")
+                                          (powerline-raw "%6p" face0 'r)
+                                          (powerline-hud face2 face1)
+                                          ))
+                            (rhs (list (powerline-raw " " face1)
+                                       (funcall separator-left face1 face2)
+                                       (when (and (boundp 'erc-track-minor-mode) erc-track-minor-mode)
+                                         (powerline-raw erc-modified-channels-object face2 'l))
+                                       (powerline-major-mode face2 'l)
+                                       (powerline-process face2)
+                                       (powerline-raw " :" face2)
+                                       (powerline-minor-modes face2 'l)
+                                       (powerline-raw " " face2)
+                                       (funcall separator-right face2 face1)
+                                       ))
+                            )
+                       (concat (powerline-render lhs)
+                               (powerline-fill-center face1 (/ (powerline-width center) 2.0))
+                               (powerline-render center)
+                               (powerline-fill face1 (powerline-width rhs))
+                               (powerline-render rhs)))))))
+  (powerline-right-theme)
+  )
+
+(use-package flyspell
+  :ensure t
+  :init
+  (setq flyspell-issue-welcome-flag nil)
+  :config
+  (defun flyspell-check-next-highlighted-word ()
+    "Custom function to spell check next highlighted word."
+    (interactive)
+    (flyspell-goto-next-error)
+    (ispell-word))
+
+  (global-set-key (kbd "<f7>") 'flyspell-buffer)
+  (global-set-key (kbd "<f8>") 'flyspell-correct-previous)
+  (global-set-key (kbd "<f9>") 'flyspell-correct-previous)
+
+  (add-hook 'text-mode-hook #'flyspell-mode)
+  (add-hook 'prog-mode-hook #'flyspell-prog-mode)
+  )
+(use-package flyspell-correct-ivy
+  :ensure t
+  :after flyspell)
+
+;;; Variables
+(defvar my:ycmd-server-command '("python" "/home/karthik/Packages/ycmd/ycmd"))
+(defvar my:ycmd-extra-conf-whitelist '("/home/karthik/Packages/ycmd/cpp/ycm/.ycm_extra_conf.py"))
+(defvar my:ycmd-global-config "/home/karthik/Packages/ycmd/cpp/ycm/.ycm_extra_conf.py")
+
+(defvar my:python-location (executable-find (nth 0 my:ycmd-server-command)))
+(if (not my:python-location)
+    (message
+     "Could not start YouCompleteMeDaemon because the python executable could
+not be found.\nSpecified executable is: '%s'\nPlease set my:ycmd-server-command
+appropriately in ~/.emacs.el.\n" (nth 0 my:ycmd-server-command)))
+(if (not (file-directory-p (nth 1 my:ycmd-server-command)))
+    (message "Could not YouCompleteMeDaemon because the specified directory does
+not exist.\nSpecified directory is: '%s'\nPlease set my:ycmd-server-command
+appropriately in ~/.emacs.el.\n" (nth 1 my:ycmd-server-command)))
+(if (and my:python-location
+         (file-directory-p (nth 1 my:ycmd-server-command)))
+    (use-package ycmd
+      :ensure t
+      :init
+      (add-hook 'after-init-hook #'global-ycmd-mode)
+      :config
+      (progn
+        (set-variable 'ycmd-server-command my:ycmd-server-command)
+        (set-variable 'ycmd-extra-conf-whitelist my:ycmd-extra-conf-whitelist)
+        (set-variable 'ycmd-global-config my:ycmd-global-config)
+        (setq ycmd-force-semantic-completion t)
+        (use-package company-ycmd
+          :ensure t
+          :config
+          (company-ycmd-setup)
+          )
+
+        (use-package flycheck-ycmd
+          :ensure t
+          :init
+          (add-hook 'c-mode-common-hook 'flycheck-ycmd-setup)
+          )
+
+        ;; Add displaying the function arguments in mini buffer using El Doc
+        (use-package ycmd-eldoc
+          :init
+          ;; For some reason ycmd-eldoc doesn't work properly in Python mode.
+          ;; I get a "connection refused" error when it connects to JediHTTP
+          (add-hook 'c-mode-common-hook
+                    (lambda ()
+                      (ycmd-eldoc-mode t)))
+          )
+        )
+      )
+  )

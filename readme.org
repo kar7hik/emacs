@@ -1,4 +1,2 @@
-
-* Emacs configuration:
-** This repository contains the init.el files for my emacs config.
-
+Emacs configuration:
+This repository contains the init.el files for my emacs config.
