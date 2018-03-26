@@ -1,0 +1,81 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/karthik/Projects/Programming/cairo/" . "slope-master/")
+ ("/usr/" . "include/")
+ ("/" . "usr/")
+ ("/home/karthik/Projects/Programming/" . "cairo/")
+ ("/home/karthik/Projects/" . "Programming/")
+ ("/home/karthik/Arduino/Obstacle_avoider/test/" . "build-uno/")
+ ("/home/karthik/Arduino/Obstacle_avoider/" . "test/")
+ ("/home/karthik/Arduino/" . "Obstacle_avoider/")
+ ("/home/karthik/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/karthik/Projects/Programming/c/learning/"
+ "/home/karthik/Projects/Programming/cairo/"
+ "/home/karthik/Projects/Programming/"
+ "/home/karthik/.emacs.d/"
+ "/home/karthik/Arduino/Obstacle_avoider/test/build-uno/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "str_int_vv.c"
+ "basic.c"
+ "paint_path.c"
+ "path_paint.c.save~"
+ "path_paint.c.save"
+ "myinit.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/karthik/Projects/Programming/c/learning/" (23219 61311 28255 223000) "basic.c" "../" "sn_print.c" "basic" "basic.c~" "boolean_check.c~" "boolean_check" "array_manipulation" "sn_print.c~" "./" "boolean_check.c" "array_manipulation.c" "sn_print" "array_manipulation.c~")
+
+ ("/home/karthik/.emacs.d/" (23210 42017 722431 445000) "request/" "myinit.el~" "recentf" "myinit.org" "elpa/" "../" "recentf~" "stm32/" "ac-comphist.dat" "url/" "init.el~" "./" "session.1089ba2d1a41db8bf151983556246368900000040800081" "snippets/" "session.10943d802f2dfbb9e815209545785614100000041370065" "ido.last" "ede-projects.el" "ido.last~" "auto-save-list/" "init.el" ".python-environments/" "semanticdb/" ".sx/" "myinit.org~" "myinit.el" "eshell/" "bookmarks" "session.10117abd9f64d737ea152104270065200300000042310062" "custom/" "session.10a04c74213f0b44e4152077571888353700000041350070")
+
+ ("/home/karthik/Projects/Programming/openanimation/" (23207 62803 645922 54000) "animation.c" "../" "animation.h~" "animation.c~" "./" "animation.h")
+
+ ("/home/karthik/Projects/Programming/cairo/" (23205 41876 433304 891000) "svgfile.svg" "cairo-master/" "image.png" "draw_lines" "paint_path.c" "path_paint.c.save~" "threaded" "png_image_creating.c" "waiting" "gtk_creator.c~" "arc.svg" "../" "gtk_create" "paint_draw.c" "temp.c~" "opengraphics/" "path" "eampl.py" ".path_paint.c.swp" "arc_draw" "./" "slope-master/" "arc_drawing.c" "drawing_lines.c" "gtk_creator.c" "drawing_lines_v2.c" "paint_path.c~" "video_encoding.c" "arc_drawing.c~" "example_v2" "bouncer" "cairo-demos/" "svg_creator.c" "bevel.c" "bevels.png" "example" "bevel" "temp.c" "waiting_symbol.c" "drawing_lines.c~")
+
+ ("/home/karthik/Projects/Programming/" (23207 61081 425416 611000) "html/" "c/" "html_backup/" "drawnn1.py" "../" "drawnn.py" "c++/" "ex.c" "drawnn1.pyc" "example.cpp~" "./" "cairo/" "exaple.py" "ex.c~" "exaple.py~" "example.cpp" "openanimation/" "java/" "common-lisp/" "draw_nn.py~")
+
+ ("/home/karthik/Projects/Programming/cairo/slope-master/demos/" (23205 12754 692224 256000) "animation.c" "slope/" "cmake_install.cmake" "screenshot.png" "simple.c~" "../" "config.h" "widg" "animation.c~" "./" "CMakeLists.txt" "anim" "CMakeCache.txt" "CMakeFiles/" "widgets.c" "simple.c" "plot_stack.c" "Makefile" "demos/")
+
+ ("/home/karthik/Projects/Programming/cairo/slope-master/" (23205 12035 970121 586000) "slope/" "build/" "scripts.sh" "HTML/" "../" "GRTAGS" "LICENSE" "GTAGS" "./" "CMakeLists.txt" "GPATH" "ID" ".gitignore" "README.md" ".clang-format" "demos/" "AUTHORS")
+
+ ("/usr/include/" (23204 17135 417450 277000) "nettle/" "RtAudio.h" "netipx/" "stringprep.h" "pcre_scanner.h" "curses.h" "GL/" "ulimit.h" "libbonoboui-2.0/" "archive.h" "lua5.1/" "cursesapp.h" "opencv/" "usb.h" "libpng12/" "term_entry.h" "wayland-client-core.h" "errno.h" "libxml2/" "pngconf.h" "libintl.h" "popt.h" "net/" "libut.h" "gshadow.h" "netrose/" "uv-unix.h" "math.h" "libusb-1.0/" "syslog.h" "FLAC/" "m17n-core.h" "assimp/" "resolv.h" "libgen.h" "lzma/" "alsa/" "uuid/" "jpegint.h" "semaphore.h" "sound/" "re_comp.h" "epoxy/" "gio-unix-2.0/" "stdio_ext.h" "panel.h" "strings.h" "NVCtrl/" "libv4l1-videodev.h" "maillock.h" "turbojpeg.h" "libart-2.0/" "video/" "iconv.h" "utmp.h" "gdk-pixbuf-2.0/" "otf.h" "GLFW/" "libtasn1.h" "gail-1.0/" "grp.h" "crypt.h" "arpa/" "poppler/" "png.h" "nc_tparm.h" "gettext-po.h" "libwmf/" "llvm-3.8/" "gmpxx.h" "unistd.h" "uchar.h" "EGL/" "netpacket/" "ustat.h" "c++/" "mircookie/" "wctype.h" "dis-asm.h" "locale.h" "openni2/" "cblas_mangling.h" "python2.7/" "stdlib.h" "regexp.h" "libyasm.h" "libsync.h" "netinet/" "jmorecfg.h" "libexif/" "sched.h" "aio.h" "pr29.h" "mono-2.0/" "wordexp.h" "uapi/" "tar.h" "stdint.h" "wayland-server.h" "fontconfig/" "stdc-predef.h" "archive_entry.h" "gnome-vfs-2.0/" "libgnomecanvas-2.0/" "atlas/" "sysexits.h" "regex.h" "m17n-gui.h" "lastlog.h" "libgnomeui-2.0/" "gee-0.8/" "harfbuzz/" "ar.h" "libv4l2.h" "uv.h" "ncurses.h" "fstab.h" "utmm.h" "utstring.h" "signal.h" "libv4lconvert.h" "canberra.h" "paths.h" "hwloc.h" "drm/" "google/" "xorg/" "cursesp.h" "_G_config.h" "xkbcommon/" "expat_external.h" "wait.h" "nite2/" "pixman-1/" "dbus-1.0/" "libmnl/" "menu.h" "scsi/" "netiucv/" "m17n.h" "libv4l1.h" "idn-free.h" "memory.h" "numa.h" "cpio.h" "uv-errno.h" "atk-1.0/" "stropts.h" "gconv.h" "lxappearance/" "wayland-client-protocol.h" "assert.h" "AL/" "libudev.h" "nodejs/" "libltdl/" "autoopts/" "argp.h" "utlist.h" "uthash.h" "dirent.h" "zconf.h" "at-spi-2.0/" "KHR/" "OpenEXR/" "gif_lib.h" "ruby-2.3.0/" "libv4l2rds.h" "idn-int.h" "xlocale.h" "neteconet/" "numaif.h" "curl/" "tld.h" "netax25/" "pty.h" "wayland-egl-core.h" "mirclient/" "thai/" "err.h" "at-spi2-atk/" "python3.5/" "endian.h" "GLES3/" "jpeglib.h" "bzlib.h" "utarray.h" "acl/" "sudo_plugin.h" "zlib.h" "thread_db.h" "lqr-1/" "gconf/" "gstreamer-0.10/" "valgrind/" "wayland-server-core.h" "m17n-X.h" "cblas.h" "libIDL-2.0/" "boost/" "libv4l-plugin.h" "pcrecpp.h" "linux/" "gdkmm-2.4/" "llvm-c-3.8/" "wayland-egl.h" "pcrecpparg.h" "xvid.h" "bfdlink.h" "xen/" "pangomm-1.4/" "obstack.h" "malloc.h" "cursesw.h" "ucontext.h" "lcms2_plugin.h" "idna.h" "mircore/" "wchar.h" "etip.h" "glib-2.0/" "netrom/" "gstreamer-1.0/" "nss.h" "plugin-api.h" "alloca.h" "getopt.h" "byteswap.h" "freetype2/" "fmtmsg.h" "clang/" "gtkmm-2.4/" "wayland-cursor.h" "libdjvu/" "uv-linux.h" "aliases.h" "features.h" "term.h" "openssl/" "selinux/" "libgtop-2.0/" "autosprintf.h" "time.h" "syscall.h" "python3.5m/" "libraw1394/" "libio.h" "numacompat1.h" "complex.h" "m17n-flt.h" "cursesm.h" "gtkmm-3.0/" "jerror.h" "gnutls/" "pcre_stringpiece.h" "ltdl.h" "ogg/" "x86_64-linux-gnu/" "mcheck.h" "xf86drmMode.h" "ansidecl.h" "argz.h" "form.h" "readline/" "rdma/" "cblas_f77.h" "tic.h" "FreeImage.h" "lzma.h" "poll.h" "ringbuf.h" "xcb/" "lcms2.h" "jbig85.h" "elf.h" "jbig.h" "ttyent.h" "avahi-glib/" "datrie/" "jasper/" "execinfo.h" "sndfile.hh" "lockfile.h" "X11/" "netatalk/" "sepol/" "rpcsvc/" "mpg123.h" "uv-threadpool.h" "orbit-2.0/" "termcap.h" "graphviz/" "openmpi/" "pango-1.0/" "fcntl.h" "nfs/" "mpi/" "reglib/" "ncurses_dll.h" "shadow.h" "gnome-vfs-module-2.0/" "pwd.h" "libgnome-2.0/" "nite/" "cursesf.h" "string.h" "dc1394/" "gtk-unix-print-2.0/" "libbonobo-2.0/" "gpm.h" "mircommon/" "termio.h" "expat.h" "symcat.h" "eti.h" "rpc/" "punycode.h" "wayland-client.h" "gawkapi.h" "m17n-misc.h" "link.h" "stab.h" "ni/" "attr/" "avahi-client/" "jbig_ar.h" "glibmm-2.4/" "unctrl.h" "avahi-common/" "libpng/" "opencv2/" "ftw.h" "FlexLexer.h" "sgtty.h" "protocols/" "slope/" "ifaddrs.h" "setjmp.h" "ctype.h" "numpy" "infiniband/" "GLES2/" "wayland-version.h" "monetary.h" "tgmath.h" "pcre.h" "mtd/" "termios.h" "utringbuffer.h" "nl_types.h" "pthread.h" "x264.h" "libdrm/" "dlfcn.h" "asm-generic/" "pcreposix.h" "x264_config.h" "qt4/" "uv-version.h" "netdb.h" "gobject-introspection-1.0/" "fts.h" "utmpx.h" "utvector.h" "limits.h" "bonobo-activation-2.0/" "wayland-util.h" "giomm-2.4/" "fnmatch.h" "gtk-3.0/" "pulse/" "gdkmm-3.0/" "gnu-versions.h" "utime.h" "langinfo.h" "gnome-keyring-1/" "cairomm-1.0/" "cursslk.h" "hwloc/" "gnumake.h" "atkmm-1.6/" "jack/" "mqueue.h" "glob.h" "netash/" "vorbis/" "ImageMagick-6/" "envz.h" "cairo/" "librsvg-2.0/" "sigc++-2.0/" "values.h" "CL/" "spawn.h" "stdio.h" "gtk-2.0/" "inttypes.h" "sndfile.h" "sys/" "wayland-server-protocol.h" "libyasm-stdint.h" "search.h" "error.h" "mntent.h" "printf.h" "p11-kit-1/" "fenv.h" "misc/" "libyasm/" "bfd.h" "xf86drm.h" "../" "./")
+
+ ("/usr/" (23070 53075 230811 109000) "include/" "./" "libexec/" "lib/" "lib64/" "meson-private/" "java/" "share/" "etc/" "sbin/" "src/" "locale/" "games/" "local/" "lib32/" "meson-logs/" "bin/" "../")
+
+ ("/home/" (23052 27951 630877 138000) "lost+found/" "../" "./" "root/" "karthik/")
+
+ ("/home/karthik/" (23204 18546 728462 789000) "STM32Cube/" ".mono/" "final_face_detect_edited.mp4" "#.emacs_old#" "handGesture_mouse_control.mp4" "Bluetooth_led.mp4" ".codeintel/" "Nee_partha_bgm.mp3" "readme.txt" ".MCTranscodingSDK/" "Android/" "La La Land - Vennilave Mashup by Remix Mama-621861081356119.mp4" ".audacity-data/" ".stm32cubemx/" ".gtkrc-2.0" "Mun_paniya_intro.mp3" "face_landmark_detection.mp4" ".perf/" "Kinect/" ".android/" ".gksu.lock" "Vaanaviley_opening_music.mp3" ".vscode/" ".macromedia/" ".gvfs/" "snap/" ".eteks/" ".zcompdump" "Dropbox/" ".fusion/" "Figure_1-1.svg" ".apport-ignore.xml" "Vennilave Vennilave BGM- A.R. Rahman-JOmzowY1RPE.mp3" ".themes/" ".emacs_backup/" "DJI - Introducing Spark.mp4" ".subversion/" ".netbeans/" ".Komorebi.prop" ".nanorc" "script.txt~" ".zsh-update" ".spacemacs" "global-6.5.6/" "hand_alone_capture.mp4" "Arduino/" ".python_history" "netbeans-8.2/" ".openshot_qt/" ".zprofile" ".zshrc" ".jssc/" ".lightworks.thereCanBeOnlyOne" ".virtualenvs/" ".mozilla/" "get-pip.py.1" ".mplayer/" "Java Tutorial for Beginners - Original Step by Step-3u1fu6f8Hto.mkv" ".xsession-errors" "karthik1.jpg" ".FreeCAD/" ".netfabb/" "music.xspf" ".profile" "pose.mp4" ".xinputrc" "MY_BL.3gp" ".slime/" ".cmake/" ".tupi/" ".ipython/" ".zshrc~" "modified_script.txt~" ".bash_history" ".dbus/" "logo_1920_669.png" "Pictures/" ".gitconfig" ".gnome/" ".icons/" "study materials/" ".gnome2/" "Projects/" "Instrumentals/" ".oracle_jre_usage/" ".gradle/" "cairo_example.c" ".scribus/" "out1.avi" "AndroidStudioProjects/" "only_face_vikram_remix.mp4" "opencv_contrib-3.3.0/" "user_tracker.mp4" "VV.mp4" ".wget-hsts" ".adobe/" ".gnuplot_history" ".emacs.d/" "9.3.jpg" ".aspell.en.prepl" ".bashrc~" "Public/" ".emacs.spacemacs.d/" "exa.c" "poongathavey_bgm.mp3" "Templates/" ".rustup/" ".emacs.d_from/" "[Jasmin_Blanchette,_Mark_Summerfield]_C_Gui_Progra(bookos-z1.org).pdf" "lmms/" ".compiz/" ".processing/" ".pki/" ".base16-onc.scheme.swp" "opencv.zip" ".local/" ".config/" ".visualvm/" "sketchbook/" ".gnome2_private/" ".IdeaIC2017.3/" "In anticipation of Blade Runner 2049, a new video essay by Beyond the Frame e...-10154598688227723.mp4" ".designer/" ".gconf/" ".nbi/" "out.avi" ".thunderbird/" ".xdm/" "hand_final_control.mp4" ".gmshrc" ".xsession-errors.old" "Videos/" "Downloads/" ".arduino/" ".ssh/" "output.mp4" ".eclipse/" ".node_repl_history" "Mun_paniya_ending.mp3" "Qt5.9.1/" "Documents/" "படித்ததில் பிடித்தது has 963,514 members. Share posts....links...wishes. ..ab...-1849457922020121.mp4" "Figure_1.png" ".emacs~" ".synfig/" ".thumbnails/" ".aspell.en.pws" ".nano/" ".gimp-2.8/" ".zsh_history" "face_recognition_slow.mp4" "recording" "keyword_based_speech.mp4" ".lesshst" ".ssr/" ".arduino15/" "image4746.png" "hand+tracking.mp4" "Openni_handtracking.mp4" ".zsh_history~" ".git-credentials" "RLM8F.jpg" ".ICEauthority" ".dmrc" "opencv-3.3.0/" ".kde/" "OpenFOAM/" ".oh-my-zsh/" ".zcompdump-karthik-5.1.1" "output_low.mp4" "BlackMagic Fusion 7 Paint Taper-138762025.mp4" "opencv_contrib.zip" "speech_hello.c~" "Mun_paniya_interlude.mp3" ".npm/" "only_face_vikram_remix (copy).mkv" "Music/" ".cache/" ".slime-history.eld" "The day even haters loved Cristiano Ronaldo !!!-414204789012303.mp4" ".bash_logout" ".AndroidStudio3.0/" ".vnc/" "Desktop/" ".java/" "Lightworks/" ".emacs_old" ".jumpfm/" ".ionic/" "HandMouseControl_final.mp4" "bitmap.png" ".stmcufinder/" ".p2/" ".aptitude/" ".viminfo" ".jackdrc" ".wickrid" ".gnupg/" "eclipse/" "music/" ".atom/" ".Natron/" "opt/" ".emacs.d.helm/" ".multirust/" ".conkyrc" "face_detection_final.mp4" ".rednotebook/" "motion.cpp~" ".mime.types" ".Xauthority" ".bashrc" "Blackmagic Fusion Soft-Skinning Demo-229525278.mp4" ".sudo_as_admin_successful" ".wallch/" "exa.c~" ".cargo/" "exa.o" ".fltk/" "kinect_facedetection.mp4" "Packages/" "exa.s" "my-cds.db" "bluetooth_led_demo.mp4" "glassfish-4.1.1/" "Circuito_DS1307_Arduino2.png" "compile_kinect_face.txt" ".lmmsrc.xml" "../" "./")
+
+ ("/home/karthik/Projects/Gesture_recognition/OpenGesture/" (23204 22463 445806 321000) "handGesture_mouse.cpp~" "handGesture_mouse_opengl" "handGesture_mouse_opengl.cpp" "NiTE2/" "../" "handGesture_mouse.cpp" "./" "mouse.hpp" "handGesture_mouse" "OpenNI2/" "testing/" "include/" "hand_recog_opencv")
+
+ ("/home/karthik/Projects/Gesture_recognition/OpenGesture/include/" (23053 29396 262175 158000) "split_hand.cpp" "Image.hpp" "split_hand.cpp~" "Natural_Interface.hpp" "../" "GRTAGS" "GestureControl.hpp" "GTAGS" "test_sync" "example.cpp~" "./" "mouse.hpp" "GPATH" "split_hand" "example.cpp" "HandGesture.hpp" "test_sync.cpp" "utility.hpp" "Natural_Interface.hpp~")
+
+ ("/home/karthik/Projects/Programming/c/" (23204 17775 677895 562000) "entab.c" "../" "lispy" "temp.c~" "lispy.c~" "./" "hello" "example.c" "K&R/" "gtk_example.c~" "lispy.c" "entab.c~" "gtk_example.c" "temp.c" "example.c~")
+
+ ("/home/karthik/Projects/" (23201 28111 474717 8000) "haarcascade_frontalface_alt_tree.xml" "example_macro" "Boffo/" "Gesture_recognition/" "../" "GRTAGS" "OpenFoam/" "Farm_Automation/" "Athena/" "idea/" "haarcascade_frontalface_default.xml" "3d-printer/" "a.out" "fluid/" "GTAGS" "work.c" "haarcascade_frontalface_alt.xml" "./" "work.c~" "GPATH" "Quad/" "CO2_PPM/" "Programming/" "Reminder/" "ASR/" "work.cpp" "GUI/" "Robotolabs/" "work.cpp~" "haarcascade_frontalface_alt2.xml" "Emacs/")
+
+ ("/home/karthik/Projects/Programming/c++/" (23204 3642 436986 378000) "basics/" "test.cpp~" "../" "GRTAGS" "generic_functions/" "a.out" "fact.h" "GTAGS" "example.cpp~" "./" "Makefile~" "GPATH" "fact.cpp~" "fact.o" "example.cpp" "fact.cpp" "test.cpp" "Makefile" "test.o")
+
+ ("/home/karthik/Projects/Gesture_recognition/" (23201 25057 606321 423000) "cropped_faces/" "../" "GRTAGS" "GTAGS" "myGesture/" "./" "GPATH" "ID" "image_processing/" "OpenGesture/")
+
+ ("/home/karthik/Arduino/Obstacle_avoider/test/build-uno/" (22864 50294 772654 710000) "test.hex" "test_run.d" "../" "test_run.o" "./" "libcore.a" "test.elf" "test.hex.sizeok" "core/")
+
+ ("/home/karthik/Arduino/Obstacle_avoider/test/" (23065 10284 527639 899000) "../" "build-uno/" "./" "test_run/" "test_run.ino~" "Makefile")
+
+ ("/home/karthik/Arduino/Obstacle_avoider/" (23065 56026 429929 22000) "../" "build-uno/" "./" "Obstacle_avoider.ino" "Obstacle_avoider.ino~" "Makefile" "test/")
+
+ ("/home/karthik/Arduino/" (23093 28133 12476 292000) "serial_message_processing/" "final_farm_16.08.17/" "Ultrasonic/" "sim_test/" "relay_test/" "pre_final/" "final_farm/" "ultrasonic_v4_modi/" "../" "I2C_Scanner/" "ldr/" "./" "libraries/" "Blink_test/" "pre_final.ino~" "pre_final.ino" "rgb/" "Obstacle_avoider/" "farm_automation/" "gsm_SMS_HTTP/" "speed_of_sound/" "obs/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

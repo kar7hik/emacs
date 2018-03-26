@@ -1,0 +1,607 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("MOUSE_HPP" variable (:constant-flag t) nil [919 928])
+            ("X11/Xlib.h" include (:system-flag t) nil [930 951])
+            ("stdio.h" include (:system-flag t) nil [952 970])
+            ("stdlib.h" include (:system-flag t) nil [971 990])
+            ("assert.h" include (:system-flag t) nil [991 1010])
+            ("math.h" include (:system-flag t) nil [1011 1028])
+            ("float.h" include (:system-flag t) nil [1029 1047])
+            ("limits.h" include (:system-flag t) nil [1048 1067])
+            ("time.h" include (:system-flag t) nil [1068 1085])
+            ("string.h" include (:system-flag t) nil [1086 1105])
+            ("ctype.h" include (:system-flag t) nil [1106 1124])
+            ("unistd.h" include (:system-flag t) nil [1125 1144])
+            ("moveMousePointer" function
+               (:arguments 
+                  ( ("delta_x" variable (:type "int") (reparse-symbol arg-sub-list) [1184 1196])
+                    ("delta_y" variable (:type "int") (reparse-symbol arg-sub-list) [1197 1209]))                  
+                :type "void")
+                nil [1162 1387])
+            ("getScreenResolution" function
+               (:arguments 
+                  ( ("xres" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1415 1425])
+                    ("yres" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1426 1436]))                  
+                :type "bool")
+                nil [1390 1685])
+            ("getGlobalMousePosition" function
+               (:arguments 
+                  ( ("mouse_pos_x" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1716 1733])
+                    ("mouse_pos_y" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1734 1751]))                  
+                :type "bool")
+                nil [1688 2468])
+            ("MouseClick" function
+               (:arguments 
+                  ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [2487 2498]))                  
+                :type "void")
+                nil [2471 3798]))          
+      :file "mouse.hpp"
+      :pointmax 3824
+      :fsize 3823
+      :lastmodtime '(23007 20064 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MOUSE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("NATURAL_INTERFACE_HPP" variable (:constant-flag t) nil [819 840])
+            ("stdio.h" include (:system-flag t) nil [996 1014])
+            ("iostream" include (:system-flag t) nil [1015 1034])
+            ("stdlib.h" include (:system-flag t) nil [1035 1054])
+            ("string.h" include (:system-flag t) nil [1055 1074])
+            ("vector" include (:system-flag t) nil [1075 1092])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [1132 1170])
+            ("opencv2/core/core.hpp" include (:system-flag t) nil [1171 1203])
+            ("opencv2/imgproc.hpp" include (:system-flag t) nil [1204 1234])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [1235 1262])
+            ("nite2/NiTE.h" include (:system-flag t) nil [1263 1286])
+            ("XRES" variable (:constant-flag t) nil [1296 1300])
+            ("YRES" variable (:constant-flag t) nil [1313 1317])
+            ("_Point_3f" type
+               (:members 
+                  ( ("posX" variable
+                       (:default-value "0"
+                        :type "float")
+                        (reparse-symbol classsubparts) [1422 1437])
+                    ("posY" variable
+                       (:default-value "0"
+                        :type "float")
+                        (reparse-symbol classsubparts) [1439 1454])
+                    ("posZ" variable
+                       (:default-value "0"
+                        :type "float")
+                        (reparse-symbol classsubparts) [1456 1471]))                  
+                :type "struct")
+                nil [1394 1483])
+            ("Point_3f" type
+               (:typedef ("_Point_3f" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1394 1483])
+            ("Natural_Interface" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1658 1666])
+                    ("window_w" variable
+                       (:default-value "640"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1668 1687])
+                    ("window_h" variable
+                       (:default-value "480"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1689 1708])
+                    ("isWave" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1710 1730])
+                    ("isRaise" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1732 1753])
+                    ("isClick" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1755 1776])
+                    ("isDepthStreamCreated" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1778 1812])
+                    ("isColorStreamCreated" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1814 1848])
+                    ("isDepthFrameReading" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1850 1883])
+                    ("isColorFrameReading" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1885 1918])
+                    ("isHandFrameReading" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1920 1952])
+                    ("isHandDetection" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1954 1983])
+                    ("isSyncOn" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1985 2007])
+                    ("oldDepthValue" variable (:type "int") (reparse-symbol classsubparts) [2009 2027])
+                    ("NUM_STREAMS" variable
+                       (:constant-flag t
+                        :default-value "2"
+                        :type "int")
+                        (reparse-symbol classsubparts) [2095 2121])
+                    ("isDefault" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2123 2146])
+                    ("InitializeOpenNI" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2179 2203])
+                    ("CreateStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2223 2254]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2205 2255])
+                    ("StartStream" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2274 2305]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2257 2306])
+                    ("CreateDevice" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2308 2328])
+                    ("SelectResolution" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2330 2353])
+                    ("SetResolution" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [2374 2383])
+                            ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [2404 2413])
+                            ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [2434 2442])
+                            ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2463 2494]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2355 2495])
+                    ("EliminateDepthErrors" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("depth" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2523 2534]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2497 2535])
+                    ("hTracker_m" variable (:type ("nite::HandTracker" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2571 2600])
+                    ("handId_m" variable (:type ("nite::HandId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2602 2624])
+                    ("depthFrame_m" variable (:type ("openni::VideoFrameRef" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2628 2677])
+                    ("colorFrame_m" variable (:type ("openni::VideoFrameRef" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2628 2677])
+                    ("vmode_m" variable (:type ("openni::VideoMode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2679 2705])
+                    ("public" label nil (reparse-symbol classsubparts) [2707 2714])
+                    ("Natural_Interface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Natural_Interface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2734 2754])
+                    ("Natural_Interface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2774 2805])
+                            ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [2825 2834])
+                            ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [2854 2863])
+                            ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [2883 2891]))                          
+                        :type ("Natural_Interface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2756 2892])
+                    ("Natural_Interface" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [2912 2921])
+                            ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [2922 2931])
+                            ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [2932 2940])
+                            ("depthColorSync" variable (:type "bool") (reparse-symbol arg-sub-list) [2941 2961]))                          
+                        :type ("Natural_Interface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2894 2962])
+                    ("Natural_Interface" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2980 3001])
+                    ("HandleStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type ("openni::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3051 3073]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3033 3074])
+                    ("HandleStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3094 3114]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3076 3115])
+                    ("ReadLastCharOfLine" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3117 3143])
+                    ("GetResolution" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3145 3166])
+                    ("StartGesureDetection" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("isWave" variable (:type "bool") (reparse-symbol arg-sub-list) [3214 3226])
+                            ("isRaise" variable (:type "bool") (reparse-symbol arg-sub-list) [3227 3240])
+                            ("isClick" variable (:type "bool") (reparse-symbol arg-sub-list) [3241 3254]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3188 3255])
+                    ("StartHandGestureTracking" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("handsFrame" variable
+                               (:reference 1
+                                :type ("nite::HandTrackerFrameRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3287 3325]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3257 3326])
+                    ("GetHandData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("nite::HandTrackerFrameRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3345 3372]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3328 3373])
+                    ("GetDepthFromHandFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("handsFrame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("nite::HandTrackerFrameRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3402 3446])
+                            ("depthNorm" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3447 3466]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3375 3467])
+                    ("GetDepthImageFromMetaData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("depthFrame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3500 3540])
+                            ("depthNorm" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3541 3560]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3469 3561])
+                    ("GetBGRImageFromMetaData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("colorFrame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3592 3632])
+                            ("bgrImage" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3633 3651]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3563 3652])
+                    ("GetColorFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("isColorFrameValid" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3690 3713]))                          
+                        :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3654 3714])
+                    ("GetDepthFrame" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("isDepthFrameValid" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3752 3775]))                          
+                        :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3716 3776])
+                    ("VideoStreamStatusIsValid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("currentStreamStatus" variable (:type "int") (reparse-symbol arg-sub-list) [3808 3832]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3778 3833])
+                    ("EnableDepthColorSync" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3835 3863])
+                    ("SplitHandFromImageMetaData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("depthFrame" variable
+                               (:reference 1
+                                :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3903 3937])
+                            ("depthNorm" variable
+                               (:reference 1
+                                :type ("cv::Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3943 3962])
+                            ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [3968 3978]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3865 3979])
+                    ("ShutDownOpenNI" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3983 4005])
+                    ("ShutDownDefaultOpenNI" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4007 4036])
+                    ("DisplayUsingOpencv" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4059 4085])
+                    ("HandPoints_m" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Point_3f" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4110 4145])
+                    ("depthStream_m" variable (:type ("openni::VideoStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4147 4196])
+                    ("colorStream_m" variable (:type ("openni::VideoStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4147 4196])
+                    ("device_m" variable (:type ("openni::Device" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4198 4222]))                  
+                :type "class")
+                nil [1632 4225])
+            ("Natural_Interface" function
+               (:constructor-flag t
+                :parent "Natural_Interface"
+                :type ("Natural_Interface" type (:type "class") nil nil))
+                nil [4375 5384])
+            ("Natural_Interface" function
+               (:constructor-flag t
+                :parent "Natural_Interface"
+                :arguments 
+                  ( ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5656 5687])
+                    ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [5725 5734])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [5772 5781])
+                    ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [5819 5827]))                  
+                :type ("Natural_Interface" type (:type "class") nil nil))
+                nil [5619 7073])
+            ("Natural_Interface" function
+               (:constructor-flag t
+                :parent "Natural_Interface"
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [7379 7388])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [7389 7398])
+                    ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [7399 7407])
+                    ("depthColorSync" variable (:type "bool") (reparse-symbol arg-sub-list) [7408 7428]))                  
+                :type ("Natural_Interface" type (:type "class") nil nil))
+                nil [7342 9332])
+            ("Natural_Interface" function
+               (:destructor-flag t
+                :parent "Natural_Interface"
+                :type "void")
+                nil [9381 9618])
+            ("HandleStatus" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("status" variable (:type ("openni::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9831 9853]))                  
+                :type "bool")
+                nil [9794 10015])
+            ("HandleStatus" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10208 10228]))                  
+                :type "bool")
+                nil [10171 10278])
+            ("ReadLastCharOfLine" function
+               (:parent "Natural_Interface"
+                :type "bool")
+                nil [10398 10623])
+            ("InitializeOpenNI" function
+               (:parent "Natural_Interface"
+                :type "bool")
+                nil [10729 11254])
+            ("CreateDevice" function
+               (:parent "Natural_Interface"
+                :type "bool")
+                nil [11404 11705])
+            ("CreateStream" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12013 12044]))                  
+                :type "bool")
+                nil [11976 13215])
+            ("GetColorFrame" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("isColorFrameValid" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13437 13460]))                  
+                :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                nil [13382 14198])
+            ("GetDepthFrame" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("isDepthFrameValid" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14420 14443]))                  
+                :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                nil [14365 15179])
+            ("SetResolution" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("xres" variable (:type "int") (reparse-symbol arg-sub-list) [15514 15523])
+                    ("yres" variable (:type "int") (reparse-symbol arg-sub-list) [15562 15571])
+                    ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [15610 15618])
+                    ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15657 15688]))                  
+                :type "bool")
+                nil [15476 16055])
+            ("StartStream" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("selecedType" variable (:type ("openni::SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16248 16279]))                  
+                :type "bool")
+                nil [16212 16728])
+            ("StartGesureDetection" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("wave" variable (:type "bool") (reparse-symbol arg-sub-list) [16892 16902])
+                    ("raise" variable (:type "bool") (reparse-symbol arg-sub-list) [16903 16914])
+                    ("click" variable (:type "bool") (reparse-symbol arg-sub-list) [16915 16926]))                  
+                :type "bool")
+                nil [16847 17685])
+            ("StartHandGestureTracking" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("handsFrame" variable
+                       (:reference 1
+                        :type ("nite::HandTrackerFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17913 17951]))                  
+                :type "bool")
+                nil [17864 18615])
+            ("GetHandData" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("handsFrame" variable
+                       (:reference 1
+                        :type ("nite::HandTrackerFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18763 18801]))                  
+                :type "void")
+                nil [18727 19641])
+            ("GetDepthFromHandFrame" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("handsFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("nite::HandTrackerFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19905 19949])
+                    ("depthNorm" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19950 19969]))                  
+                :type "bool")
+                nil [19859 20331])
+            ("GetBGRImageFromMetaData" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("colorFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20593 20633])
+                    ("bgrImage" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20642 20660]))                  
+                :type "bool")
+                nil [20545 21196])
+            ("GetDepthImageFromMetaData" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("depthFrame" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21464 21504])
+                    ("depthNorm" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21505 21524]))                  
+                :type "bool")
+                nil [21414 21837])
+            ("VideoStreamStatusIsValid" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("currentStreamStatus" variable (:type "int") (reparse-symbol arg-sub-list) [22062 22086]))                  
+                :type "bool")
+                nil [22013 22431])
+            ("SplitHandFromImageMetaData" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("depthFrame" variable
+                       (:reference 1
+                        :type ("openni::VideoFrameRef" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22979 23013])
+                    ("depthNorm" variable
+                       (:reference 1
+                        :type ("cv::Mat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23018 23037])
+                    ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [23042 23052]))                  
+                :type "bool")
+                nil [22923 24180])
+            ("EliminateDepthErrors" function
+               (:parent "Natural_Interface"
+                :arguments 
+                  ( ("depth" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [24229 24240]))                  
+                :type "void")
+                nil [24184 24340])
+            ("ShutDownOpenNI" function
+               (:parent "Natural_Interface"
+                :type "void")
+                nil [24426 25068])
+            ("ShutDownDefaultOpenNI" function
+               (:parent "Natural_Interface"
+                :type "void")
+                nil [25144 25594]))          
+      :file "Natural_Interface.hpp"
+      :pointmax 25631
+      :fsize 25630
+      :lastmodtime '(23053 29172 834177 233000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NATURAL_INTERFACE_HPP")
+          ("XRES" . ((number "640" 1301 . 1304)))
+          ("YRES" . ((number "480" 1318 . 1321)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "HandGesture.hpp"
+      :fsize 9728
+      :lastmodtime '(23033 42912 0 0)))
+  :file "!home!karthik!Projects!Gesture_recognition!OpenGesture!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

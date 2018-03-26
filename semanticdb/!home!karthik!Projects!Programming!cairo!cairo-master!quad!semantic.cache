@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [101 118])
+            ("stdlib.h" include (:system-flag t) nil [119 137])
+            ("X11/X.h" include (:system-flag t) nil [138 155])
+            ("X11/Xlib.h" include (:system-flag t) nil [156 176])
+            ("GL/gl.h" include (:system-flag t) nil [177 194])
+            ("GL/glx.h" include (:system-flag t) nil [195 213])
+            ("GL/glu.h" include (:system-flag t) nil [214 232])
+            ("dpy" variable
+               (:pointer 1
+                :type ("Display" type (:type "class") nil nil))
+                nil [234 263])
+            ("root" variable (:type ("Window" type (:type "class") nil nil)) nil [264 293])
+            ("att" variable
+               (:dereference 1
+                :default-value "{ GLX_RGBA, GLX_DEPTH_SIZE, 24, GLX_DOUBLEBUFFER, None }"
+                :type ("GLint" type (:type "class") nil nil))
+                nil [294 383])
+            ("vi" variable
+               (:pointer 1
+                :type ("XVisualInfo" type (:type "class") nil nil))
+                nil [384 412])
+            ("cmap" variable (:type ("Colormap" type (:type "class") nil nil)) nil [413 442])
+            ("swa" variable (:type ("XSetWindowAttributes" type (:type "class") nil nil)) nil [443 471])
+            ("win" variable (:type ("Window" type (:type "class") nil nil)) nil [472 500])
+            ("glc" variable (:type ("GLXContext" type (:type "class") nil nil)) nil [501 529])
+            ("gwa" variable (:type ("XWindowAttributes" type (:type "class") nil nil)) nil [530 558])
+            ("xev" variable (:type ("XEvent" type (:type "class") nil nil)) nil [559 587])
+            ("DrawAQuad" function (:type "void") nil [589 1117])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1130 1139])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1140 1153]))                  
+                :type "int")
+                nil [1121 2508]))          
+      :file "quad.c"
+      :pointmax 2577
+      :fsize 2576
+      :lastmodtime '(19461 25570 0 0)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!cairo!cairo-master!quad!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

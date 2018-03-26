@@ -1,0 +1,454 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [110 128])
+            ("stdlib.h" include (:system-flag t) nil [129 148])
+            ("cairo/cairo.h" include (:system-flag t) nil [149 173])
+            ("string.h" include (:system-flag t) nil [174 193])
+            ("colors" type
+               (:members 
+                  ( ("BLACK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [290 296])
+                    ("WHITE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [297 303])
+                    ("RED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [304 308])
+                    ("GREEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [309 315])
+                    ("BLUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [316 321])
+                    ("YELLOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [322 329]))                  
+                :type "enum")
+                nil [277 330])
+            ("opacity" type
+               (:typedef ("float")
+                :type "typedef")
+                nil [331 353])
+            ("width" variable
+               (:default-value "1980"
+                :type "int")
+                nil [354 371])
+            ("height" variable
+               (:default-value "1080"
+                :type "int")
+                nil [372 390])
+            ("cr" variable
+               (:pointer 1
+                :type ("cairo_t" type (:type "class") nil nil))
+                nil [392 404])
+            ("surface" variable
+               (:pointer 1
+                :type ("cairo_surface_t" type (:type "class") nil nil))
+                nil [405 430])
+            ("initialize_with_image_surface" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [548 558])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [559 570]))                  
+                :type "void")
+                nil [513 571])
+            ("create_background" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [595 607])
+                    ("color" variable (:type "int") (reparse-symbol arg-sub-list) [608 618]))                  
+                :type "void")
+                nil [572 619])
+            ("save_image" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("cairo_surface_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [636 661]))                  
+                :type "void")
+                nil [620 662])
+            ("clear_memory" function
+               (:prototype-flag t
+                :type "void")
+                nil [663 683])
+            ("create_dynamic_background" function
+               (:prototype-flag t
+                :type "void")
+                nil [684 717])
+            ("itoa" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [729 733])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [734 740])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [741 745]))                  
+                :type "char")
+                nil [718 746])
+            ("itoa" function
+               (:pointer 1
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [762 772])
+                    ("result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [773 786])
+                    ("base" variable (:type "int") (reparse-symbol arg-sub-list) [787 796]))                  
+                :type "char")
+                nil [749 1391])
+            ("initialize_with_image_surface" function
+               (:arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1429 1439])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1440 1451]))                  
+                :type "void")
+                nil [1394 1559])
+            ("create_background" function
+               (:arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1585 1597])
+                    ("color" variable (:type "int") (reparse-symbol arg-sub-list) [1598 1608]))                  
+                :type "void")
+                nil [1562 1775])
+            ("save_image" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("cairo_surface_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1794 1819]))                  
+                :type "void")
+                nil [1778 1878])
+            ("clear_memory" function (:type "void") nil [1880 1956])
+            ("create_dynamic_background" function (:type "void") nil [1959 2410])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2421 2430])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2431 2444]))                  
+                :type "int")
+                nil [2412 2611]))          
+      :file "drawing.c"
+      :pointmax 2612
+      :fsize 2611
+      :lastmodtime '(23223 30712 443508 372000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [49 67])
+            ("cairo/cairo.h" include (:system-flag t) nil [68 92])
+            ("string.h" include (:system-flag t) nil [93 112])
+            ("stdlib.h" include (:system-flag t) nil [113 132])
+            ("math.h" include (:system-flag t) nil [133 150])
+            ("stdbool.h" include (:system-flag t) nil [151 171])
+            ("Colors" type
+               (:members 
+                  ( ("BLACK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [219 225])
+                    ("WHITE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [226 232])
+                    ("RED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [233 237])
+                    ("GREEN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [238 244])
+                    ("BLUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [245 250])
+                    ("YELLOW" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [251 258]))                  
+                :type "enum")
+                nil [198 266])
+            ("colors" type
+               (:typedef ("Colors" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [198 266])
+            ("opacity" type
+               (:typedef ("float")
+                :type "typedef")
+                nil [267 289])
+            ("width" variable
+               (:default-value "1980"
+                :type "int")
+                nil [290 307])
+            ("height" variable
+               (:default-value "1080"
+                :type "int")
+                nil [308 326])
+            ("count" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [327 348])
+            ("increment" variable
+               (:default-value "0.15"
+                :type "double")
+                nil [349 373])
+            ("cr" variable
+               (:pointer 1
+                :type ("cairo_t" type (:type "class") nil nil))
+                nil [374 386])
+            ("surface" variable
+               (:pointer 1
+                :type ("cairo_surface_t" type (:type "class") nil nil))
+                nil [387 412])
+            ("initialize_with_image_surface" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [477 487])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [488 499]))                  
+                :type "void")
+                nil [442 500])
+            ("select_color" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [519 531])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [532 545]))                  
+                :type "void")
+                nil [501 546])
+            ("create_background" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [570 582])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [583 596]))                  
+                :type "void")
+                nil [547 597])
+            ("save_image" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("cairo_surface_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [614 639])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [640 655]))                  
+                :type "void")
+                nil [598 656])
+            ("clear_memory" function
+               (:prototype-flag t
+                :type "void")
+                nil [657 677])
+            ("itoa" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [689 693])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [694 700])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [701 705]))                  
+                :type "char")
+                nil [678 706])
+            ("draw_circle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [724 736])
+                    ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [737 747])
+                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [748 758])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [759 773])
+                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [779 793])
+                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [794 808])
+                    ("line_width" variable (:type "double") (reparse-symbol arg-sub-list) [809 827])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [833 846])
+                    ("fill" variable (:type "bool") (reparse-symbol arg-sub-list) [847 857])
+                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [858 870]))                  
+                :type "void")
+                nil [707 871])
+            ("draw_circle_animation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [900 912])
+                    ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [913 923])
+                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [924 934])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [944 958])
+                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [959 973])
+                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [983 997])
+                    ("line_width" variable (:type "double") (reparse-symbol arg-sub-list) [998 1016])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1026 1039])
+                    ("fill" variable (:type "bool") (reparse-symbol arg-sub-list) [1040 1050])
+                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [1051 1063]))                  
+                :type "void")
+                nil [873 1064])
+            ("draw_inv_circle_animation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1097 1109])
+                    ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [1110 1120])
+                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [1121 1131])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [1142 1156])
+                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [1157 1171])
+                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [1182 1196])
+                    ("line_width" variable (:type "double") (reparse-symbol arg-sub-list) [1197 1215])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1226 1239])
+                    ("fill" variable (:type "bool") (reparse-symbol arg-sub-list) [1240 1250])
+                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [1251 1263]))                  
+                :type "void")
+                nil [1066 1264])
+            ("itoa" function
+               (:pointer 1
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [1281 1291])
+                    ("result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1292 1305])
+                    ("base" variable (:type "int") (reparse-symbol arg-sub-list) [1306 1315]))                  
+                :type "char")
+                nil [1269 1910])
+            ("initialize_with_image_surface" function
+               (:arguments 
+                  ( ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1948 1958])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1959 1970]))                  
+                :type "void")
+                nil [1913 2078])
+            ("select_color" function
+               (:arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2099 2111])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2112 2125]))                  
+                :type "void")
+                nil [2081 2859])
+            ("create_background" function
+               (:arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2885 2897])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2898 2911]))                  
+                :type "void")
+                nil [2862 3001])
+            ("draw_circle" function
+               (:arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3021 3033])
+                    ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [3034 3044])
+                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [3045 3055])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [3056 3070])
+                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [3076 3090])
+                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [3091 3105])
+                    ("line_width" variable (:type "double") (reparse-symbol arg-sub-list) [3106 3124])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3130 3143])
+                    ("fill" variable (:type "bool") (reparse-symbol arg-sub-list) [3144 3154])
+                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [3155 3167]))                  
+                :type "void")
+                nil [3004 3515])
+            ("draw_circle_animation" function
+               (:arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3544 3556])
+                    ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [3557 3567])
+                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [3568 3578])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [3588 3602])
+                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [3603 3617])
+                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [3627 3641])
+                    ("line_width" variable (:type "double") (reparse-symbol arg-sub-list) [3642 3660])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3670 3683])
+                    ("fill" variable (:type "bool") (reparse-symbol arg-sub-list) [3684 3694])
+                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [3695 3707]))                  
+                :type "void")
+                nil [3517 4988])
+            ("draw_inv_circle_animation" function
+               (:arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5022 5034])
+                    ("xc" variable (:type "double") (reparse-symbol arg-sub-list) [5035 5045])
+                    ("yc" variable (:type "double") (reparse-symbol arg-sub-list) [5046 5056])
+                    ("radius" variable (:type "double") (reparse-symbol arg-sub-list) [5067 5081])
+                    ("angle1" variable (:type "double") (reparse-symbol arg-sub-list) [5082 5096])
+                    ("angle2" variable (:type "double") (reparse-symbol arg-sub-list) [5107 5121])
+                    ("line_width" variable (:type "double") (reparse-symbol arg-sub-list) [5122 5140])
+                    ("color" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5151 5164])
+                    ("fill" variable (:type "bool") (reparse-symbol arg-sub-list) [5165 5175])
+                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [5176 5188]))                  
+                :type "void")
+                nil [4991 6534])
+            ("save_image" function
+               (:arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("cairo_surface_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6554 6579])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6580 6595]))                  
+                :type "void")
+                nil [6538 6647])
+            ("clear_memory" function (:type "void") nil [6650 6726])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6738 6747])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6748 6761]))                  
+                :type "int")
+                nil [6729 7784]))          
+      :file "create_circle.c"
+      :pointmax 7785
+      :fsize 7784
+      :lastmodtime '(23225 22022 563236 526000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!cairo!opengraphics!learning!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

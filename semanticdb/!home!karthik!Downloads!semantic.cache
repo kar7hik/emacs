@@ -1,0 +1,300 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo/cairo.h" include (:system-flag t) nil [2 26])
+            ("stdio.h" include (:system-flag t) nil [27 45])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [58 67])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68 81]))                  
+                :type "int")
+                nil [48 688]))          
+      :file "stroke.c"
+      :pointmax 691
+      :fsize 690
+      :lastmodtime '(23204 20676 709151 677000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [2 21])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [32 41])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42 59]))                  
+                :type "int")
+                nil [23 110]))          
+      :file "example.cpp"
+      :pointmax 111
+      :fsize 110
+      :lastmodtime '(23193 25013 137074 898000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo/cairo.h" include (:system-flag t) nil [2 26])
+            ("cairo/cairo-pdf.h" include (:system-flag t) nil [27 55])
+            ("cairo/cairo-svg.h" include (:system-flag t) nil [56 84])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [96 105])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [106 119]))                  
+                :type "int")
+                nil [86 607]))          
+      :file "paint.c"
+      :pointmax 609
+      :fsize 608
+      :lastmodtime '(23204 25957 646769 911000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JO_INCLUDE_MPEG_H" variable (:constant-flag t) nil [1079 1096])
+            ("stdio.h" include (:system-flag t) nil [1098 1116])
+            ("jo_write_mpeg" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1337 1346])
+                    ("rgbx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1347 1373])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1374 1384])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1385 1396])
+                    ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [1397 1405]))                  
+                :type "void")
+                nil [1311 1406])
+            ("stdio.h" include (:system-flag t) nil [1471 1489])
+            ("math.h" include (:system-flag t) nil [1490 1507])
+            ("memory.h" include (:system-flag t) nil [1508 1527])
+            ("s_jo_HTDC_Y" variable
+               (:dereference 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{{4,3}, {0,2}, {1,2}, {5,3}, {6,3}, {14,4}, {30,5}, {62,6}, {126,7}}"
+                :type "unsigned char")
+                nil [1547 1663])
+            ("s_jo_HTDC_C" variable
+               (:dereference 2
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{{0,2}, {1,2}, {2,2}, {6,3}, {14,4}, {30,5}, {62,6}, {126,7}, {254,8}}"
+                :type "unsigned char")
+                nil [1664 1782])
+            ("s_jo_HTAC" variable
+               (:dereference 3
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+{{6,3},{8,5},{10,6},{12,8},{76,9},{66,9},{20,11},{58,13},{48,13},{38,13},{32,13},{52,14},{50,14},{48,14},{46,14},{62,15},{62,15},{58,15},{56,15},{54,15},{52,15},{50,15},{48,15},{46,15},{44,15},{42,15},{40,15},{38,15},{36,15},{34,15},{32,15},{48,16},{46,16},{44,16},{42,16},{40,16},{38,16},{36,16},{34,16},{32,16},},
+{{6,4},{12,7},{74,9},{24,11},{54,13},{44,14},{42,14},{62,16},{60,16},{58,16},{56,16},{54,16},{52,16},{50,16},{38,17},{36,17},{34,17},{32,17}},
+{{10,5},{8,8},{22,11},{40,13},{40,14}},
+{{14,6},{72,9},{56,13},{38,14}},
+{{12,6},{30,11},{36,13}},  {{14,7},{18,11},{36,14}},  {{10,7},{60,13},{40,17}},
+{{8,7},{42,13}},  {{14,8},{34,13}},  {{10,8},{34,14}},  {{78,9},{32,14}},  {{70,9},{52,17}},  {{68,9},{50,17}},  {{64,9},{48,17}},  {{28,11},{46,17}},  {{26,11},{44,17}},  {{16,11},{42,17}},
+{{62,13}}, {{52,13}}, {{50,13}}, {{46,13}}, {{44,13}}, {{62,14}}, {{60,14}}, {{58,14}}, {{56,14}}, {{54,14}}, {{62,17}}, {{60,17}}, {{58,17}}, {{56,17}}, {{54,17}},
+}"
+                :type "unsigned char")
+                nil [1783 2805])
+            ("s_jo_quantTbl" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	0.015625f,0.005632f,0.005035f,0.004832f,0.004808f,0.005892f,0.007964f,0.013325f,
+	0.005632f,0.004061f,0.003135f,0.003193f,0.003338f,0.003955f,0.004898f,0.008828f,
+	0.005035f,0.003135f,0.002816f,0.003013f,0.003299f,0.003581f,0.005199f,0.009125f,
+	0.004832f,0.003484f,0.003129f,0.003348f,0.003666f,0.003979f,0.005309f,0.009632f,
+	0.005682f,0.003466f,0.003543f,0.003666f,0.003906f,0.004546f,0.005774f,0.009439f,
+	0.006119f,0.004248f,0.004199f,0.004228f,0.004546f,0.005062f,0.006124f,0.009942f,
+	0.008883f,0.006167f,0.006096f,0.005777f,0.006078f,0.006391f,0.007621f,0.012133f,
+	0.016780f,0.011263f,0.009907f,0.010139f,0.009849f,0.010297f,0.012133f,0.019785f,
+}"
+                :type "float")
+                nil [2806 3505])
+            ("s_jo_ZigZag" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{ 0,1,5,6,14,15,27,28,2,4,7,13,16,26,29,42,3,8,12,17,25,30,41,43,9,11,18,24,31,40,44,53,10,19,23,32,39,45,52,54,20,22,33,38,46,51,55,60,21,34,37,47,50,56,59,61,35,36,48,49,57,58,62,63 }"
+                :type "unsigned char")
+                nil [3506 3735])
+            ("jo_bits_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("fp" variable
+                             (:pointer 1
+                              :type ("FILE" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3755 3764])
+                          ("buf" variable (:type "int") (reparse-symbol classsubparts) [3766 3779])
+                          ("cnt" variable (:type "int") (reparse-symbol classsubparts) [3766 3779]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3737 3792])
+            ("jo_writeBits" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type ("jo_bits_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3819 3832])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [3833 3843])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [3844 3854]))                  
+                :type "void")
+                nil [3794 4027])
+            ("jo_DCT" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d0" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4048 4058])
+                    ("d1" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4059 4069])
+                    ("d2" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4070 4080])
+                    ("d3" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4081 4091])
+                    ("d4" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4092 4102])
+                    ("d5" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4103 4113])
+                    ("d6" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4114 4124])
+                    ("d7" variable
+                       (:reference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4125 4135]))                  
+                :type "void")
+                nil [4029 5103])
+            ("jo_processDU" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bits" variable
+                       (:pointer 1
+                        :type ("jo_bits_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5130 5146])
+                    ("A" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5147 5159])
+                    ("htdc" variable
+                       (:dereference 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5160 5191])
+                    ("DC" variable (:type "int") (reparse-symbol arg-sub-list) [5192 5199]))                  
+                :type "int")
+                nil [5106 6637])
+            ("jo_write_mpeg" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6658 6667])
+                    ("rgbx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [6668 6694])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [6695 6705])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [6706 6717])
+                    ("fps" variable (:type "int") (reparse-symbol arg-sub-list) [6718 6726]))                  
+                :type "void")
+                nil [6639 8905]))          
+      :file "jo_mpeg.cpp"
+      :pointmax 8914
+      :fsize 9171
+      :lastmodtime '(23205 35111 138142 836000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("JO_INCLUDE_MPEG_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("UP_CASE" variable (:constant-flag t) nil [11 18])
+            ("UP_CASE" variable (:constant-flag t) nil [11 18])
+            ("LOW_CASE" variable (:constant-flag t) nil [82 90])
+            ("index" function
+               (:arguments 
+                  ( ("c" variable (:type "char") nil nil)
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [218 374])
+            ("jaz.h" include (:system-flag t) nil [533 549])
+            ("jzinsstr" function
+               (:arguments 
+                  ( ("fdestin" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("fsource" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("fstart" variable (:type "int") nil nil))                  
+                :type "int")
+                nil [551 1417])
+            ("jzmidstr" function
+               (:pointer 1
+                :arguments 
+                  ( ("fstr" variable
+                       (:pointer 1
+                        :type "char")
+                        nil nil)
+                    ("flen" variable (:type "int") nil nil)
+                    ("ffrom" variable (:type "int") nil nil))                  
+                :type "char")
+                nil [1536 1924]))          
+      :file "strings.c"
+      :pointmax 1925
+      :fsize 1923
+      :lastmodtime '(23219 59181 351145 894000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UP_CASE" (spp-arg-list ("ch") 18 . 22) . ((semantic-list "((ch) & 223)" 24 . 36)))
+          )
+))
+  :file "!home!karthik!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

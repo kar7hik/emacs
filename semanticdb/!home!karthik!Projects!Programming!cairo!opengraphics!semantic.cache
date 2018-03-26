@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo/cairo.h" include (:system-flag t) nil [50 74])
+            ("gtk/gtk.h" include (:system-flag t) nil [75 95])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [108 117])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [118 135]))                  
+                :type "int")
+                nil [99 155]))          
+      :file "gtkwindow_create.c"
+      :pointmax 158
+      :fsize 157
+      :lastmodtime '(23192 19258 442324 489000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!cairo!opengraphics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

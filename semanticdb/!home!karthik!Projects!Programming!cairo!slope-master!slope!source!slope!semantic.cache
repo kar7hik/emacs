@@ -1,0 +1,1068 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("slope/scale.h" include (:system-flag t) nil [733 757])
+            ("slope/xyseries.h" include (:system-flag t) nil [758 785])
+            ("_SlopeXySeriesPrivate" type
+               (:members 
+                  ( ("x_min" variable (:type "double") (reparse-symbol classsubparts) [828 855])
+                    ("x_max" variable (:type "double") (reparse-symbol classsubparts) [828 855])
+                    ("y_min" variable (:type "double") (reparse-symbol classsubparts) [858 885])
+                    ("y_max" variable (:type "double") (reparse-symbol classsubparts) [858 885])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [888 908])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [911 931])
+                    ("n_pts" variable (:type "long") (reparse-symbol classsubparts) [934 954])
+                    ("line_color" variable (:type ("SlopeColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [957 982])
+                    ("symbol_stroke_color" variable (:type ("SlopeColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [985 1019])
+                    ("symbol_fill_color" variable (:type ("SlopeColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1022 1054])
+                    ("line_width" variable (:type "double") (reparse-symbol classsubparts) [1057 1082])
+                    ("symbol_stroke_width" variable (:type "double") (reparse-symbol classsubparts) [1085 1119])
+                    ("symbol_small_radius" variable (:type "double") (reparse-symbol classsubparts) [1122 1156])
+                    ("symbol_big_radius" variable (:type "double") (reparse-symbol classsubparts) [1159 1191])
+                    ("antialias" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1194 1218])
+                    ("mode" variable (:type "int") (reparse-symbol classsubparts) [1221 1240]))                  
+                :type "struct")
+                nil [787 1264])
+            ("SlopeXySeriesPrivate" type
+               (:typedef ("_SlopeXySeriesPrivate" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [787 1264])
+            ("_xyseries_draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1293 1309])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1310 1322]))                  
+                :type "void")
+                nil [1266 1323])
+            ("_xyseries_draw_thumb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1357 1380])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1414 1435])
+                    ("pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1469 1491]))                  
+                :type "void")
+                nil [1324 1492])
+            ("_xyseries_finalize" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("GObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1524 1538]))                  
+                :type "void")
+                nil [1493 1539])
+            ("_xyseries_get_figure_rect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1578 1594])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1595 1611]))                  
+                :type "void")
+                nil [1540 1612])
+            ("_xyseries_get_data_rect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1649 1665])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1666 1682]))                  
+                :type "void")
+                nil [1613 1683])
+            ("_xyseries_draw_line" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1716 1736])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1737 1749]))                  
+                :type "void")
+                nil [1684 1750])
+            ("_xyseries_draw_circles" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1786 1806])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1807 1819]))                  
+                :type "void")
+                nil [1751 1820])
+            ("_xyseries_draw_areaunder" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1858 1878])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1879 1891]))                  
+                :type "void")
+                nil [1821 1892])
+            ("SLOPE_XYSERIES_GET_PRIVATE" variable (:constant-flag t) nil [1902 1928])
+            ("slope_xyseries_class_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("SlopeXySeriesClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2150 2176]))                  
+                :type "void")
+                nil [2112 2569])
+            ("slope_xyseries_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2603 2623]))                  
+                :type "void")
+                nil [2571 3089])
+            ("_xyseries_finalize" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("GObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3115 3129]))                  
+                :type "void")
+                nil [3091 3218])
+            ("slope_xyseries_new" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3250 3255]))                  
+                :type ("SlopeItem" type (:type "class") nil nil))
+                nil [3220 3347])
+            ("slope_xyseries_new_filled" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3386 3405])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3443 3463])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3501 3521])
+                    ("n_pts" variable (:type "long") (reparse-symbol arg-sub-list) [3559 3579])
+                    ("style" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3617 3637]))                  
+                :type ("SlopeItem" type (:type "class") nil nil))
+                nil [3349 3894])
+            ("slope_xyseries_set_data" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3925 3945])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3975 3996])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4026 4047])
+                    ("n_pts" variable (:type "long") (reparse-symbol arg-sub-list) [4077 4098]))                  
+                :type "void")
+                nil [3896 4337])
+            ("slope_xyseries_update_data" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4371 4391])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4424 4445])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4478 4499])
+                    ("n_pts" variable (:type "long") (reparse-symbol arg-sub-list) [4532 4553]))                  
+                :type "void")
+                nil [4339 4642])
+            ("_xyseries_draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4671 4687])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4688 4700]))                  
+                :type "void")
+                nil [4644 5591])
+            ("_xyseries_draw_thumb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5626 5649])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5683 5704])
+                    ("pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5738 5760]))                  
+                :type "void")
+                nil [5593 7201])
+            ("_xyseries_draw_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7235 7255])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7256 7268]))                  
+                :type "void")
+                nil [7203 8091])
+            ("_xyseries_draw_areaunder" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8130 8150])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8151 8163]))                  
+                :type "void")
+                nil [8093 9510])
+            ("_xyseries_draw_circles" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9547 9567])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9568 9580]))                  
+                :type "void")
+                nil [9512 10294])
+            ("_xyseries_get_figure_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10334 10350])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10351 10367]))                  
+                :type "void")
+                nil [10296 10502])
+            ("_xyseries_get_data_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10540 10556])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10557 10573]))                  
+                :type "void")
+                nil [10504 10846])
+            ("slope_xyseries_update" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10875 10895]))                  
+                :type "void")
+                nil [10848 11525])
+            ("_xyseries_parse_mode" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11552 11566]))                  
+                :type "int")
+                nil [11527 12459])
+            ("slope_xyseries_set_style" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12491 12511])
+                    ("style" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12512 12530]))                  
+                :type "void")
+                nil [12461 14199]))          
+      :file "xyseries.c"
+      :pointmax 14224
+      :fsize 14223
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax '((semantic-list 2062 . 2110) (symbol 2036 . 2062))
+      :lexical-table 
+        '(("SLOPE_XYSERIES_GET_PRIVATE" (spp-arg-list ("obj") 1928 . 1933) . ((semantic-list "(G_TYPE_INSTANCE_GET_PRIVATE(         \\
+      (obj), SLOPE_XYSERIES_TYPE, SlopeXySeriesPrivate))" 1938 . 2034)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("slope/figure_p.h" include (:system-flag t) nil [733 760])
+            ("slope/item_p.h" include (:system-flag t) nil [761 786])
+            ("slope/xyscale.h" include (:system-flag t) nil [787 813])
+            ("stdio.h" include (:system-flag t) nil [815 833])
+            ("MAX_AXIS" variable (:constant-flag t) nil [843 851])
+            ("_SlopeXyScalePrivate" type
+               (:members 
+                  ( ("axis" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("SlopeItem" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [895 921])
+                    ("left_margin" variable (:type "double") (reparse-symbol classsubparts) [924 961])
+                    ("right_margin" variable (:type "double") (reparse-symbol classsubparts) [924 961])
+                    ("top_margin" variable (:type "double") (reparse-symbol classsubparts) [964 1001])
+                    ("bottom_margin" variable (:type "double") (reparse-symbol classsubparts) [964 1001])
+                    ("horiz_pad" variable (:type "double") (reparse-symbol classsubparts) [1004 1039])
+                    ("vertical_pad" variable (:type "double") (reparse-symbol classsubparts) [1004 1039])
+                    ("fig_x_min" variable (:type "double") (reparse-symbol classsubparts) [1042 1074])
+                    ("fig_x_max" variable (:type "double") (reparse-symbol classsubparts) [1042 1074])
+                    ("fig_y_min" variable (:type "double") (reparse-symbol classsubparts) [1077 1109])
+                    ("fig_y_max" variable (:type "double") (reparse-symbol classsubparts) [1077 1109])
+                    ("fig_width" variable (:type "double") (reparse-symbol classsubparts) [1112 1145])
+                    ("fig_height" variable (:type "double") (reparse-symbol classsubparts) [1112 1145])
+                    ("dat_x_min" variable (:type "double") (reparse-symbol classsubparts) [1148 1180])
+                    ("dat_x_max" variable (:type "double") (reparse-symbol classsubparts) [1148 1180])
+                    ("dat_y_min" variable (:type "double") (reparse-symbol classsubparts) [1183 1215])
+                    ("dat_y_max" variable (:type "double") (reparse-symbol classsubparts) [1183 1215])
+                    ("dat_width" variable (:type "double") (reparse-symbol classsubparts) [1218 1251])
+                    ("dat_height" variable (:type "double") (reparse-symbol classsubparts) [1218 1251])
+                    ("mouse_p1" variable (:type ("SlopePoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1254 1274])
+                    ("mouse_p2" variable (:type ("SlopePoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1277 1297])
+                    ("mouse_rect_color" variable (:type ("SlopeColor" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1300 1328])
+                    ("on_drag" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1331 1350])
+                    ("interaction" variable (:type "int") (reparse-symbol classsubparts) [1353 1376]))                  
+                :type "struct")
+                nil [855 1399])
+            ("SlopeXyScalePrivate" type
+               (:typedef ("_SlopeXyScalePrivate" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [855 1399])
+            ("SLOPE_XYSCALE_GET_PRIVATE" variable (:constant-flag t) nil [1409 1434])
+            ("_xyscale_finalize" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("GObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1628 1642]))                  
+                :type "void")
+                nil [1598 1643])
+            ("_xyscale_draw" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1670 1687])
+                    ("rect" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1688 1710])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1711 1723]))                  
+                :type "void")
+                nil [1644 1724])
+            ("_xyscale_map" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1750 1773])
+                    ("res" variable
+                       (:pointer 1
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1799 1821])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1847 1869]))                  
+                :type "void")
+                nil [1725 1870])
+            ("_xyscale_unmap" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1898 1921])
+                    ("res" variable
+                       (:pointer 1
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1949 1971])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1999 2021]))                  
+                :type "void")
+                nil [1871 2022])
+            ("_xyscale_rescale" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2052 2069]))                  
+                :type "void")
+                nil [2023 2070])
+            ("_xyscale_get_figure_rect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2108 2125])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2126 2142]))                  
+                :type "void")
+                nil [2071 2143])
+            ("_xyscale_get_data_rect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2179 2196])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2197 2213]))                  
+                :type "void")
+                nil [2144 2214])
+            ("_xyscale_position_axis" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2250 2267]))                  
+                :type "void")
+                nil [2215 2268])
+            ("_xyscale_apply_padding" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2304 2323]))                  
+                :type "void")
+                nil [2269 2324])
+            ("_xyscale_mouse_event" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2358 2375])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2376 2399]))                  
+                :type "void")
+                nil [2325 2400])
+            ("_xyscale_zoom_event" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2433 2450])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2451 2474]))                  
+                :type "void")
+                nil [2401 2475])
+            ("_xyscale_translate_event" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2513 2530])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2531 2554]))                  
+                :type "void")
+                nil [2476 2555])
+            ("slope_xyscale_class_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("SlopeXyScaleClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2594 2619]))                  
+                :type "void")
+                nil [2557 3166])
+            ("slope_xyscale_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3199 3218]))                  
+                :type "void")
+                nil [3168 4403])
+            ("_xyscale_finalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("GObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4435 4449]))                  
+                :type "void")
+                nil [4405 4758])
+            ("slope_xyscale_new" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4790 4795]))                  
+                :type ("SlopeScale" type (:type "class") nil nil))
+                nil [4760 4905])
+            ("slope_xyscale_new_axis" function
+               (:pointer 1
+                :arguments 
+                  ( ("x_title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4942 4962])
+                    ("y_title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4998 5018])
+                    ("top_title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5054 5076]))                  
+                :type ("SlopeScale" type (:type "class") nil nil))
+                nil [4907 5587])
+            ("_xyscale_draw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5615 5632])
+                    ("rect" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5633 5655])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5656 5668]))                  
+                :type "void")
+                nil [5589 7166])
+            ("_xyscale_map" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7193 7216])
+                    ("res" variable
+                       (:pointer 1
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7242 7264])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7290 7312]))                  
+                :type "void")
+                nil [7168 7629])
+            ("_xyscale_unmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7658 7681])
+                    ("res" variable
+                       (:pointer 1
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7709 7731])
+                    ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SlopePoint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7759 7781]))                  
+                :type "void")
+                nil [7631 8098])
+            ("_xyscale_rescale" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8129 8146]))                  
+                :type "void")
+                nil [8100 9444])
+            ("_xyscale_apply_padding" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9481 9500]))                  
+                :type "void")
+                nil [9446 10561])
+            ("_xyscale_get_figure_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10600 10617])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10618 10634]))                  
+                :type "void")
+                nil [10563 10839])
+            ("_xyscale_get_data_rect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10876 10893])
+                    ("rect" variable
+                       (:pointer 1
+                        :type ("SlopeRect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10894 10910]))                  
+                :type "void")
+                nil [10841 11115])
+            ("_xyscale_position_axis" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11152 11169]))                  
+                :type "void")
+                nil [11117 12499])
+            ("_xyscale_set_visible_axis" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12539 12558])
+                    ("axis_flag" variable (:type "int") (reparse-symbol arg-sub-list) [12559 12573]))                  
+                :type "void")
+                nil [12501 14182])
+            ("slope_xyscale_set_axis" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14212 14231])
+                    ("axis_flag" variable (:type "int") (reparse-symbol arg-sub-list) [14232 14246]))                  
+                :type "void")
+                nil [14184 16710])
+            ("slope_xyscale_get_axis" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16746 16765])
+                    ("axis_id" variable (:type "int") (reparse-symbol arg-sub-list) [16766 16778]))                  
+                :type ("SlopeItem" type (:type "class") nil nil))
+                nil [16712 16839])
+            ("slope_xyscale_set_x_range" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16872 16891])
+                    ("min" variable (:type "double") (reparse-symbol arg-sub-list) [16892 16903])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [16904 16915]))                  
+                :type "void")
+                nil [16841 17064])
+            ("slope_xyscale_set_y_range" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17097 17116])
+                    ("min" variable (:type "double") (reparse-symbol arg-sub-list) [17117 17128])
+                    ("max" variable (:type "double") (reparse-symbol arg-sub-list) [17129 17140]))                  
+                :type "void")
+                nil [17066 17292])
+            ("_xyscale_mouse_event" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17327 17344])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17345 17368]))                  
+                :type "void")
+                nil [17294 18802])
+            ("_xyscale_zoom_event" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18836 18853])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18854 18877]))                  
+                :type "void")
+                nil [18804 20479])
+            ("_xyscale_translate_event" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20518 20535])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20536 20559]))                  
+                :type "void")
+                nil [20481 21588])
+            ("slope_xyscale_set_interaction" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXyScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21625 21644])
+                    ("interaction" variable (:type "int") (reparse-symbol arg-sub-list) [21645 21661]))                  
+                :type "void")
+                nil [21590 21771]))          
+      :file "xyscale.c"
+      :pointmax 21795
+      :fsize 21794
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax '((semantic-list 1549 . 1596) (symbol 1523 . 1549))
+      :lexical-table 
+        '(("SLOPE_XYSCALE_GET_PRIVATE" (spp-arg-list ("obj") 1434 . 1439) . ((semantic-list "(G_TYPE_INSTANCE_GET_PRIVATE((obj), SLOPE_XYSCALE_TYPE, SlopeXyScalePrivate))" 1444 . 1521)))
+          ("MAX_AXIS" . ((number "6" 852 . 853)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SLOPE_FIGURE_P_H" variable (:constant-flag t) nil [766 782])
+            ("slope/figure.h" include (:system-flag t) nil [784 809])
+            ("_figure_set_view" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [833 851])
+                    ("view" variable
+                       (:pointer 1
+                        :type ("SlopeView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [852 868]))                  
+                :type "void")
+                nil [811 869])
+            ("_figure_handle_mouse_event" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [903 921])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("SlopeMouseEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [922 945]))                  
+                :type "void")
+                nil [871 946])
+            ("_figure_request_redraw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [976 994]))                  
+                :type "void")
+                nil [948 995]))          
+      :file "figure_p.h"
+      :pointmax 1027
+      :fsize 1026
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SLOPE_FIGURE_P_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("slope/chart.h" include (:system-flag t) nil [733 757])
+            ("_SlopeChartPrivate" type
+               (:members 
+                  ( ("header" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [797 817])
+                    ("view" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [820 838])
+                    ("figure" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [841 861]))                  
+                :type "struct")
+                nil [759 882])
+            ("SlopeChartPrivate" type
+               (:typedef ("_SlopeChartPrivate" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [759 882])
+            ("SLOPE_CHART_GET_PRIVATE" variable (:constant-flag t) nil [892 915])
+            ("_chart_finalize" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("GObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1112]))                  
+                :type "void")
+                nil [1070 1113])
+            ("slope_chart_class_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("SlopeChartClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1150 1173]))                  
+                :type "void")
+                nil [1115 1279])
+            ("slope_chart_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1310 1327]))                  
+                :type "void")
+                nil [1281 1917])
+            ("_chart_finalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("GObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1947 1961]))                  
+                :type "void")
+                nil [1919 2090])
+            ("slope_chart_new" function
+               (:pointer 1
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [2092 2209])
+            ("slope_chart_new_detailed" function
+               (:pointer 1
+                :arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2247 2266])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2267 2277])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2278 2289]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [2211 2574])
+            ("slope_chart_add_scale" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2603 2620])
+                    ("scale" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2639]))                  
+                :type "void")
+                nil [2576 2749])
+            ("slope_chart_write_to_png" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2781 2798])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2829 2850])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2881 2899])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2930 2949]))                  
+                :type "void")
+                nil [2751 3080])
+            ("slope_chart_redraw" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3106 3123]))                  
+                :type "void")
+                nil [3082 3231])
+            ("slope_chart_get_figure" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3269 3286]))                  
+                :type ("SlopeFigure" type (:type "class") nil nil))
+                nil [3233 3338])
+            ("slope_chart_get_header" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3374 3391]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [3340 3443])
+            ("slope_chart_get_view" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3477 3494]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [3445 3544]))          
+      :file "chart.c"
+      :pointmax 3566
+      :fsize 3565
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax '((semantic-list 1026 . 1068) (symbol 1000 . 1026))
+      :lexical-table 
+        '(("SLOPE_CHART_GET_PRIVATE" (spp-arg-list ("obj") 915 . 920) . ((semantic-list "(G_TYPE_INSTANCE_GET_PRIVATE((obj), SLOPE_CHART_TYPE, SlopeChartPrivate))" 925 . 998)))
+          )
+))
+  :file "!home!karthik!Projects!Programming!cairo!slope-master!slope!source!slope!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

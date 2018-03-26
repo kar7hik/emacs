@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [914 932])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [964 991])
+            ("nite2/NiTE.h" include (:system-flag t) nil [992 1015])
+            ("HandleStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("openni::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1062 1084]))                  
+                :type "bool")
+                nil [1044 1085])
+            ("ReadLastCharOfLine" function
+               (:prototype-flag t
+                :type "char")
+                nil [1086 1112])
+            ("HandleStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1131 1151]))                  
+                :type "bool")
+                nil [1113 1152])
+            ("hTrackerNewFrameListener" type
+               (:superclasses 
+                  ( ("nite::HandTracker::NewFrameListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("onNewFrame" function
+                       (:arguments 
+                          ( ("hTracker" variable
+                               (:reference 1
+                                :type ("nite::HandTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1255 1283]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1239 2336]))                  
+                :type "struct")
+                nil [1155 2340])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2352 2361])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2362 2381]))                  
+                :type "int")
+                nil [2343 3003])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("openni::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3181 3203]))                  
+                :type "bool")
+                nil [3163 3377])
+            ("ReadLastCharOfLine" function (:type "char") nil [3380 3623])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3644 3664]))                  
+                :type "bool")
+                nil [3626 3717]))          
+      :file "event_based_hand_reading.cpp"
+      :pointmax 3718
+      :fsize 3717
+      :lastmodtime '(23006 20827 180004 964000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Gesture_recognition!image_processing!motion_tracking!handGestureRecognition!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

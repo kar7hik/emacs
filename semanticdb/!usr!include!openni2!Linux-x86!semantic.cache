@@ -1,0 +1,61 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_ONI_PLATFORM_LINUX_X86_H_" variable (:constant-flag t) nil [1624 1650])
+            ("unistd.h" include (:system-flag t) nil [1994 2013])
+            ("stdlib.h" include (:system-flag t) nil [2014 2033])
+            ("stdio.h" include (:system-flag t) nil [2034 2052])
+            ("string.h" include (:system-flag t) nil [2053 2072])
+            ("assert.h" include (:system-flag t) nil [2073 2092])
+            ("limits.h" include (:system-flag t) nil [2093 2112])
+            ("stdint.h" include (:system-flag t) nil [2113 2132])
+            ("ONI_PLATFORM" variable (:constant-flag t) nil [2327 2339])
+            ("ONI_PLATFORM_STRING" variable (:constant-flag t) nil [2371 2390])
+            ("ONI_PLATFORM_ENDIAN_TYPE" variable (:constant-flag t) nil [2593 2617])
+            ("ONI_PLATFORM_SUPPORTS_DYNAMIC_LIBS" variable (:constant-flag t) nil [2657 2691])
+            ("ONI_DEFAULT_MEM_ALIGN" variable (:constant-flag t) nil [2907 2928])
+            ("ONI_THREAD_STATIC" variable (:constant-flag t) nil [2990 3007])
+            ("ONI_FILE_MAX_PATH" variable (:constant-flag t) nil [3246 3263])
+            ("ONI_STDCALL" variable (:constant-flag t) nil [3473 3484])
+            ("ONI_CALLBACK_TYPE" variable (:constant-flag t) nil [3546 3563])
+            ("ONI_C_DECL" variable (:constant-flag t) nil [3615 3625])
+            ("ONI_TIMESTAMP" variable (:constant-flag t) nil [3852 3865])
+            ("ONI_STRINGIFY" variable (:constant-flag t) nil [3946 3959])
+            ("ONI_STRINGIFY_HELPER" variable (:constant-flag t) nil [3995 4015])
+            ("ONI_API_EXPORT" variable (:constant-flag t) nil [4270 4284])
+            ("ONI_API_IMPORT" variable (:constant-flag t) nil [4389 4403])
+            ("ONI_API_DEPRECATED" variable (:constant-flag t) nil [4453 4471]))          
+      :file "OniPlatformLinux-x86.h"
+      :pointmax 4577
+      :fsize 4576
+      :lastmodtime '(22966 63599 482198 510000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ONI_PLATFORM_STRING" . ((string "\"Linux-x86\"" 2391 . 2402)))
+          ("ONI_FILE_MAX_PATH" . ((number "256" 3264 . 3267)))
+          ("ONI_STRINGIFY_HELPER" (spp-arg-list ("n") 4015 . 4018) . ((punctuation "#" 4019 . 4020) (symbol "n" 4020 . 4021)))
+          ("_ONI_PLATFORM_LINUX_X86_H_")
+          ("ONI_PLATFORM_SUPPORTS_DYNAMIC_LIBS" . ((number "1" 2692 . 2693)))
+          ("ONI_THREAD_STATIC" . ((symbol "__thread" 3008 . 3016)))
+          ("ONI_STDCALL" . ((symbol "__stdcall" 3485 . 3494)))
+          ("ONI_TIMESTAMP" . 
+              ((symbol "__DATE__" 3866 . 3874) (string "\" \"" 3875 . 3878) (symbol "__TIME__" 3879 . 3887)))
+          ("ONI_API_EXPORT" . ((symbol "__attribute__" 4285 . 4298) (semantic-list "((visibility(\"default\")))" 4299 . 4324)))
+          ("ONI_PLATFORM_ENDIAN_TYPE" . ((symbol "ONI_PLATFORM_IS_LITTLE_ENDIAN" 2618 . 2647)))
+          ("ONI_DEFAULT_MEM_ALIGN" . ((number "16" 2929 . 2931)))
+          ("ONI_PLATFORM" . ((symbol "ONI_PLATFORM_LINUX_X86" 2340 . 2362)))
+          ("ONI_API_IMPORT")
+          ("ONI_CALLBACK_TYPE")
+          ("ONI_C_DECL")
+          ("ONI_STRINGIFY" (spp-arg-list ("n") 3959 . 3962) . ((symbol "ONI_STRINGIFY_HELPER" 3963 . 3983) (semantic-list "(n)" 3983 . 3986)))
+          ("ONI_API_DEPRECATED" (spp-arg-list ("msg") 4471 . 4476) . ((symbol "__attribute__" 4477 . 4490) (semantic-list "((warning(\"This function is deprecated: \" msg)))" 4490 . 4538)))
+          )
+))
+  :file "!usr!include!openni2!Linux-x86!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

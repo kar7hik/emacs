@@ -1,0 +1,263 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("CMDIFFSTEPSIZE" variable (:constant-flag t) nil [1342 1356])
+            ("DYNAMIC_LEARNING" variable (:constant-flag t) nil [1423 1439])
+            ("errno.h" include (:system-flag t) nil [1478 1496])
+            ("fcntl.h" include (:system-flag t) nil [1497 1515])
+            ("math.h" include (:system-flag t) nil [1516 1533])
+            ("stdio.h" include (:system-flag t) nil [1534 1552])
+            ("stdlib.h" include (:system-flag t) nil [1553 1572])
+            ("string.h" include (:system-flag t) nil [1573 1592])
+            ("unistd.h" include (:system-flag t) nil [1593 1612])
+            ("sys/stat.h" include (:system-flag t) nil [1613 1634])
+            ("sys/types.h" include (:system-flag t) nil [1635 1657])
+            ("backprop.h" include nil nil [1658 1679])
+            ("bkp_setup_all" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1707 1724]))                  
+                :type "void")
+                nil [1681 1725])
+            ("bkp_forward" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1750 1767]))                  
+                :type "void")
+                nil [1726 1768])
+            ("bkp_backward" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1794 1811]))                  
+                :type "void")
+                nil [1769 1812])
+            ("sigmoid" variable (:constant-flag t) nil [1881 1888])
+            ("sigmoidDerivative" variable (:constant-flag t) nil [1951 1968])
+            ("random" variable (:constant-flag t) nil [2032 2038])
+            ("bkp_create_network" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 2
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2527 2545])
+                    ("config" variable
+                       (:pointer 1
+                        :type ("bkp_config_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2546 2567]))                  
+                :type "int")
+                nil [2504 5318])
+            ("bkp_destroy_network" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5477 5494]))                  
+                :type "void")
+                nil [5452 6786])
+            ("bkp_set_training_set" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7197 7214])
+                    ("ntrainset" variable (:type "int") (reparse-symbol arg-sub-list) [7215 7229])
+                    ("tinputvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7230 7248])
+                    ("targetvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [7249 7267]))                  
+                :type "int")
+                nil [7172 7492])
+            ("bkp_clear_training_set" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7827 7844]))                  
+                :type "void")
+                nil [7799 7990])
+            ("bkp_setup_all" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8018 8035]))                  
+                :type "void")
+                nil [7992 9067])
+            ("bkp_learn" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9585 9602])
+                    ("ntimes" variable (:type "int") (reparse-symbol arg-sub-list) [9603 9614]))                  
+                :type "int")
+                nil [9571 11698])
+            ("bkp_evaluate" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12745 12762])
+                    ("eoutputvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [12763 12782])
+                    ("sizeofoutputvals" variable (:type "int") (reparse-symbol arg-sub-list) [12783 12804]))                  
+                :type "int")
+                nil [12728 13336])
+            ("bkp_forward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13739 13756]))                  
+                :type "void")
+                nil [13715 15233])
+            ("bkp_backward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15671 15688]))                  
+                :type "void")
+                nil [15646 18708])
+            ("bkp_query" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21698 21715])
+                    ("qlastlearningerror" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21723 21749])
+                    ("qlastrmserror" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21750 21771])
+                    ("qinputvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21773 21791])
+                    ("qihweights" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21792 21810])
+                    ("qhiddenvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21811 21830])
+                    ("qhoweights" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21833 21851])
+                    ("qoutputvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21852 21871])
+                    ("qbhweights" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21878 21896])
+                    ("qbiasvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21897 21914])
+                    ("qboweights" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [21915 21933]))                  
+                :type "int")
+                nil [21684 22961])
+            ("bkp_set_input" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23572 23589])
+                    ("setall" variable (:type "int") (reparse-symbol arg-sub-list) [23590 23601])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [23602 23612])
+                    ("sinputvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [23613 23631]))                  
+                :type "int")
+                nil [23554 23927])
+            ("bkp_set_output" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24948 24965])
+                    ("setall" variable (:type "int") (reparse-symbol arg-sub-list) [24966 24977])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [24978 24988])
+                    ("soutputvals" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [24989 25008]))                  
+                :type "int")
+                nil [24929 25331])
+            ("bkp_loadfromfile" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 2
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25859 25877])
+                    ("fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25878 25890]))                  
+                :type "int")
+                nil [25838 29035])
+            ("bkp_savetofile" function
+               (:arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("bkp_network_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31134 31151])
+                    ("fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [31152 31164]))                  
+                :type "int")
+                nil [31115 34215]))          
+      :file "backprop.c"
+      :pointmax 34216
+      :fsize 35126
+      :lastmodtime '(22835 36034 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CMDIFFSTEPSIZE" . ((number "1" 1359 . 1360)))
+          ("sigmoidDerivative" (spp-arg-list ("x") 1968 . 1971) . ((semantic-list "((float)(x)*(1.0-(x)))" 1972 . 1994)))
+          ("random" (spp-arg-list nil 2038 . 2040) . ((semantic-list "((((float)rand()/(RAND_MAX)) * 2.0) - 1.0)" 2053 . 2095)))
+          ("DYNAMIC_LEARNING" . ((number "0" 1440 . 1441)))
+          ("sigmoid" (spp-arg-list ("x") 1888 . 1891) . ((semantic-list "(1.0 / (1.0 + (float)exp(-(double)(x))))" 1902 . 1942)))
+          )
+))
+  :file "!home!karthik!.cache!.fr-vnWjjF!backprop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

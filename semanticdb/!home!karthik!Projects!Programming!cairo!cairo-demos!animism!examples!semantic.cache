@@ -1,0 +1,31 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("animism" include nil nil [25 39])
+            ("cairo" include nil nil [40 52])
+            ("math" include nil nil [53 64])
+            ("arrow_head" function (:arguments 
+              ( ("ctx" variable nil (reparse-symbol function_parameters) [81 84]))              ) nil [66 205])
+            ("arrow" function (:arguments 
+              ( ("ctx" variable nil (reparse-symbol function_parameters) [216 219])
+                ("s" variable nil (reparse-symbol function_parameters) [221 222])
+                ("e" variable nil (reparse-symbol function_parameters) [224 225])
+                ("arrow_size" variable nil (reparse-symbol function_parameters) [227 237]))              ) nil [206 678])
+            ("draw_frame" function (:arguments 
+              ( ("t" variable nil (reparse-symbol function_parameters) [694 695])
+                ("width" variable nil (reparse-symbol function_parameters) [697 702])
+                ("height" variable nil (reparse-symbol function_parameters) [704 710]))              ) nil [679 1988])
+            ("if" code nil nil [1990 2050]))          
+      :file "phasor.py"
+      :pointmax 2050
+      :fsize 2049
+      :lastmodtime '(23205 31833 820576 840000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!cairo!cairo-demos!animism!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

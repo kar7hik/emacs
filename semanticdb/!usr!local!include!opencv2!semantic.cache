@@ -1,0 +1,2876 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("OPENCV_HIGHGUI_HPP" variable (:constant-flag t) nil [2192 2210])
+            ("opencv2/core.hpp" include nil nil [2212 2239])
+            ("cv" type
+               (:members 
+                  ( ("WindowFlags" type
+                       (:members 
+                          ( ("WINDOW_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (6971 6981)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6951 6981])
+                            ("WINDOW_AUTOSIZE" variable
+                               (:constant-flag t
+                                :default-value (7121 7131)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7101 7131])
+                            ("WINDOW_OPENGL" variable
+                               (:constant-flag t
+                                :default-value (7249 7259)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7229 7259])
+                            ("WINDOW_FULLSCREEN" variable
+                               (:constant-flag t
+                                :default-value (7322 7323)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7302 7323])
+                            ("WINDOW_FREERATIO" variable
+                               (:constant-flag t
+                                :default-value (7399 7409)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7379 7409])
+                            ("WINDOW_KEEPRATIO" variable
+                               (:constant-flag t
+                                :default-value (7502 7512)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7482 7512])
+                            ("WINDOW_GUI_EXPANDED" variable
+                               (:constant-flag t
+                                :default-value (7583 7593)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7563 7593])
+                            ("WINDOW_GUI_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (7651 7661)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7631 7661]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6925 7691])
+                    ("WindowPropertyFlags" type
+                       (:members 
+                          ( ("WND_PROP_FULLSCREEN" variable
+                               (:constant-flag t
+                                :default-value (7811 7812)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7787 7812])
+                            ("WND_PROP_AUTOSIZE" variable
+                               (:constant-flag t
+                                :default-value (7918 7919)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7894 7919])
+                            ("WND_PROP_ASPECT_RATIO" variable
+                               (:constant-flag t
+                                :default-value (8023 8024)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7999 8024])
+                            ("WND_PROP_OPENGL" variable
+                               (:constant-flag t
+                                :default-value (8139 8140)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8115 8140])
+                            ("WND_PROP_VISIBLE" variable
+                               (:constant-flag t
+                                :default-value (8194 8195)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8170 8195]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [7753 8257])
+                    ("MouseEventTypes" type
+                       (:members 
+                          ( ("EVENT_MOUSEMOVE" variable
+                               (:constant-flag t
+                                :default-value (8351 8352)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8328 8352])
+                            ("EVENT_LBUTTONDOWN" variable
+                               (:constant-flag t
+                                :default-value (8449 8450)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8426 8450])
+                            ("EVENT_RBUTTONDOWN" variable
+                               (:constant-flag t
+                                :default-value (8536 8537)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8513 8537])
+                            ("EVENT_MBUTTONDOWN" variable
+                               (:constant-flag t
+                                :default-value (8624 8625)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8601 8625])
+                            ("EVENT_LBUTTONUP" variable
+                               (:constant-flag t
+                                :default-value (8713 8714)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8690 8714])
+                            ("EVENT_RBUTTONUP" variable
+                               (:constant-flag t
+                                :default-value (8797 8798)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8774 8798])
+                            ("EVENT_MBUTTONUP" variable
+                               (:constant-flag t
+                                :default-value (8882 8883)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8859 8883])
+                            ("EVENT_LBUTTONDBLCLK" variable
+                               (:constant-flag t
+                                :default-value (8968 8969)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8945 8969])
+                            ("EVENT_RBUTTONDBLCLK" variable
+                               (:constant-flag t
+                                :default-value (9058 9059)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9035 9059])
+                            ("EVENT_MBUTTONDBLCLK" variable
+                               (:constant-flag t
+                                :default-value (9149 9150)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9126 9150])
+                            ("EVENT_MOUSEWHEEL" variable
+                               (:constant-flag t
+                                :default-value (9241 9243)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9218 9243])
+                            ("EVENT_MOUSEHWHEEL" variable
+                               (:constant-flag t
+                                :default-value (9359 9361)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9336 9361]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [8298 9448])
+                    ("MouseEventFlags" type
+                       (:members 
+                          ( ("EVENT_FLAG_LBUTTON" variable
+                               (:constant-flag t
+                                :default-value (9547 9548)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9524 9548])
+                            ("EVENT_FLAG_RBUTTON" variable
+                               (:constant-flag t
+                                :default-value (9631 9632)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9608 9632])
+                            ("EVENT_FLAG_MBUTTON" variable
+                               (:constant-flag t
+                                :default-value (9716 9717)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9693 9717])
+                            ("EVENT_FLAG_CTRLKEY" variable
+                               (:constant-flag t
+                                :default-value (9802 9803)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9779 9803])
+                            ("EVENT_FLAG_SHIFTKEY" variable
+                               (:constant-flag t
+                                :default-value (9876 9878)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9853 9878])
+                            ("EVENT_FLAG_ALTKEY" variable
+                               (:constant-flag t
+                                :default-value (9951 9953)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9928 9953]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [9494 10001])
+                    ("QtFontWeights" type
+                       (:members 
+                          ( ("QT_FONT_LIGHT" variable
+                               (:constant-flag t
+                                :default-value (10077 10079)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10051 10079])
+                            ("QT_FONT_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (10133 10135)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10107 10135])
+                            ("QT_FONT_DEMIBOLD" variable
+                               (:constant-flag t
+                                :default-value (10189 10191)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10163 10191])
+                            ("QT_FONT_BOLD" variable
+                               (:constant-flag t
+                                :default-value (10245 10247)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10219 10247])
+                            ("QT_FONT_BLACK" variable
+                               (:constant-flag t
+                                :default-value (10301 10303)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10275 10303]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10022 10330])
+                    ("QtFontStyles" type
+                       (:members 
+                          ( ("QT_STYLE_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (10404 10405)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10378 10405])
+                            ("QT_STYLE_ITALIC" variable
+                               (:constant-flag t
+                                :default-value (10459 10460)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10433 10460])
+                            ("QT_STYLE_OBLIQUE" variable
+                               (:constant-flag t
+                                :default-value (10514 10515)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10488 10515]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10350 10543])
+                    ("QtButtonTypes" type
+                       (:members 
+                          ( ("QT_PUSH_BUTTON" variable
+                               (:constant-flag t
+                                :default-value (10613 10614)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10594 10614])
+                            ("QT_CHECKBOX" variable
+                               (:constant-flag t
+                                :default-value (10663 10664)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10644 10664])
+                            ("QT_RADIOBOX" variable
+                               (:constant-flag t
+                                :default-value (10717 10718)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10698 10718])
+                            ("QT_NEW_BUTTONBAR" variable
+                               (:constant-flag t
+                                :default-value (10771 10775)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10752 10775]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10566 10826])
+                    ("MouseCallback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("event" variable (:type "int") (reparse-symbol arg-sub-list) [11176 11186])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [11187 11193])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [11194 11200])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [11201 11211])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11212 11227]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11154 11228])
+                    ("TrackbarCallback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [11427 11435])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11436 11451]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11402 11452])
+                    ("OpenGlDrawCallback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11626 11641]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11599 11642])
+                    ("ButtonCallback" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [11902 11912])
+                            ("userdata" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [11913 11928]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11879 11929])
+                    ("namedWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13435 13457])
+                            ("flags" variable
+                               (:default-value "WINDOW_AUTOSIZE"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [13458 13485]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13418 13487])
+                    ("destroyWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13688 13710]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13669 13711])
+                    ("destroyAllWindows" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13854 13879])
+                    ("startWindowThread" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [13894 13918])
+                    ("waitKeyEx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delay" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [14100 14113]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [14086 14115])
+                    ("waitKey" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("delay" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [15114 15127]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [15102 15129])
+                    ("imshow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16976 16998])
+                            ("mat" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16999 17014]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16964 17015])
+                    ("resizeWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17362 17384])
+                            ("width" variable (:type "int") (reparse-symbol arg-sub-list) [17385 17395])
+                            ("height" variable (:type "int") (reparse-symbol arg-sub-list) [17396 17407]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17344 17408])
+                    ("moveWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [17619 17641])
+                            ("x" variable (:type "int") (reparse-symbol arg-sub-list) [17642 17648])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [17649 17655]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [17603 17656])
+                    ("setWindowProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18058 18080])
+                            ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [18081 18093])
+                            ("prop_value" variable (:type "double") (reparse-symbol arg-sub-list) [18094 18112]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18035 18113])
+                    ("setWindowTitle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18242 18264])
+                            ("title" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18265 18285]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18222 18286])
+                    ("getWindowProperty" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [18612 18634])
+                            ("prop_id" variable (:type "int") (reparse-symbol arg-sub-list) [18635 18647]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [18587 18648])
+                    ("setMouseCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19014 19036])
+                            ("onMouse" variable (:type ("MouseCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19037 19059])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [19060 19078]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [18992 19080])
+                    ("getMouseWheelDelta" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [19993 20003]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19970 20004])
+                    ("selectROI" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("windowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20890 20915])
+                            ("img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20916 20931])
+                            ("showCrosshair" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [20932 20957])
+                            ("fromCenter" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [20959 20982]))                          
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20875 20984])
+                    ("selectROI" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21032 21047])
+                            ("showCrosshair" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [21048 21073])
+                            ("fromCenter" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [21075 21098]))                          
+                        :type ("Rect" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [21017 21100])
+                    ("selectROIs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("windowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [21976 22001])
+                            ("img" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22002 22017])
+                            ("std::vector" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22047 22072])
+                            ("" variable (:type ("boundingBoxes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22073 22087])
+                            ("showCrosshair" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [22088 22113])
+                            ("fromCenter" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [22115 22138]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21960 22140])
+                    ("createTrackbar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23675 23702])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23703 23725])
+                            ("value" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [23756 23767])
+                            ("count" variable (:type "int") (reparse-symbol arg-sub-list) [23768 23778])
+                            ("onChange" variable
+                               (:default-value "0"
+                                :type ("TrackbarCallback" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [23809 23838])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [23870 23888]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [23656 23890])
+                    ("getTrackbarPos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24264 24291])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24292 24314]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [24245 24315])
+                    ("setTrackbarPos" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24721 24748])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [24749 24771])
+                            ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [24772 24780]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24701 24781])
+                    ("setTrackbarMax" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25214 25241])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25242 25264])
+                            ("maxval" variable (:type "int") (reparse-symbol arg-sub-list) [25265 25276]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25194 25277])
+                    ("setTrackbarMin" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("trackbarname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25710 25737])
+                            ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25738 25760])
+                            ("minval" variable (:type "int") (reparse-symbol arg-sub-list) [25761 25772]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25690 25773])
+                    ("imshow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [25990 26012])
+                            ("tex" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ogl::Texture2D" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [26013 26039]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25978 26040])
+                    ("setOpenGlDrawCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27641 27663])
+                            ("onOpenGlDraw" variable (:type ("OpenGlDrawCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27664 27696])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [27697 27715]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27614 27717])
+                    ("setOpenGlContext" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [27856 27878]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [27834 27879])
+                    ("updateWindow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [28054 28076]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [28036 28077])
+                    ("QtFont" type
+                       (:members 
+                          ( ("nameFont" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [28217 28238])
+                            ("color" variable (:type ("Scalar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [28266 28284])
+                            ("font_face" variable (:type "int") (reparse-symbol classsubparts) [28391 28413])
+                            ("ascii" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [28444 28462])
+                            ("greek" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [28498 28516])
+                            ("cyrillic" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [28521 28542])
+                            ("hscale" variable (:type "float") (reparse-symbol classsubparts) [28547 28574])
+                            ("vscale" variable (:type "float") (reparse-symbol classsubparts) [28547 28574])
+                            ("shear" variable (:type "float") (reparse-symbol classsubparts) [28579 28597])
+                            ("thickness" variable (:type "int") (reparse-symbol classsubparts) [28654 28676])
+                            ("dx" variable (:type "float") (reparse-symbol classsubparts) [28708 28723])
+                            ("line_type" variable (:type "int") (reparse-symbol classsubparts) [28776 28798]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [28197 28816])
+                    ("fontQt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("nameFont" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29888 29911])
+                            ("pointSize" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [29912 29930])
+                            ("color" variable
+                               (:default-value "Scalar::all(0)"
+                                :type ("Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29957 29986])
+                            ("weight" variable
+                               (:default-value "QT_FONT_NORMAL"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [29988 30015])
+                            ("style" variable
+                               (:default-value "QT_STYLE_NORMAL"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [30042 30069])
+                            ("spacing" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [30071 30086]))                          
+                        :type ("QtFont" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29874 30088])
+                    ("addText" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30474 30489])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30490 30509])
+                            ("org" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30510 30520])
+                            ("font" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QtFont" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30521 30540]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30460 30541])
+                    ("addText" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31468 31483])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31484 31503])
+                            ("org" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31504 31514])
+                            ("nameFont" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31515 31538])
+                            ("pointSize" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [31539 31557])
+                            ("color" variable
+                               (:default-value "Scalar::all(0)"
+                                :type ("Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [31559 31588])
+                            ("weight" variable
+                               (:default-value "QT_FONT_NORMAL"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [31598 31625])
+                            ("style" variable
+                               (:default-value "QT_STYLE_NORMAL"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [31627 31654])
+                            ("spacing" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [31656 31671]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [31455 31673])
+                    ("displayOverlay" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32415 32437])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32438 32457])
+                            ("delayms" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [32458 32473]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [32395 32475])
+                    ("displayStatusBar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winname" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33156 33178])
+                            ("text" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33179 33198])
+                            ("delayms" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [33199 33214]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33134 33216])
+                    ("saveWindowParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("windowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33484 33509]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33458 33510])
+                    ("loadWindowParameters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("windowName" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33778 33803]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33752 33804])
+                    ("startLoop" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt2Func" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33847 33856])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [33857 33870]))                                  
+                                :type "int")
+                                nil nil)
+                            ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33872 33881])
+                            ("argv" variable
+                               (:pointer 1
+                                :dereference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [33882 33895]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [33818 33896])
+                    ("stopLoop" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33910 33926])
+                    ("createButton" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bar_name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [35483 35506])
+                            ("on_change" variable (:type ("ButtonCallback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35507 35532])
+                            ("userdata" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [35562 35580])
+                            ("type" variable
+                               (:default-value "QT_PUSH_BUTTON"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [35582 35607])
+                            ("initial_button_state" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [35638 35671]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [35465 35673]))                  
+                :type "namespace")
+                nil [6847 35711])
+            ("opencv2/highgui/highgui_c.h" include nil nil [35759 35797]))          
+      :file "highgui.hpp"
+      :pointmax 35813
+      :fsize 35812
+      :lastmodtime '(22915 47263 0 0)
+      :unmatched-syntax '((symbol 35454 . 35464) (symbol 33898 . 33908) (symbol 33806 . 33816) (symbol 33741 . 33751) (symbol 33447 . 33457) (symbol 33121 . 33133) (symbol 32382 . 32394) (symbol 31442 . 31454) (symbol 30449 . 30459) (symbol 29863 . 29873) (symbol 28025 . 28035) (symbol 27823 . 27833) (symbol 27603 . 27613) (symbol 25967 . 25977) (symbol 25677 . 25689) (symbol 25181 . 25193) (symbol 24688 . 24700) (symbol 24232 . 24244) (symbol 23645 . 23655) (punctuation 22071 . 22072) (symbol 21947 . 21959) (symbol 21004 . 21016) (symbol 20862 . 20874) (symbol 19959 . 19969) (symbol 18981 . 18991) (symbol 18574 . 18586) (symbol 18209 . 18221) (symbol 18022 . 18034) (symbol 17590 . 17602) (symbol 17331 . 17343) (symbol 16951 . 16963) (symbol 15089 . 15101) (symbol 14073 . 14085) (symbol 13881 . 13893) (symbol 13841 . 13853) (symbol 13656 . 13668) (symbol 13405 . 13417) (TYPEDEF 11871 . 11878) (TYPEDEF 11591 . 11598) (TYPEDEF 11394 . 11401) (TYPEDEF 11146 . 11153))
+      :lexical-table 
+        '(("OPENCV_HIGHGUI_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("OPENCV_CORE_HPP" variable (:constant-flag t) nil [2315 2330])
+            ("opencv2/core/cvdef.h" include nil nil [2409 2440])
+            ("opencv2/core/version.hpp" include nil nil [2441 2476])
+            ("opencv2/core/base.hpp" include nil nil [2477 2509])
+            ("opencv2/core/cvstd.hpp" include nil nil [2510 2543])
+            ("opencv2/core/traits.hpp" include nil nil [2544 2578])
+            ("opencv2/core/matx.hpp" include nil nil [2579 2611])
+            ("opencv2/core/types.hpp" include nil nil [2612 2645])
+            ("opencv2/core/mat.hpp" include nil nil [2646 2677])
+            ("opencv2/core/persistence.hpp" include nil nil [2678 2717])
+            ("cv" type
+               (:members 
+                  ( ("std::exception" variable (:type "int") (reparse-symbol namespacesubparts) [4243 5153])
+                    ("error" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("exc" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Exception" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5539 5561]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5527 5562])
+                    ("SortFlags" type
+                       (:members 
+                          ( ("SORT_EVERY_ROW" variable
+                               (:constant-flag t
+                                :default-value (5601 5602)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5581 5602])
+                            ("SORT_EVERY_COLUMN" variable
+                               (:constant-flag t
+                                :default-value (5686 5687)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5666 5687])
+                            ("SORT_ASCENDING" variable
+                               (:constant-flag t
+                                :default-value (5920 5921)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [5900 5921])
+                            ("SORT_DESCENDING" variable
+                               (:constant-flag t
+                                :default-value (6060 6062)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [6040 6062]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [5564 6286])
+                    ("CovarFlags" type
+                       (:members 
+                          ( ("COVAR_SCRAMBLED" variable
+                               (:constant-flag t
+                                :default-value (7111 7112)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7093 7112])
+                            ("COVAR_NORMAL" variable
+                               (:constant-flag t
+                                :default-value (7597 7598)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [7579 7598])
+                            ("COVAR_USE_AVG" variable
+                               (:constant-flag t
+                                :default-value (8030 8031)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8012 8031])
+                            ("COVAR_SCALE" variable
+                               (:constant-flag t
+                                :default-value (8388 8389)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8370 8389])
+                            ("COVAR_ROWS" variable
+                               (:constant-flag t
+                                :default-value (8578 8579)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8560 8579])
+                            ("COVAR_COLS" variable
+                               (:constant-flag t
+                                :default-value (8774 8776)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8756 8776]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [6358 8779])
+                    ("KmeansFlags" type
+                       (:members 
+                          ( ("KMEANS_RANDOM_CENTERS" variable
+                               (:constant-flag t
+                                :default-value (8907 8908)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [8879 8908])
+                            ("KMEANS_PP_CENTERS" variable
+                               (:constant-flag t
+                                :default-value (9029 9030)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9001 9030])
+                            ("KMEANS_USE_INITIAL_LABELS" variable
+                               (:constant-flag t
+                                :default-value (9368 9369)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9340 9369]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [8799 9372])
+                    ("LineTypes" type
+                       (:members 
+                          ( ("FILLED" variable
+                               (:constant-flag t
+                                :default-value (9422 9424)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9412 9424])
+                            ("LINE_4" variable
+                               (:constant-flag t
+                                :default-value (9440 9441)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9430 9441])
+                            ("LINE_8" variable
+                               (:constant-flag t
+                                :default-value (9479 9480)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9469 9480])
+                            ("LINE_AA" variable
+                               (:constant-flag t
+                                :default-value (9518 9520)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9508 9520]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [9391 9545])
+                    ("HersheyFonts" type
+                       (:members 
+                          ( ("FONT_HERSHEY_SIMPLEX" variable
+                               (:constant-flag t
+                                :default-value (9707 9708)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9677 9708])
+                            ("FONT_HERSHEY_PLAIN" variable
+                               (:constant-flag t
+                                :default-value (9777 9778)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9747 9778])
+                            ("FONT_HERSHEY_DUPLEX" variable
+                               (:constant-flag t
+                                :default-value (9846 9847)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9816 9847])
+                            ("FONT_HERSHEY_COMPLEX" variable
+                               (:constant-flag t
+                                :default-value (9957 9958)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9927 9958])
+                            ("FONT_HERSHEY_TRIPLEX" variable
+                               (:constant-flag t
+                                :default-value (10022 10023)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [9992 10023])
+                            ("FONT_HERSHEY_COMPLEX_SMALL" variable
+                               (:constant-flag t
+                                :default-value (10128 10129)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10098 10129])
+                            ("FONT_HERSHEY_SCRIPT_SIMPLEX" variable
+                               (:constant-flag t
+                                :default-value (10210 10211)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10180 10211])
+                            ("FONT_HERSHEY_SCRIPT_COMPLEX" variable
+                               (:constant-flag t
+                                :default-value (10276 10277)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10246 10277])
+                            ("FONT_ITALIC" variable
+                               (:constant-flag t
+                                :default-value (10370 10372)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10340 10372]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [9653 10401])
+                    ("ReduceTypes" type
+                       (:members 
+                          ( ("REDUCE_SUM" variable
+                               (:constant-flag t
+                                :default-value (10435 10436)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10422 10436])
+                            ("REDUCE_AVG" variable
+                               (:constant-flag t
+                                :default-value (10532 10533)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10519 10533])
+                            ("REDUCE_MAX" variable
+                               (:constant-flag t
+                                :default-value (10637 10638)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10624 10638])
+                            ("REDUCE_MIN" variable
+                               (:constant-flag t
+                                :default-value (10756 10757)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [10743 10757]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [10403 10862])
+                    ("swap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10919 10926])
+                            ("b" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10927 10934]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10909 10935])
+                    ("swap" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10975 10983])
+                            ("b" variable
+                               (:reference 1
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10984 10993]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10964 10994])
+                    ("borderInterpolate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type "int") (reparse-symbol arg-sub-list) [12249 12255])
+                            ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12256 12264])
+                            ("borderType" variable (:type "int") (reparse-symbol arg-sub-list) [12265 12280]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12227 12281])
+                    ("copyMakeBorder" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14415 14430])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14431 14447])
+                            ("top" variable (:type "int") (reparse-symbol arg-sub-list) [14481 14489])
+                            ("bottom" variable (:type "int") (reparse-symbol arg-sub-list) [14490 14501])
+                            ("left" variable (:type "int") (reparse-symbol arg-sub-list) [14502 14511])
+                            ("right" variable (:type "int") (reparse-symbol arg-sub-list) [14512 14522])
+                            ("borderType" variable (:type "int") (reparse-symbol arg-sub-list) [14556 14571])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Scalar()"
+                                :type ("Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14572 14602]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [14395 14605])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16870 16886])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16887 16903])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16904 16920])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16943 16970])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [16972 16986]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [16861 16988])
+                    ("subtract" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19432 19448])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19449 19465])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19466 19482])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19510 19537])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19539 19553]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [19418 19555])
+                    ("multiply" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20495 20511])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20512 20528])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20556 20572])
+                            ("scale" variable
+                               (:default-value "1"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [20573 20589])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [20591 20605]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [20481 20607])
+                    ("divide" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21592 21608])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21609 21625])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21626 21642])
+                            ("scale" variable
+                               (:default-value "1"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [21668 21684])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [21686 21700]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21580 21702])
+                    ("divide" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("scale" variable (:type "double") (reparse-symbol arg-sub-list) [21746 21759])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21760 21776])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21802 21818])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [21819 21833]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [21734 21835])
+                    ("scaleAdd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22684 22700])
+                            ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [22701 22714])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22715 22731])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22732 22748]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [22670 22749])
+                    ("addWeighted" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24028 24044])
+                            ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [24045 24058])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24059 24075])
+                            ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [24106 24118])
+                            ("gamma" variable (:type "double") (reparse-symbol arg-sub-list) [24119 24132])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24133 24149])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [24150 24164]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [24011 24166])
+                    ("convertScaleAbs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25277 25292])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25293 25309])
+                            ("alpha" variable
+                               (:default-value "1"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [25344 25360])
+                            ("beta" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [25362 25377]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25256 25379])
+                    ("convertFp16" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25866 25881])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25882 25898]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [25849 25899])
+                    ("LUT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26785 26800])
+                            ("lut" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26801 26816])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26817 26833]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [26776 26834])
+                    ("sum" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27148 27163]))                          
+                        :type ("Scalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [27137 27164])
+                    ("countNonZero" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27440 27456]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [27422 27457])
+                    ("findNonZero" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28413 28428])
+                            ("idx" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28429 28446]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [28395 28447])
+                    ("mean" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29084 29099])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [29100 29127]))                          
+                        :type ("Scalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [29072 29129])
+                    ("meanStdDev" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30431 30446])
+                            ("mean" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30447 30464])
+                            ("stddev" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30465 30484])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [30514 30539]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [30415 30541])
+                    ("norm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32563 32579])
+                            ("normType" variable
+                               (:default-value "NORM_L2"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [32580 32602])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [32604 32631]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [32551 32633])
+                    ("norm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32923 32939])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32940 32956])
+                            ("normType" variable
+                               (:default-value "NORM_L2"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [32982 33004])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33006 33033]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [32911 33035])
+                    ("norm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SparseMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33161 33182])
+                            ("normType" variable (:type "int") (reparse-symbol arg-sub-list) [33183 33197]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [33148 33198])
+                    ("PSNR" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33370 33386])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33387 33403]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [33358 33404])
+                    ("batchDistance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33557 33573])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33574 33590])
+                            ("dist" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33623 33640])
+                            ("dtype" variable (:type "int") (reparse-symbol arg-sub-list) [33641 33651])
+                            ("nidx" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33652 33669])
+                            ("normType" variable
+                               (:default-value "NORM_L2"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [33702 33724])
+                            ("K" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [33726 33735])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [33769 33796])
+                            ("update" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [33798 33812])
+                            ("crosscheck" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [33846 33869]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [33538 33871])
+                    ("normalize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36532 36547])
+                            ("dst" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36548 36569])
+                            ("alpha" variable
+                               (:default-value "1"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [36570 36586])
+                            ("beta" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [36588 36603])
+                            ("norm_type" variable
+                               (:default-value "NORM_L2"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [36634 36657])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [36659 36673])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36675 36702]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36516 36704])
+                    ("normalize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SparseMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36984 37005])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("SparseMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [37006 37021])
+                            ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [37022 37035])
+                            ("normType" variable (:type "int") (reparse-symbol arg-sub-list) [37036 37050]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [36968 37051])
+                    ("minMaxLoc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38188 38203])
+                            ("" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38204 38217])
+                            ("minVal" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [38211 38226])
+                            ("" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38255 38268])
+                            ("maxVal" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [38262 38280])
+                            ("Point" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38282 38295])
+                            ("" variable (:type ("minLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38296 38306])
+                            ("Point" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38336 38349])
+                            ("" variable (:type ("maxLoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38350 38360])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [38362 38389]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [38173 38391])
+                    ("minMaxIdx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40038 40053])
+                            ("minVal" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [40054 40069])
+                            ("maxVal" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [40070 40088])
+                            ("minIdx" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [40116 40131])
+                            ("maxIdx" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [40133 40148])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40150 40177]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40023 40179])
+                    ("minMaxLoc" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SparseMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [40772 40791])
+                            ("minVal" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [40792 40807])
+                            ("maxVal" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [40834 40849])
+                            ("minIdx" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [40850 40865])
+                            ("maxIdx" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [40867 40882]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [40757 40884])
+                    ("reduce" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42082 42097])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42098 42114])
+                            ("dim" variable (:type "int") (reparse-symbol arg-sub-list) [42115 42123])
+                            ("rtype" variable (:type "int") (reparse-symbol arg-sub-list) [42124 42134])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [42135 42149]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [42070 42151])
+                    ("merge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mv" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43041 43055])
+                            ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43056 43069])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43070 43086]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [43030 43087])
+                    ("merge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mv" variable (:type ("InputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43399 43421])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43422 43438]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [43388 43439])
+                    ("split" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [43988 44003])
+                            ("mvbegin" variable
+                               (:pointer 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [44004 44017]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [43977 44018])
+                    ("split" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("m" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44182 44195])
+                            ("mv" variable (:type ("OutputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44196 44219]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [44171 44220])
+                    ("mixChannels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46480 46495])
+                            ("nsrcs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46496 46509])
+                            ("dst" variable
+                               (:pointer 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [46510 46519])
+                            ("ndsts" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46520 46533])
+                            ("fromTo" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [46562 46580])
+                            ("npairs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46581 46595]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [46463 46596])
+                    ("mixChannels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47538 47561])
+                            ("dst" variable (:type ("InputOutputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47562 47591])
+                            ("fromTo" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [47620 47638])
+                            ("npairs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47639 47653]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [47521 47654])
+                    ("mixChannels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48551 48574])
+                            ("dst" variable (:type ("InputOutputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48575 48604])
+                            ("fromTo" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [48635 48666]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48534 48667])
+                    ("extractChannel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48883 48898])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48899 48915])
+                            ("coi" variable (:type "int") (reparse-symbol arg-sub-list) [48916 48924]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [48863 48925])
+                    ("insertChannel" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49140 49155])
+                            ("dst" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49156 49177])
+                            ("coi" variable (:type "int") (reparse-symbol arg-sub-list) [49178 49186]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [49121 49187])
+                    ("flip" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50743 50758])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50759 50775])
+                            ("flipCode" variable (:type "int") (reparse-symbol arg-sub-list) [50776 50789]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [50733 50790])
+                    ("RotateFlags" type
+                       (:members 
+                          ( ("ROTATE_90_CLOCKWISE" variable
+                               (:constant-flag t
+                                :default-value (50837 50838)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50815 50838])
+                            ("ROTATE_180" variable
+                               (:constant-flag t
+                                :default-value (50887 50888)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50874 50888])
+                            ("ROTATE_90_COUNTERCLOCKWISE" variable
+                               (:constant-flag t
+                                :default-value (50954 50955)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [50925 50955]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [50792 50990])
+                    ("rotate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51655 51670])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51671 51687])
+                            ("rotateCode" variable (:type "int") (reparse-symbol arg-sub-list) [51688 51703]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [51643 51704])
+                    ("repeat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52355 52370])
+                            ("ny" variable (:type "int") (reparse-symbol arg-sub-list) [52371 52378])
+                            ("nx" variable (:type "int") (reparse-symbol arg-sub-list) [52379 52386])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52387 52403]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [52343 52404])
+                    ("repeat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [52662 52677])
+                            ("ny" variable (:type "int") (reparse-symbol arg-sub-list) [52678 52685])
+                            ("nx" variable (:type "int") (reparse-symbol arg-sub-list) [52686 52693]))                          
+                        :type ("Mat" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [52651 52694])
+                    ("hconcat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [53663 53678])
+                            ("nsrc" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53679 53691])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53692 53708]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [53650 53709])
+                    ("hconcat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54515 54531])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54532 54548])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54549 54565]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [54502 54566])
+                    ("hconcat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55238 55261])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55262 55278]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [55225 55279])
+                    ("vconcat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [56255 56270])
+                            ("nsrc" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56271 56283])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56284 56300]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [56242 56301])
+                    ("vconcat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57124 57140])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57141 57157])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57158 57174]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [57111 57175])
+                    ("vconcat" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArrayOfArrays" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57857 57880])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57881 57897]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [57844 57898])
+                    ("bitwise_and" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59383 59399])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59400 59416])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59447 59463])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [59464 59491]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [59366 59493])
+                    ("bitwise_or" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60903 60919])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60920 60936])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60966 60982])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [60983 61010]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [60887 61012])
+                    ("bitwise_xor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62451 62467])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62468 62484])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62515 62531])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [62532 62559]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [62434 62561])
+                    ("bitwise_not" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63213 63228])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63229 63245])
+                            ("mask" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [63276 63303]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [63196 63305])
+                    ("absdiff" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64629 64645])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64646 64662])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64663 64679]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [64616 64680])
+                    ("inRange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65694 65709])
+                            ("lowerb" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65710 65728])
+                            ("upperb" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65755 65773])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65774 65790]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [65681 65791])
+                    ("compare" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67147 67163])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67164 67180])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67181 67197])
+                            ("cmpop" variable (:type "int") (reparse-symbol arg-sub-list) [67198 67208]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [67134 67209])
+                    ("min" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67742 67758])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67759 67775])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67776 67792]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [67733 67793])
+                    ("min" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [67916 67932])
+                            ("src2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [67933 67949])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [67950 67959]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [67907 67960])
+                    ("min" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68083 68100])
+                            ("src2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68101 68118])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68119 68129]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68074 68130])
+                    ("max" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68689 68705])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68706 68722])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68723 68739]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68680 68740])
+                    ("max" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68863 68879])
+                            ("src2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68880 68896])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [68897 68906]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [68854 68907])
+                    ("max" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69030 69047])
+                            ("src2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69048 69065])
+                            ("dst" variable
+                               (:reference 1
+                                :type ("UMat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [69066 69076]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [69021 69077])
+                    ("sqrt" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69478 69493])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69494 69510]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [69468 69511])
+                    ("pow" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70463 70478])
+                            ("power" variable (:type "double") (reparse-symbol arg-sub-list) [70479 70492])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70493 70509]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [70454 70510])
+                    ("exp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71101 71116])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71117 71133]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [71092 71134])
+                    ("log" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71588 71603])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71604 71620]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [71579 71621])
+                    ("polarToCart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("magnitude" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72805 72826])
+                            ("angle" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72827 72844])
+                            ("x" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72875 72889])
+                            ("y" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72890 72904])
+                            ("angleInDegrees" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [72905 72932]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [72788 72934])
+                    ("cartToPolar" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74001 74014])
+                            ("y" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74015 74028])
+                            ("magnitude" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74059 74081])
+                            ("angle" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74082 74100])
+                            ("angleInDegrees" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [74131 74158]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [73984 74160])
+                    ("phase" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74944 74957])
+                            ("y" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74958 74971])
+                            ("angle" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74972 74990])
+                            ("angleInDegrees" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [75015 75042]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [74933 75044])
+                    ("magnitude" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75583 75596])
+                            ("y" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75597 75610])
+                            ("magnitude" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75611 75633]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [75568 75634])
+                    ("checkRange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76594 76607])
+                            ("quiet" variable
+                               (:default-value "true"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [76608 76625])
+                            ("Point" variable (:type ("CV_OUT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76627 76640])
+                            ("" variable (:type ("pos" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76641 76648])
+                            ("minVal" variable
+                               (:default-value "-DBL_MAX"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [76678 76702])
+                            ("maxVal" variable
+                               (:default-value "DBL_MAX"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [76704 76727]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [76578 76729])
+                    ("patchNaNs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76808 76827])
+                            ("val" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [76828 76842]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [76793 76844])
+                    ("gemm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78040 78056])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78057 78073])
+                            ("alpha" variable (:type "double") (reparse-symbol arg-sub-list) [78074 78087])
+                            ("src3" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78111 78127])
+                            ("beta" variable (:type "double") (reparse-symbol arg-sub-list) [78128 78140])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78141 78157])
+                            ("flags" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [78158 78171]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [78030 78173])
+                    ("mulTransposed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79784 79799])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79800 79816])
+                            ("aTa" variable (:type "bool") (reparse-symbol arg-sub-list) [79817 79826])
+                            ("delta" variable
+                               (:default-value "noArray()"
+                                :type ("InputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [79860 79888])
+                            ("scale" variable
+                               (:default-value "1"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [79923 79939])
+                            ("dtype" variable
+                               (:default-value "-1"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [79941 79955]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [79764 79958])
+                    ("transpose" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80305 80320])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80321 80337]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [80290 80338])
+                    ("transform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81525 81540])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81541 81557])
+                            ("m" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81558 81572]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [81510 81573])
+                    ("perspectiveTransform" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82802 82817])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82818 82834])
+                            ("m" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82835 82849]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [82776 82850])
+                    ("completeSymm" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mtx" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83493 83514])
+                            ("lowerToUpper" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [83515 83540]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [83475 83542])
+                    ("setIdentity" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mtx" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84143 84164])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :default-value "Scalar(1)"
+                                :type ("Scalar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [84165 84192]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [84126 84194])
+                    ("determinant" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mtx" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84809 84824]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [84790 84825])
+                    ("trace" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("mtx" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85074 85089]))                          
+                        :type ("Scalar" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [85061 85090])
+                    ("invert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86286 86301])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86302 86318])
+                            ("flags" variable
+                               (:default-value "DECOMP_LU"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [86319 86340]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [86272 86342])
+                    ("solve" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87411 87427])
+                            ("src2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87428 87444])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87469 87485])
+                            ("flags" variable
+                               (:default-value "DECOMP_LU"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [87486 87507]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [87400 87509])
+                    ("sort" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88084 88099])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88100 88116])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [88117 88127]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [88074 88128])
+                    ("sortIdx" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88948 88963])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88964 88980])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [88981 88991]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [88935 88992])
+                    ("solveCubic" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("coeffs" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89591 89609])
+                            ("roots" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89610 89628]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [89576 89629])
+                    ("solvePoly" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("coeffs" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90098 90116])
+                            ("roots" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90117 90135])
+                            ("maxIters" variable
+                               (:default-value "300"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [90136 90154]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [90081 90156])
+                    ("eigen" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91043 91058])
+                            ("eigenvalues" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91059 91083])
+                            ("eigenvectors" variable
+                               (:default-value "noArray()"
+                                :type ("OutputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [91108 91144]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [91032 91146])
+                    ("calcCovarMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("samples" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [91828 91847])
+                            ("nsamples" variable (:type "int") (reparse-symbol arg-sub-list) [91848 91861])
+                            ("covar" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [91862 91873])
+                            ("mean" variable
+                               (:reference 1
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [91874 91884])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [91918 91928])
+                            ("ctype" variable
+                               (:default-value "CV_64F"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [91929 91947]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [91806 91949])
+                    ("calcCovarMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("samples" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92421 92440])
+                            ("covar" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92441 92459])
+                            ("mean" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92495 92517])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [92518 92528])
+                            ("ctype" variable
+                               (:default-value "CV_64F"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [92529 92547]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [92399 92549])
+                    ("PCACompute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92608 92624])
+                            ("mean" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92625 92647])
+                            ("eigenvectors" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92677 92702])
+                            ("maxComponents" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [92703 92724]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [92592 92726])
+                    ("PCACompute" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92785 92801])
+                            ("mean" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92802 92824])
+                            ("eigenvectors" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92854 92879])
+                            ("retainedVariance" variable (:type "double") (reparse-symbol arg-sub-list) [92880 92904]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [92769 92905])
+                    ("PCAProject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92961 92977])
+                            ("mean" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92978 92994])
+                            ("eigenvectors" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93024 93048])
+                            ("result" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93049 93068]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [92945 93069])
+                    ("PCABackProject" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93133 93149])
+                            ("mean" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93150 93166])
+                            ("eigenvectors" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93200 93224])
+                            ("result" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93225 93244]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [93113 93245])
+                    ("SVDecomp" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93300 93315])
+                            ("w" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93316 93330])
+                            ("u" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93331 93345])
+                            ("vt" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93346 93361])
+                            ("flags" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [93362 93375]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [93285 93378])
+                    ("SVBackSubst" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("w" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93438 93451])
+                            ("u" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93452 93465])
+                            ("vt" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93466 93480])
+                            ("rhs" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93512 93527])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93528 93545]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [93420 93546])
+                    ("Mahalanobis" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v1" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94209 94223])
+                            ("v2" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94224 94238])
+                            ("icovar" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94239 94257]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [94190 94258])
+                    ("dft" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102983 102998])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102999 103015])
+                            ("flags" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [103016 103029])
+                            ("nonzeroRows" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [103031 103050]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [102974 103052])
+                    ("idft" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103773 103788])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103789 103805])
+                            ("flags" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [103806 103819])
+                            ("nonzeroRows" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [103821 103840]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [103763 103842])
+                    ("dct" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106027 106042])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106043 106059])
+                            ("flags" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [106060 106073]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [106018 106075])
+                    ("idct" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("src" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106441 106456])
+                            ("dst" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106457 106473])
+                            ("flags" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [106474 106487]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [106431 106489])
+                    ("mulSpectrums" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107644 107657])
+                            ("b" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107658 107671])
+                            ("c" variable (:type ("OutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107672 107686])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [107718 107728])
+                            ("conjB" variable
+                               (:default-value "false"
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [107729 107747]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [107626 107749])
+                    ("getOptimalDFTSize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("vecsize" variable (:type "int") (reparse-symbol arg-sub-list) [109040 109052]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [109018 109053])
+                    ("theRNG" function
+                       (:prototype-flag t
+                        :type ("RNG" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [109640 109654])
+                    ("setRNGSeed" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("seed" variable (:type "int") (reparse-symbol arg-sub-list) [109918 109927]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [109902 109928])
+                    ("randu" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dst" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110486 110507])
+                            ("low" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110508 110523])
+                            ("high" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110524 110540]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [110475 110541])
+                    ("randn" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dst" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111248 111269])
+                            ("mean" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111270 111286])
+                            ("stddev" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111287 111305]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [111237 111306])
+                    ("randShuffle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("dst" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111859 111880])
+                            ("iterFactor" variable
+                               (:default-value "1."
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [111881 111903])
+                            ("rng" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("RNG" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [111905 111917]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [111842 111919])
+                    ("PCA" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [114893 121446])
+                    ("LDA" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [121643 123682])
+                    ("SVD" variable
+                       (:dereference 1
+                        :type ("CV_EXPORTS" type
+                             (:prototype t
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [124286 129342])
+                    ("RNG" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [129929 136166])
+                    ("RNG_MT19937" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [136325 137117])
+                    ("kmeans" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable (:type ("InputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139394 139410])
+                            ("K" variable (:type "int") (reparse-symbol arg-sub-list) [139411 139417])
+                            ("bestLabels" variable (:type ("InputOutputArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139418 139446])
+                            ("criteria" variable (:type ("TermCriteria" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [139475 139497])
+                            ("attempts" variable (:type "int") (reparse-symbol arg-sub-list) [139498 139511])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [139540 139550])
+                            ("centers" variable
+                               (:default-value "noArray()"
+                                :type ("OutputArray" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [139551 139582]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [139379 139585])
+                    ("Formatted" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [139754 139885])
+                    ("Formatter" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [139909 140423])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [140460 140472])
+                            ("fmtd" variable (:type ("Ptr" type
+                                 (:template-specifier 
+                                    ( ("Formatted" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [140473 140493]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [140425 140629])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("static" "inline")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [140666 140678])
+                            ("mtx" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [140679 140694]))                          
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [140631 140747])
+                    ("Algorithm" variable (:type ("CV_EXPORTS" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [140838 140865])
+                    ("ParamType" type
+                       (:template 
+                          ( ("_Tp" type (:type "class") nil nil))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [140867 140910])
+                    ("Algorithm" variable (:type ("CV_EXPORTS_W" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [142343 145849])
+                    ("Param" type
+                       (:members 
+                          ( ("" type
+                               (:members 
+                                  ( ("INT" variable
+                                       (:constant-flag t
+                                        :default-value (145881 145882)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145877 145882])
+                                    ("BOOLEAN" variable
+                                       (:constant-flag t
+                                        :default-value (145892 145893)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145884 145893])
+                                    ("REAL" variable
+                                       (:constant-flag t
+                                        :default-value (145900 145901)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145895 145901])
+                                    ("STRING" variable
+                                       (:constant-flag t
+                                        :default-value (145910 145911)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145903 145911])
+                                    ("MAT" variable
+                                       (:constant-flag t
+                                        :default-value (145917 145918)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145913 145918])
+                                    ("MAT_VECTOR" variable
+                                       (:constant-flag t
+                                        :default-value (145931 145932)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145920 145932])
+                                    ("ALGORITHM" variable
+                                       (:constant-flag t
+                                        :default-value (145944 145945)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145934 145945])
+                                    ("FLOAT" variable
+                                       (:constant-flag t
+                                        :default-value (145953 145954)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145947 145954])
+                                    ("UNSIGNED_INT" variable
+                                       (:constant-flag t
+                                        :default-value (145980 145981)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145967 145981])
+                                    ("UINT64" variable
+                                       (:constant-flag t
+                                        :default-value (145990 145991)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145983 145991])
+                                    ("UCHAR" variable
+                                       (:constant-flag t
+                                        :default-value (145999 146001)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [145993 146001]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [145870 146004]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [145851 146007])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("bool")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146051 146081])
+                            ("member_type" type
+                               (:typedef ("bool")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146086 146111])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (146131 146136)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146124 146136])
+                                    ("BOOLEAN" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146138 146147]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [146117 146148]))                          
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146011 146151])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146192 146221])
+                            ("member_type" type
+                               (:typedef ("int")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146226 146250])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (146270 146275)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146263 146275])
+                                    ("INT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146277 146282]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [146256 146283]))                          
+                        :template-specifier 
+                          ( ("int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146153 146286])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("double")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146330 146362])
+                            ("member_type" type
+                               (:typedef ("double")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146367 146394])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (146414 146419)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146407 146419])
+                                    ("REAL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146421 146427]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [146400 146428]))                          
+                        :template-specifier 
+                          ( ("double" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146288 146431])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" variable
+                               (:constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [146483 146514])
+                            ("member_type" type
+                               (:typedef ("String" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146519 146546])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (146566 146571)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146559 146571])
+                                    ("STRING" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146573 146581]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [146552 146582]))                          
+                        :template-specifier 
+                          ( ("String" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146433 146585])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" variable
+                               (:constant-flag t
+                                :type ("Mat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [146634 146662])
+                            ("member_type" type
+                               (:typedef ("Mat" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146667 146691])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (146711 146716)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146704 146716])
+                                    ("MAT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146718 146723]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [146697 146724]))                          
+                        :template-specifier 
+                          ( ("Mat" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146587 146727])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [146790 146831])
+                            ("member_type" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Mat" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [146836 146873])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (146893 146898)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146886 146898])
+                                    ("MAT_VECTOR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [146900 146912]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [146879 146913]))                          
+                        :template-specifier 
+                          ( ("std::vector" type (:template-specifier 
+                              ( ("Mat" type nil nil nil))                              ) nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146729 146916])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" variable
+                               (:constant-flag t
+                                :type ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("Algorithm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [146971 147010])
+                            ("member_type" type
+                               (:typedef ("Ptr" type
+                                     (:template-specifier 
+                                        ( ("Algorithm" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147015 147050])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (147070 147075)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147063 147075])
+                                    ("ALGORITHM" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147077 147088]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [147056 147089]))                          
+                        :template-specifier 
+                          ( ("Algorithm" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [146918 147092])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("float")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147135 147166])
+                            ("member_type" type
+                               (:typedef ("float")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147171 147197])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (147217 147222)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147210 147222])
+                                    ("FLOAT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147224 147231]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [147203 147232]))                          
+                        :template-specifier 
+                          ( ("float" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [147094 147235])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("unsigned int")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147281 147315])
+                            ("member_type" type
+                               (:typedef ("unsigned int")
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147320 147349])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (147369 147374)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147362 147374])
+                                    ("UNSIGNED_INT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147376 147390]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [147355 147391]))                          
+                        :template-specifier 
+                          ( ("unsigned int" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [147237 147394])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("uint64" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147438 147470])
+                            ("member_type" type
+                               (:typedef ("uint64" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147475 147502])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (147522 147527)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147515 147527])
+                                    ("UINT64" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147529 147537]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [147508 147538]))                          
+                        :template-specifier 
+                          ( ("uint64" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [147396 147541])
+                    ("ParamType" type
+                       (:type "struct"
+                        :members 
+                          ( ("const_param_type" type
+                               (:typedef ("uchar" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147584 147615])
+                            ("member_type" type
+                               (:typedef ("uchar" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [147620 147646])
+                            ("" type
+                               (:members 
+                                  ( ("type" variable
+                                       (:constant-flag t
+                                        :default-value (147666 147671)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147659 147671])
+                                    ("UCHAR" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [147673 147680]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [147652 147681]))                          
+                        :template-specifier 
+                          ( ("uchar" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [147543 147684]))                  
+                :type "namespace")
+                nil [3904 147706])
+            ("opencv2/core/operations.hpp" include nil nil [147723 147761])
+            ("opencv2/core/cvstd.inl.hpp" include nil nil [147762 147799])
+            ("opencv2/core/utility.hpp" include nil nil [147800 147835])
+            ("opencv2/core/optim.hpp" include nil nil [147836 147869])
+            ("opencv2/core/ovx.hpp" include nil nil [147870 147901]))          
+      :file "core.hpp"
+      :pointmax 147930
+      :fsize 147929
+      :lastmodtime '(22915 47263 0 0)
+      :unmatched-syntax '((punctuation 147672 . 147673) (punctuation 147671 . 147672) (punctuation 147672 . 147673) (punctuation 147671 . 147672) (punctuation 147528 . 147529) (punctuation 147527 . 147528) (punctuation 147528 . 147529) (punctuation 147527 . 147528) (punctuation 147375 . 147376) (punctuation 147374 . 147375) (punctuation 147375 . 147376) (punctuation 147374 . 147375) (punctuation 147223 . 147224) (punctuation 147222 . 147223) (punctuation 147223 . 147224) (punctuation 147222 . 147223) (punctuation 147076 . 147077) (punctuation 147075 . 147076) (punctuation 147076 . 147077) (punctuation 147075 . 147076) (TYPEDEF 146963 . 146970) (punctuation 146899 . 146900) (punctuation 146898 . 146899) (punctuation 146899 . 146900) (punctuation 146898 . 146899) (TYPEDEF 146782 . 146789) (punctuation 146717 . 146718) (punctuation 146716 . 146717) (punctuation 146717 . 146718) (punctuation 146716 . 146717) (TYPEDEF 146626 . 146633) (punctuation 146572 . 146573) (punctuation 146571 . 146572) (punctuation 146572 . 146573) (punctuation 146571 . 146572) (TYPEDEF 146475 . 146482) (punctuation 146420 . 146421) (punctuation 146419 . 146420) (punctuation 146420 . 146421) (punctuation 146419 . 146420) (punctuation 146276 . 146277) (punctuation 146275 . 146276) (punctuation 146276 . 146277) (punctuation 146275 . 146276) (punctuation 146137 . 146138) (punctuation 146136 . 146137) (punctuation 146137 . 146138) (punctuation 146136 . 146137) (symbol 139366 . 139378) (symbol 111829 . 111841) (symbol 111224 . 111236) (symbol 110462 . 110474) (symbol 109889 . 109901) (symbol 109629 . 109639) (symbol 109005 . 109017) (symbol 107613 . 107625) (symbol 106418 . 106430) (symbol 106005 . 106017) (symbol 103750 . 103762) (symbol 102961 . 102973) (symbol 94177 . 94189) (symbol 93407 . 93419) (symbol 93272 . 93284) (symbol 93100 . 93112) (symbol 92932 . 92944) (symbol 92756 . 92768) (symbol 92579 . 92591) (symbol 92386 . 92398) (symbol 91795 . 91805) (symbol 91019 . 91031) (symbol 90068 . 90080) (symbol 89563 . 89575) (symbol 88922 . 88934) (symbol 88061 . 88073) (symbol 87387 . 87399) (symbol 86259 . 86271) (symbol 85048 . 85060) (symbol 84777 . 84789) (symbol 84113 . 84125) (symbol 83462 . 83474) (symbol 82763 . 82775) (symbol 81497 . 81509) (symbol 80277 . 80289) (symbol 79751 . 79763) (symbol 78017 . 78029) (symbol 76780 . 76792) (punctuation 76639 . 76640) (symbol 76565 . 76577) (symbol 75555 . 75567) (symbol 74920 . 74932) (symbol 73971 . 73983) (symbol 72775 . 72787) (symbol 71566 . 71578) (symbol 71079 . 71091) (symbol 70441 . 70453) (symbol 69455 . 69467) (symbol 69010 . 69020) (symbol 68843 . 68853) (symbol 68667 . 68679) (symbol 68063 . 68073) (symbol 67896 . 67906) (symbol 67720 . 67732) (symbol 67121 . 67133) (symbol 65668 . 65680) (symbol 64603 . 64615) (symbol 63183 . 63195) (symbol 62421 . 62433) (symbol 60874 . 60886) (symbol 59353 . 59365) (symbol 57831 . 57843) (symbol 57100 . 57110) (symbol 56231 . 56241) (symbol 55212 . 55224) (symbol 54491 . 54501) (symbol 53639 . 53649) (symbol 52640 . 52650) (symbol 52330 . 52342) (symbol 51630 . 51642) (symbol 50720 . 50732) (symbol 49108 . 49120) (symbol 48850 . 48862) (symbol 48521 . 48533) (symbol 47510 . 47520) (symbol 46452 . 46462) (symbol 44158 . 44170) (symbol 43966 . 43976) (symbol 43375 . 43387) (symbol 43019 . 43029) (symbol 42057 . 42069) (symbol 40746 . 40756) (symbol 40012 . 40022) (punctuation 38348 . 38349) (punctuation 38294 . 38295) (symbol 38160 . 38172) (symbol 36957 . 36967) (symbol 36503 . 36515) (symbol 33525 . 33537) (symbol 33345 . 33357) (symbol 33137 . 33147) (symbol 32898 . 32910) (symbol 32538 . 32550) (symbol 30402 . 30414) (symbol 29059 . 29071) (symbol 28382 . 28394) (symbol 27409 . 27421) (semantic-list 27126 . 27136) (symbol 27113 . 27126) (symbol 26763 . 26775) (symbol 25836 . 25848) (symbol 25243 . 25255) (symbol 23998 . 24010) (symbol 22657 . 22669) (symbol 21721 . 21733) (symbol 21567 . 21579) (symbol 20468 . 20480) (symbol 19405 . 19417) (symbol 16848 . 16860) (symbol 14382 . 14394) (symbol 12214 . 12226) (symbol 10953 . 10963) (symbol 10898 . 10908) (symbol 5516 . 5526) (PUBLIC 4236 . 4242) (punctuation 4234 . 4235) (symbol 4224 . 4233) (symbol 4213 . 4223) (CLASS 4207 . 4212))
+      :lexical-table 
+        '(("OPENCV_CORE_HPP")
+          )
+))
+  :file "!usr!local!include!opencv2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

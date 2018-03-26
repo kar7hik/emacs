@@ -1,0 +1,365 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [915 934])
+            ("algorithm" include (:system-flag t) nil [935 955])
+            ("stdio.h" include (:system-flag t) nil [956 974])
+            ("stdlib.h" include (:system-flag t) nil [975 994])
+            ("vector" include (:system-flag t) nil [995 1012])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [1045 1072])
+            ("nite2/NiTE.h" include (:system-flag t) nil [1073 1096])
+            ("./include/mouse.hpp" include nil nil [1117 1147])
+            ("CHECK_LIMIT" variable (:constant-flag t) nil [1158 1169])
+            ("CHECK_LIMIT" variable (:constant-flag t) nil [1158 1169])
+            ("CHECK_LIMIT" variable (:constant-flag t) nil [1158 1169])
+            ("CHECK_LIMIT" variable (:constant-flag t) nil [1158 1169])
+            ("TOLERENCE" variable (:constant-flag t) nil [1181 1190])
+            ("ReadLastCharOfLine" function
+               (:prototype-flag t
+                :type "char")
+                nil [1222 1248])
+            ("HandleStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1267 1287]))                  
+                :type "bool")
+                nil [1249 1288])
+            ("_RECT" type
+               (:members 
+                  ( ("left" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1608 1621])
+                    ("top" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1623 1635])
+                    ("right" variable (:type "int") (reparse-symbol classsubparts) [1637 1647])
+                    ("bottom" variable (:type "int") (reparse-symbol classsubparts) [1649 1660]))                  
+                :type "struct")
+                nil [1584 1668])
+            ("RECT" type
+               (:typedef ("_RECT" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1584 1668])
+            ("MouseController" type
+               (:superclasses 
+                  ( ("nite::HandTracker::NewFrameListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1807 1815])
+                    ("startPosX" variable (:type "float") (reparse-symbol classsubparts) [1817 1844])
+                    ("startPosY" variable (:type "float") (reparse-symbol classsubparts) [1817 1844])
+                    ("curX" variable (:type "int") (reparse-symbol classsubparts) [1846 1861])
+                    ("curY" variable (:type "int") (reparse-symbol classsubparts) [1846 1861])
+                    ("xres" variable (:type "int") (reparse-symbol classsubparts) [1863 1878])
+                    ("yres" variable (:type "int") (reparse-symbol classsubparts) [1863 1878])
+                    ("handId" variable (:type ("nite::HandId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1880 1900])
+                    ("desktopRect" variable (:type ("RECT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1902 1919])
+                    ("isGestureClick" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1921 1949])
+                    ("CheckCount" variable
+                       (:default-value "1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1951 1970])
+                    ("depthValues" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1972 2003])
+                    ("public" label nil (reparse-symbol classsubparts) [2005 2012])
+                    ("MouseController" function
+                       (:constructor-flag t
+                        :type ("MouseController" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2017 2498])
+                    ("onNewFrame" function
+                       (:arguments 
+                          ( ("hTracker" variable
+                               (:reference 1
+                                :type ("nite::HandTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2520 2548]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2504 5804])
+                    ("CheckGestureClick" function
+                       (:arguments 
+                          ( ("depth" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [5833 5858]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5810 6562]))                  
+                :type "class")
+                nil [1738 8399])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8420 8440]))                  
+                :type "bool")
+                nil [8402 8608])
+            ("ReadLastCharOfLine" function (:type "char") nil [8611 8824])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8837 8846])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8847 8866]))                  
+                :type "int")
+                nil [8828 9469]))          
+      :file "handGesture_mouse.cpp"
+      :pointmax 9470
+      :fsize 9469
+      :lastmodtime '(23204 22463 425805 976000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TOLERENCE" . ((number "10" 1191 . 1193)))
+          ("CHECK_LIMIT" . ((number "20" 1170 . 1172)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [941 960])
+            ("algorithm" include (:system-flag t) nil [961 981])
+            ("stdio.h" include (:system-flag t) nil [982 1000])
+            ("stdlib.h" include (:system-flag t) nil [1001 1020])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [1053 1080])
+            ("nite2/NiTE.h" include (:system-flag t) nil [1081 1104])
+            ("GL/glut.h" include (:system-flag t) nil [1124 1144])
+            ("./include/mouse.hpp" include nil nil [1165 1195])
+            ("CHECK_LIMIT" variable (:constant-flag t) nil [1206 1217])
+            ("TOLERENCE" variable (:constant-flag t) nil [1229 1238])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1243 1266])
+            ("HandleStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("openni::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1312 1334]))                  
+                :type "bool")
+                nil [1294 1335])
+            ("HandleStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1354 1374]))                  
+                :type "bool")
+                nil [1336 1375])
+            ("readLastCharOfLine" function
+               (:prototype-flag t
+                :type "char")
+                nil [1376 1402])
+            ("gl_keyboardCallback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1428 1446])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [1447 1453])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [1454 1460]))                  
+                :type "void")
+                nil [1403 1461])
+            ("gl_idleCallback" function
+               (:prototype-flag t
+                :type "void")
+                nil [1462 1485])
+            ("gl_displayCallback" function
+               (:prototype-flag t
+                :type "void")
+                nil [1486 1512])
+            ("XRES" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "int")
+                nil [1515 1536])
+            ("YRES" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "int")
+                nil [1537 1558])
+            ("texture" variable
+               (:pointer 1
+                :type ("OniRGB888Pixel" type (:type "class") nil nil))
+                nil [1559 1583])
+            ("hTracker" variable (:type ("nite::HandTracker" type (:type "class") nil nil)) nil [1584 1611])
+            ("nite" using (:type ("nite" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1614 1635])
+            ("_RECT" type
+               (:members 
+                  ( ("left" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1947 1960])
+                    ("top" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol classsubparts) [1962 1974])
+                    ("right" variable (:type "int") (reparse-symbol classsubparts) [1976 1986])
+                    ("bottom" variable (:type "int") (reparse-symbol classsubparts) [1988 1999]))                  
+                :type "struct")
+                nil [1923 2007])
+            ("RECT" type
+               (:typedef ("_RECT" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1923 2007])
+            ("MouseController" type
+               (:superclasses 
+                  ( ("nite::HandTracker::NewFrameListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [2147 2155])
+                    ("startPosX" variable (:type "float") (reparse-symbol classsubparts) [2157 2184])
+                    ("startPosY" variable (:type "float") (reparse-symbol classsubparts) [2157 2184])
+                    ("curX" variable (:type "int") (reparse-symbol classsubparts) [2186 2201])
+                    ("curY" variable (:type "int") (reparse-symbol classsubparts) [2186 2201])
+                    ("xres" variable (:type "int") (reparse-symbol classsubparts) [2203 2218])
+                    ("yres" variable (:type "int") (reparse-symbol classsubparts) [2203 2218])
+                    ("handId" variable (:type ("nite::HandId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2220 2240])
+                    ("desktopRect" variable (:type ("RECT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2242 2259])
+                    ("isGestureClick" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2261 2289])
+                    ("CheckCount" variable
+                       (:default-value "1"
+                        :type "int")
+                        (reparse-symbol classsubparts) [2291 2310])
+                    ("depthValues" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("float" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2312 2343])
+                    ("public" label nil (reparse-symbol classsubparts) [2346 2353])
+                    ("MouseController" function
+                       (:constructor-flag t
+                        :type ("MouseController" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2355 2822])
+                    ("onNewFrame" function
+                       (:arguments 
+                          ( ("hTracker" variable
+                               (:reference 1
+                                :type ("nite::HandTracker" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2841 2869]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2825 6158])
+                    ("CheckGestureClick" function
+                       (:arguments 
+                          ( ("depth" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [6184 6209]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6161 7105]))                  
+                :type "class")
+                nil [2078 7109])
+            ("listener" variable
+               (:pointer 1
+                :default-value "new MouseController()"
+                :type ("MouseController" type (:type "class") nil nil))
+                nil [7112 7162])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("openni::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7182 7204]))                  
+                :type "bool")
+                nil [7164 7356])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("nite::Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7377 7397]))                  
+                :type "bool")
+                nil [7359 7447])
+            ("readLastCharOfLine" function (:type "char") nil [7450 7651])
+            ("gl_keyboardCallback" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [7679 7697])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [7698 7704])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [7705 7711]))                  
+                :type "void")
+                nil [7654 7964])
+            ("gl_idleCallback" function (:type "void") nil [7968 8016])
+            ("gl_displayCallback" function (:type "void") nil [8019 12215])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [12228 12237])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12238 12257]))                  
+                :type "int")
+                nil [12219 13482]))          
+      :file "handGesture_mouse_opengl.cpp"
+      :pointmax 13483
+      :fsize 13482
+      :lastmodtime '(23031 23139 625460 564000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TOLERENCE" . ((number "30" 1239 . 1241)))
+          ("CHECK_LIMIT" . ((number "20" 1218 . 1220)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("X11/Xlib.h" include (:system-flag t) nil [920 941])
+            ("stdio.h" include (:system-flag t) nil [942 960])
+            ("stdlib.h" include (:system-flag t) nil [961 980])
+            ("assert.h" include (:system-flag t) nil [981 1000])
+            ("math.h" include (:system-flag t) nil [1001 1018])
+            ("float.h" include (:system-flag t) nil [1019 1037])
+            ("limits.h" include (:system-flag t) nil [1038 1057])
+            ("time.h" include (:system-flag t) nil [1058 1075])
+            ("string.h" include (:system-flag t) nil [1076 1095])
+            ("ctype.h" include (:system-flag t) nil [1096 1114])
+            ("unistd.h" include (:system-flag t) nil [1115 1134])
+            ("moveMousePointer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1187 1191])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1192 1196]))                  
+                :type "void")
+                nil [1165 1197])
+            ("mouseClick" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [1214 1225]))                  
+                :type "void")
+                nil [1198 1226])
+            ("getGlobalMousePosition" function
+               (:prototype-flag t
+                :type "bool")
+                nil [1227 1257])
+            ("moveMousePointer" function
+               (:arguments 
+                  ( ("delta_x" variable (:type "int") (reparse-symbol arg-sub-list) [1310 1322])
+                    ("delta_y" variable (:type "int") (reparse-symbol arg-sub-list) [1323 1335]))                  
+                :type "void")
+                nil [1288 1467])
+            ("getGlobalMousePosition" function (:type "bool") nil [1470 2105])
+            ("mouseClick" function
+               (:arguments 
+                  ( ("button" variable (:type "int") (reparse-symbol arg-sub-list) [2124 2135]))                  
+                :type "void")
+                nil [2108 3445]))          
+      :file "mouse.hpp"
+      :pointmax 3445
+      :fsize 3444
+      :lastmodtime '(23004 62904 794114 195000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Gesture_recognition!OpenGesture!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

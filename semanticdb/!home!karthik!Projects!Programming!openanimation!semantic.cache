@@ -1,0 +1,49 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [295 313])
+            ("math.h" include (:system-flag t) nil [314 331])
+            ("string.h" include (:system-flag t) nil [332 351])
+            ("cairo/cairo.h" include (:system-flag t) nil [353 377])
+            ("makeFrame" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("surface" variable
+                       (:pointer 1
+                        :type ("cairo_surface_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [476 501])
+                    ("frame_num" variable (:type "int") (reparse-symbol arg-sub-list) [502 516])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [517 527])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [528 539]))                  
+                :type "char")
+                nil [460 540])
+            ("runAnimation" function
+               (:prototype-flag t
+                :type "void")
+                nil [541 561])
+            ("frame" variable
+               (:pointer 1
+                :type "char")
+                nil [644 656]))          
+      :file "animation.h"
+      :pointmax 657
+      :fsize 656
+      :lastmodtime '(23207 62515 201525 369000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "animation.c"
+      :pointmax 151
+      :fsize 150
+      :lastmodtime '(23207 62803 617921 312000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!openanimation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

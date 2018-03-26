@@ -1,0 +1,222 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SLOPE_SLOPE_H" variable (:constant-flag t) nil [763 776])
+            ("slope/figure.h" include (:system-flag t) nil [884 909])
+            ("slope/item.h" include (:system-flag t) nil [910 933])
+            ("slope/scale.h" include (:system-flag t) nil [934 958])
+            ("slope/view.h" include (:system-flag t) nil [959 982])
+            ("slope/xyaxis.h" include (:system-flag t) nil [984 1009])
+            ("slope/xyscale.h" include (:system-flag t) nil [1010 1036])
+            ("slope/xyseries.h" include (:system-flag t) nil [1037 1064])
+            ("slope/chart.h" include (:system-flag t) nil [1066 1090]))          
+      :file "slope.h"
+      :pointmax 1119
+      :fsize 1118
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SLOPE_SLOPE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SLOPE_XYSERIES_H" variable (:constant-flag t) nil [766 782])
+            ("slope/item.h" include (:system-flag t) nil [784 807])
+            ("SLOPE_XYSERIES_TYPE" variable (:constant-flag t) nil [817 836])
+            ("SLOPE_XYSERIES" variable (:constant-flag t) nil [873 887])
+            ("SLOPE_XYSERIES_CLASS" variable (:constant-flag t) nil [977 997])
+            ("SLOPE_IS_XYSERIES" variable (:constant-flag t) nil [1093 1110])
+            ("SLOPE_IS_XYSERIES_CLASS" variable (:constant-flag t) nil [1185 1208])
+            ("SLOPE_XYSERIES_GET_CLASS" variable (:constant-flag t) nil [1284 1308])
+            ("_SlopeXySeriesMode" type
+               (:members 
+                  ( ("SLOPE_SERIES_LINE" variable
+                       (:constant-flag t
+                        :default-value (1448 1458)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1422 1458])
+                    ("SLOPE_SERIES_CIRCLES" variable
+                       (:constant-flag t
+                        :default-value (1488 1498)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1462 1498])
+                    ("SLOPE_SERIES_SQUARES" variable
+                       (:constant-flag t
+                        :default-value (1528 1538)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1502 1538])
+                    ("SLOPE_SERIES_AREAUNDER" variable
+                       (:constant-flag t
+                        :default-value (1568 1578)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1542 1578])
+                    ("SLOPE_SERIES_BIGSYMBOL" variable
+                       (:constant-flag t
+                        :default-value (1608 1618)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1582 1618])
+                    ("SLOPE_SERIES_BIGSQUARES" variable
+                       (:constant-flag t
+                        :default-value (1648 1693)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1622 1693])
+                    ("SLOPE_SERIES_BIGCIRCLES" variable
+                       (:constant-flag t
+                        :default-value (1723 1768)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1697 1768]))                  
+                :type "enum")
+                nil [1386 1789])
+            ("SlopeXySeriesMode" type
+               (:typedef ("_SlopeXySeriesMode" type (:type "enum") nil nil)
+                :type "typedef")
+                nil [1386 1789])
+            ("_SlopeXySeries" type
+               (:members 
+                  ( ("parent" variable (:type ("SlopeItem" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1825 1842])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("gpointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1921 1941]))                  
+                :type "struct")
+                nil [1791 1958])
+            ("SlopeXySeries" type
+               (:typedef ("_SlopeXySeries" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1791 1958])
+            ("_SlopeXySeriesClass" type
+               (:members 
+                  ( ("parent_class" variable (:type ("SlopeItemClass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1999 2027])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("gpointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2106 2126]))                  
+                :type "struct")
+                nil [1960 2148])
+            ("SlopeXySeriesClass" type
+               (:typedef ("_SlopeXySeriesClass" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1960 2148])
+            ("G_GNUC_CONST" variable (:type "int") nil [2186 2199])
+            ("slope_xyseries_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2231 2236]))                  
+                :type ("SlopeItem" type (:type "class") nil nil))
+                nil [2201 2237])
+            ("slope_xyseries_new_filled" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2276 2295])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2333 2353])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2391 2411])
+                    ("n_pts" variable (:type "long") (reparse-symbol arg-sub-list) [2449 2469])
+                    ("style" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2507 2527]))                  
+                :type ("SlopeItem" type (:type "class") nil nil))
+                nil [2239 2528])
+            ("slope_xyseries_set_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2559 2579])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2609 2630])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2660 2681])
+                    ("n_pts" variable (:type "long") (reparse-symbol arg-sub-list) [2711 2732]))                  
+                :type "void")
+                nil [2530 2733])
+            ("slope_xyseries_update_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2767 2787])
+                    ("x_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2820 2841])
+                    ("y_vec" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2874 2895])
+                    ("n_pts" variable (:type "long") (reparse-symbol arg-sub-list) [2928 2949]))                  
+                :type "void")
+                nil [2735 2950])
+            ("slope_xyseries_set_style" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2982 3002])
+                    ("style" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3003 3021]))                  
+                :type "void")
+                nil [2952 3022])
+            ("slope_xyseries_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeXySeries" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3051 3071]))                  
+                :type "void")
+                nil [3024 3072]))          
+      :file "xyseries.h"
+      :pointmax 3121
+      :fsize 3120
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax '((symbol 3074 . 3089) (semantic-list 2179 . 2185) (symbol 2156 . 2179) (symbol 2150 . 2155) (symbol 1367 . 1384))
+      :lexical-table 
+        '(("SLOPE_XYSERIES_H")
+          ("SLOPE_XYSERIES_TYPE" . ((semantic-list "(slope_xyseries_get_type())" 837 . 864)))
+          ("SLOPE_XYSERIES_CLASS" (spp-arg-list ("klass") 997 . 1004) . ((semantic-list "(G_TYPE_CHECK_CLASS_CAST((klass), SLOPE_XYSERIES_TYPE, SlopeXySeriesClass))" 1009 . 1084)))
+          ("SLOPE_IS_XYSERIES" (spp-arg-list ("obj") 1110 . 1115) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_TYPE((obj), SLOPE_XYSERIES_TYPE))" 1120 . 1176)))
+          ("SLOPE_IS_XYSERIES_CLASS" (spp-arg-list ("klass") 1208 . 1215) . ((semantic-list "(G_TYPE_CHECK_CLASS_TYPE((klass), SLOPE_XYSERIES_TYPE))" 1220 . 1275)))
+          ("SLOPE_XYSERIES_GET_CLASS" (spp-arg-list ("obj") 1308 . 1313) . ((semantic-list "(SLOPE_XYSERIES_CLASS(G_OBJECT_GET_CLASS(obj)))" 1318 . 1365)))
+          ("SLOPE_XYSERIES" (spp-arg-list ("obj") 887 . 892) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_CAST((obj), SLOPE_XYSERIES_TYPE, SlopeXySeries))" 897 . 968)))
+          )
+))
+  :file "!home!karthik!Projects!Programming!cairo!slope-master!slope!include!slope!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

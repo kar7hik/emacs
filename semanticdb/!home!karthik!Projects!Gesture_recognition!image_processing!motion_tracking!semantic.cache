@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("openni2/OpenNI.h" include (:system-flag t) nil [2 29])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [31 54])
+            ("ReadLastCharOfLine" function (:type "char") nil [56 312])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [334 348]))                  
+                :type "bool")
+                nil [316 548])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [561 570])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [571 584]))                  
+                :type "int")
+                nil [552 1253]))          
+      :file "getting_version.cpp"
+      :pointmax 1254
+      :fsize 1253
+      :lastmodtime '(22966 47616 0 0)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Gesture_recognition!image_processing!motion_tracking!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

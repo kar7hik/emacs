@@ -1,0 +1,128 @@
+cd ..
+ls
+ls
+ls
+python eampl.py 
+cd Projects/Programming/cairo/
+ls
+cd slope-master/
+ls
+ls
+ls
+ls
+cd slope/
+ls
+cd ../demos/
+ls
+ls
+ls
+cd cairo-demos/
+ls
+cd cairo_snippets/
+ls
+make
+gcc -I../ffmpeg/include -L../ffmpeg/lib bouncer.c -o bouncer `pkg-config --libs --cflags libavutil libavformat libavcodec libswscale`
+ls
+python3
+python3 ../cairo/cairo-demos/animism/examples/phasor.py
+python3
+cd Projects/Programming/
+ls
+cd cairo
+ls
+cd opengraphics
+ls
+ls
+ls
+rm gtkwindow_create.c gtkwindow_create.c\~
+ls
+mkdir -p learning
+cd learning/
+ls
+ls
+ls
+gcc drawing.c -o drawing `pkg-config --cflags --libs` -lm
+ls
+cd Projects/Programming/cairo/
+ls
+cd opengraphics/
+ls
+cd learning/
+ls
+cd ../../../c/
+ls
+cd K\&R/
+LS
+ls
+cd Projects/Programming/
+ls
+cd c/
+ls
+mkdir -p learning
+cd learning/
+ls
+ls
+gcc -Wall boolean_check.c -o boolean_check
+ls
+./boolean_check 
+gcc -Wall basic.c -o basic
+ls
+./basic 
+gcc -Wall basic.c -o basic
+./basic 
+cd Projects/Programming/c/learning/
+ls
+ls
+gcc -Wall basic.c -o basic
+./basic 
+gcc -Wall basic.c -o basic
+./basic 
+gcc -Wall basic.c -o basic
+gcc -Wall basic.c -o basic
+./basic 
+gcc -Wall basic.c -o basic
+./basic 
+./basic 
+gcc -Wall basic.c -o basic
+gcc -Wall basic.c -o basic
+./basic 
+gcc -Wall basic.c -o basic
+./basic 
+gcc -Wall basic.c -o basic
+./basic 
+ls
+gcc -Wall array_manipulation.c  -o array_manipulation
+./array_manipulation
+gcc -Wall array_manipulation.c  -o array_manipulation
+./array_manipulation
+gcc -Wall array_manipulation.c  -o array_manipulation
+./array_manipulation
+gcc -Wall array_manipulation.c  -o array_manipulation
+./array_manipulation
+./basic 
+$?
+$status
+gcc -Wall array_manipulation.c  -o array_manipulation
+./array_manipulation
+gcc -Wall basic.c -o basic
+./basic
+./basic
+./basic
+gcc -Wall basic.c -o basic
+./basic
+cd Projects/Programming/
+ls
+cd c/learning/
+ls
+make sn_print.c 
+gcc -Wall sn_print.c -o sn_print
+ls
+./sn_print 
+gcc -Wall sn_print.c -o sn_print
+./sn_print 
+cd Projects/Programming/cairo/opengraphics/learning/
+ls
+ls
+gcc create_circle.c -o create_circle `pkg-config --cflags --libs` -lm
+cd Projects/Programming/cairo/opengraphics/learning/
+ls

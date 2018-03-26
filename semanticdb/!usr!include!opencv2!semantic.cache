@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("HAVE_OPENCV_CALIB3D" variable (:constant-flag t) nil [165 184])
+            ("HAVE_OPENCV_CONTRIB" variable (:constant-flag t) nil [193 212])
+            ("HAVE_OPENCV_CORE" variable (:constant-flag t) nil [221 237])
+            ("HAVE_OPENCV_FEATURES2D" variable (:constant-flag t) nil [246 268])
+            ("HAVE_OPENCV_FLANN" variable (:constant-flag t) nil [277 294])
+            ("HAVE_OPENCV_GPU" variable (:constant-flag t) nil [303 318])
+            ("HAVE_OPENCV_HIGHGUI" variable (:constant-flag t) nil [327 346])
+            ("HAVE_OPENCV_IMGPROC" variable (:constant-flag t) nil [355 374])
+            ("HAVE_OPENCV_LEGACY" variable (:constant-flag t) nil [383 401])
+            ("HAVE_OPENCV_ML" variable (:constant-flag t) nil [410 424])
+            ("HAVE_OPENCV_OBJDETECT" variable (:constant-flag t) nil [433 454])
+            ("HAVE_OPENCV_OCL" variable (:constant-flag t) nil [463 478])
+            ("HAVE_OPENCV_PHOTO" variable (:constant-flag t) nil [487 504])
+            ("HAVE_OPENCV_STITCHING" variable (:constant-flag t) nil [513 534])
+            ("HAVE_OPENCV_SUPERRES" variable (:constant-flag t) nil [543 563])
+            ("HAVE_OPENCV_TS" variable (:constant-flag t) nil [572 586])
+            ("HAVE_OPENCV_VIDEO" variable (:constant-flag t) nil [595 612])
+            ("HAVE_OPENCV_VIDEOSTAB" variable (:constant-flag t) nil [621 642]))          
+      :file "opencv_modules.hpp"
+      :pointmax 645
+      :fsize 644
+      :lastmodtime '(22283 16090 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HAVE_OPENCV_FLANN")
+          ("HAVE_OPENCV_HIGHGUI")
+          ("HAVE_OPENCV_OCL")
+          ("HAVE_OPENCV_PHOTO")
+          ("HAVE_OPENCV_STITCHING")
+          ("HAVE_OPENCV_GPU")
+          ("HAVE_OPENCV_IMGPROC")
+          ("HAVE_OPENCV_ML")
+          ("HAVE_OPENCV_OBJDETECT")
+          ("HAVE_OPENCV_LEGACY")
+          ("HAVE_OPENCV_TS")
+          ("HAVE_OPENCV_VIDEO")
+          ("HAVE_OPENCV_CALIB3D")
+          ("HAVE_OPENCV_CONTRIB")
+          ("HAVE_OPENCV_CORE")
+          ("HAVE_OPENCV_SUPERRES")
+          ("HAVE_OPENCV_VIDEOSTAB")
+          ("HAVE_OPENCV_FEATURES2D")
+          )
+))
+  :file "!usr!include!opencv2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

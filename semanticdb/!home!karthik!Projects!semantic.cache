@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("string.h" include (:system-flag t) nil [21 40])
+            ("CHARANYA_SAYS_OKAY" variable (:constant-flag t) nil [51 69])
+            ("person" type
+               (:typedef ("string" type (:type "class") nil nil)
+                :type "typedef")
+                nil [74 96])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [108 117])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [118 131]))                  
+                :type "int")
+                nil [99 216]))          
+      :file "work.c"
+      :pointmax 217
+      :fsize 216
+      :lastmodtime '(23201 28111 446716 423000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CHARANYA_SAYS_OKAY" . ((number "1" 70 . 71)))
+          )
+))
+  :file "!home!karthik!Projects!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

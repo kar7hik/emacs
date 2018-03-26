@@ -1,0 +1,131 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("NULL" variable (:constant-flag t) nil [374 378])
+            ("EOF" variable (:constant-flag t) nil [394 397])
+            ("BUFSIZ" variable (:constant-flag t) nil [417 423])
+            ("OPEN_MAX" variable (:constant-flag t) nil [440 448])
+            ("_iobuf" type
+               (:members 
+                  ( ("cnt" variable (:type "int") (reparse-symbol classsubparts) [512 520])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [556 566])
+                    ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [608 619])
+                    ("flag" variable (:type "int") (reparse-symbol classsubparts) [655 664])
+                    ("fd" variable (:type "int") (reparse-symbol classsubparts) [703 710]))                  
+                :type "struct")
+                nil [484 750])
+            ("FILE" type
+               (:typedef ("_iobuf" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [484 750])
+            ("_iob" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [751 778])
+            ("stdin" variable (:constant-flag t) nil [787 792])
+            ("stdout" variable (:constant-flag t) nil [813 819])
+            ("stderr" variable (:constant-flag t) nil [839 845])
+            ("_flags" type
+               (:members 
+                  ( ("_READ" variable
+                       (:constant-flag t
+                        :default-value (886 888)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [876 888])
+                    ("_WRITE" variable
+                       (:constant-flag t
+                        :default-value (935 937)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [925 937])
+                    ("_UNBUF" variable
+                       (:constant-flag t
+                        :default-value (984 986)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [974 986])
+                    ("_EOF" variable
+                       (:constant-flag t
+                        :default-value (1030 1033)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1020 1033])
+                    ("_ERR" variable
+                       (:constant-flag t
+                        :default-value (1087 1090)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1077 1090]))                  
+                :type "enum")
+                nil [858 1130])
+            ("_fillbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1145 1152]))                  
+                :type "int")
+                nil [1132 1153])
+            ("_flushbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1168 1172])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1173 1180]))                  
+                :type "int")
+                nil [1154 1181])
+            ("feof" variable (:constant-flag t) nil [1191 1195])
+            ("ferror" variable (:constant-flag t) nil [1237 1243])
+            ("fileno" variable (:constant-flag t) nil [1283 1289])
+            ("getc" variable (:constant-flag t) nil [1314 1318])
+            ("putc" variable (:constant-flag t) nil [1412 1416])
+            ("getchar" variable (:constant-flag t) nil [1506 1513])
+            ("putchar" variable (:constant-flag t) nil [1538 1545])
+            ("_iob" variable
+               (:dereference 1
+                :default-value "{    /* stdin, stdout, stderr: */
+    { 0, (char *) 0, (char *) 0, _READ, 0 },
+    { 0, (char *) 0, (char *) 0, _WRITE, 1 },
+    { 0, (char *) 0, (char *) 0, _WRITE | _UNBUF, 2 }
+}"
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1568 1771]))          
+      :file "syscalls.h"
+      :pointmax 1772
+      :fsize 1771
+      :lastmodtime '(19443 63157 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ferror" (spp-arg-list ("p") 1243 . 1246) . ((semantic-list "(((p)->flag & _ERR) != 0)" 1249 . 1274)))
+          ("fileno" (spp-arg-list ("p") 1289 . 1292) . ((semantic-list "((p)->fd)" 1295 . 1304)))
+          ("putc" (spp-arg-list ("p") 1416 . 1419) . ((semantic-list "(--(p)->cnt >= 0 \\
+               ? *(p)->ptr++ = (x) : _flushbuf((x), p))" 1422 . 1496)))
+          ("stderr" . ((semantic-list "(&iob[2])" 847 . 856)))
+          ("putchar" (spp-arg-list ("x") 1545 . 1548) . 
+              ((symbol "putc" 1550 . 1554) (semantic-list "(x)" 1554 . 1557) (punctuation "," 1557 . 1558) (symbol "stdout" 1559 . 1565) (close-paren ")" 1565 . 1566)))
+          ("NULL" . ((number "0" 384 . 385)))
+          ("feof" (spp-arg-list ("p") 1195 . 1198) . ((semantic-list "(((p)->flag & _EOF) != 0)" 1203 . 1228)))
+          ("getc" (spp-arg-list ("p") 1318 . 1321) . ((semantic-list "(--(p)->cnt >= 0 \\
+               ? (unsigned char) *(p)->ptr++ : _fillbuff(p))" 1324 . 1403)))
+          ("EOF" . ((semantic-list "(-1)" 404 . 408)))
+          ("stdin" . ((semantic-list "(&iob[0])" 795 . 804)))
+          ("getchar" (spp-arg-list nil 1513 . 1515) . ((symbol "getc" 1518 . 1522) (semantic-list "(stdin)" 1522 . 1529)))
+          ("OPEN_MAX" . ((number "20" 450 . 452)))
+          ("stdout" . ((semantic-list "(&iob[1])" 821 . 830)))
+          ("BUFSIZ" . ((number "1024" 427 . 431)))
+          )
+))
+  :file "!home!karthik!Projects!Programming!c!K&R!solutions!KnR-The-C-Programming-Language-Solutions-master!Chapter 8!8-2!bitops!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

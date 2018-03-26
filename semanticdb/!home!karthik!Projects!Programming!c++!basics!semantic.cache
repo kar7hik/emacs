@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [2 21])
+            ("string" include (:system-flag t) nil [22 39])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [41 61])
+            ("Human" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [78 85])
+                    ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [87 99])
+                    ("age" variable (:type "int") (reparse-symbol classsubparts) [101 109])
+                    ("introduceSelf" function (:type "void") (reparse-symbol classsubparts) [112 221]))                  
+                :type "class")
+                nil [64 225])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [239 248])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [249 262]))                  
+                :type "int")
+                nil [230 298]))          
+      :file "creating_humans.cpp"
+      :pointmax 299
+      :fsize 298
+      :lastmodtime '(23204 2172 543519 985000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!c++!basics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

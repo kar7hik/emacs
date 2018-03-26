@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("cairo/cairo.h" include (:system-flag t) nil [21 45])
+            ("TABING" variable (:constant-flag t) nil [58 64])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [78 83]))                  
+                :type "int")
+                nil [69 118]))          
+      :file "entab.c"
+      :pointmax 119
+      :fsize 118
+      :lastmodtime '(23204 3494 443576 308000)
+      :unmatched-syntax '((number 65 . 66))
+      :lexical-table 
+        '(("TABING" . ((number "8" 65 . 66)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [3 21]))          
+      :file "example.c"
+      :pointmax 51
+      :fsize 50
+      :lastmodtime '(23204 17775 641894 723000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

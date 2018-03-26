@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [25 40])
+            ("multiprocessing" include nil nil [41 63])
+            ("progressbar" include nil nil [64 82])
+            ("os" include nil nil [83 92])
+            ("subprocess" include nil nil [93 116])
+            ("sys" include nil nil [117 127])
+            ("tempfile" include nil nil [128 143])
+            ("FFMPEG_BIN" variable nil nil [145 175])
+            ("make_frame" function (:arguments 
+              ( ("draw_frame_func" variable nil (reparse-symbol function_parameters) [193 208])
+                ("frame_num" variable nil (reparse-symbol function_parameters) [210 219])
+                ("width" variable nil (reparse-symbol function_parameters) [221 226])
+                ("height" variable nil (reparse-symbol function_parameters) [228 234]))              ) nil [178 391])
+            ("run" function (:arguments 
+              ( ("draw_frame_func" variable nil (reparse-symbol function_parameters) [401 416])
+                ("frame_count" variable nil (reparse-symbol function_parameters) [418 429])
+                ("width" variable nil (reparse-symbol function_parameters) [431 436])
+                ("height" variable nil (reparse-symbol function_parameters) [443 449])
+                ("frame_rate" variable nil (reparse-symbol function_parameters) [456 466]))              ) nil [393 2276]))          
+      :file "animism.py"
+      :pointmax 2276
+      :fsize 2275
+      :lastmodtime '(23205 31833 820576 840000)
+      :unmatched-syntax '((INDENT_BLOCK 2246 . 2276) (NEWLINE 2245 . 2246) (COLON 2244 . 2245) (TRY 1899 . 1902) (AS 2240 . 2242))))
+  :file "!home!karthik!Projects!Programming!cairo!cairo-demos!animism!animism!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

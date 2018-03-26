@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SkeletonSensor.h" include nil nil [1 28])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [40 78])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [79 108])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [109 128])
+            ("iostream" include (:system-flag t) nil [130 149])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [150 170])
+            ("sensor" variable
+               (:pointer 1
+                :type ("SkeletonSensor" type (:type "class") nil nil))
+                nil [183 206])
+            ("XRES" variable
+               (:constant-flag t
+                :default-value "640"
+                :type "unsigned int")
+                nil [208 238])
+            ("YRES" variable
+               (:constant-flag t
+                :default-value "480"
+                :type "unsigned int")
+                nil [239 269])
+            ("DEPTH_SCALE_FACTOR" variable
+               (:constant-flag t
+                :default-value "255./4096."
+                :type "float")
+                nil [271 315])
+            ("BIN_THRESH_OFFSET" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "unsigned int")
+                nil [370 411])
+            ("ROI_OFFSET" variable
+               (:constant-flag t
+                :default-value "70"
+                :type "unsigned int")
+                nil [482 517])
+            ("MEDIAN_BLUR_K" variable
+               (:constant-flag t
+                :default-value "5"
+                :type "unsigned int")
+                nil [541 578])
+            ("GRASPING_THRESH" variable
+               (:constant-flag t
+                :default-value "0.9"
+                :type "double")
+                nil [602 637])
+            ("COLOR_BLUE" variable
+               (:constant-flag t
+                :default-value "Scalar(240,40,0)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [649 699])
+            ("COLOR_DARK_GREEN" variable
+               (:constant-flag t
+                :default-value "Scalar(0, 128, 0)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [700 751])
+            ("COLOR_LIGHT_GREEN" variable
+               (:constant-flag t
+                :default-value "Scalar(0,255,0)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [752 801])
+            ("COLOR_YELLOW" variable
+               (:constant-flag t
+                :default-value "Scalar(0,128,200)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [802 853])
+            ("COLOR_RED" variable
+               (:constant-flag t
+                :default-value "Scalar(0,0,255)"
+                :type ("Scalar" type (:type "class") nil nil))
+                nil [854 903])
+            ("handApproachingDisplayPerimeter" function
+               (:arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [994 1002])
+                    ("y" variable (:type "float") (reparse-symbol arg-sub-list) [1003 1011]))                  
+                :type "bool")
+                nil [957 1137])
+            ("ConvexityDefect" type
+               (:members 
+                  ( ("start" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1205 1217])
+                    ("end" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1222 1232])
+                    ("depth_point" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1237 1255])
+                    ("depth" variable (:type "float") (reparse-symbol classsubparts) [1260 1272]))                  
+                :type "struct")
+                nil [1176 1275])
+            ("findConvexityDefects" function
+               (:arguments 
+                  ( ("contour" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1374 1397])
+                    ("hull" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1398 1416])
+                    ("convexDefects" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("ConvexityDefect" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1417 1456]))                  
+                :type "void")
+                nil [1348 3604])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3615 3624])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3625 3637]))                  
+                :type "int")
+                nil [3606 9584]))          
+      :file "main.cpp"
+      :pointmax 9585
+      :fsize 9584
+      :lastmodtime '(23201 25196 467799 45000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "SkeletonSensor.h"
+      :fsize 3483
+      :lastmodtime '(23001 58885 856040 804000)))
+  :file "!home!karthik!Projects!Gesture_recognition!image_processing!from!Kinect-Hand-Processing-master!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

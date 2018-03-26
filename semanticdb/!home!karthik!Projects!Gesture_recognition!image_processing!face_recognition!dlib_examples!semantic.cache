@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [311 330])
+            ("stdio.h" include (:system-flag t) nil [331 349])
+            ("dirent.h" include (:system-flag t) nil [350 369])
+            ("sys/stat.h" include (:system-flag t) nil [370 391])
+            ("algorithm" include (:system-flag t) nil [392 412])
+            ("dlib/dnn.h" include (:system-flag t) nil [437 458])
+            ("dlib/gui_widgets.h" include (:system-flag t) nil [459 488])
+            ("dlib/opencv.h" include (:system-flag t) nil [489 513])
+            ("dlib/clustering.h" include (:system-flag t) nil [514 542])
+            ("dlib/string.h" include (:system-flag t) nil [543 567])
+            ("dlib/image_io.h" include (:system-flag t) nil [568 594])
+            ("dlib/matrix.h" include (:system-flag t) nil [595 619])
+            ("dlib/image_processing.h" include (:system-flag t) nil [620 654])
+            ("dlib/image_transforms.h" include (:system-flag t) nil [655 689])
+            ("dlib/image_processing/frontal_face_detector.h" include (:system-flag t) nil [690 746])
+            ("opencv2/opencv.hpp" include (:system-flag t) nil [773 802])
+            ("opencv2/highgui/highgui.hpp" include (:system-flag t) nil [803 841])
+            ("opencv2/videoio/videoio.hpp" include (:system-flag t) nil [842 880])
+            ("opencv2/imgproc/imgproc.hpp" include (:system-flag t) nil [881 919])
+            ("dlib" using (:type ("dlib" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [922 943])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [944 964])
+            ("cv" using (:type ("cv" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [965 984])
+            ("SKIP_FRAMES" variable (:constant-flag t) nil [994 1005])
+            ("add_prev1" variable (:type "int") nil [1157 1198])
+            ("add_prev2" variable (:type "int") nil [1352 1428])
+            ("BN" variable (:type "int") nil [1521 1592])
+            ("relu" variable (:type "int") nil [1646 1687])
+            ("relu" variable (:type "int") nil [1740 1786])
+            ("ares_down" variable (:type "int") nil [1831 1854])
+            ("ares" variable (:type "int") nil [1898 1943])
+            ("ares" variable (:type "int") nil [1987 2032])
+            ("ares" variable (:type "int") nil [2076 2128])
+            ("ares" variable (:type "int") nil [2172 2209])
+            ("loss_metric" variable (:type "int") nil [2229 2560])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2572 2581])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2582 2601]))                  
+                :type "int")
+                nil [2563 7097]))          
+      :file "camera_simple_face_recog_using_dlib.cpp"
+      :pointmax 7319
+      :fsize 7318
+      :lastmodtime '(23204 22252 733312 120000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SKIP_FRAMES" . ((number "2" 1006 . 1007)))
+          )
+))
+  :file "!home!karthik!Projects!Gesture_recognition!image_processing!face_recognition!dlib_examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

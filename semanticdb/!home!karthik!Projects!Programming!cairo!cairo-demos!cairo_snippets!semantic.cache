@@ -1,0 +1,106 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("libavutil/avutil.h" include nil nil [214 243])
+            ("libavcodec/avcodec.h" include nil nil [244 275])
+            ("libavformat/avformat.h" include nil nil [276 309])
+            ("libswscale/swscale.h" include nil nil [310 341])
+            ("stdio.h" include (:system-flag t) nil [342 360])
+            ("load_frame" function
+               (:pointer 1
+                :arguments 
+                  ( ("file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [414 430])
+                    ("file_number" variable (:type "int") (reparse-symbol arg-sub-list) [431 447]))                  
+                :type ("AVFrame" type (:type "class") nil nil))
+                nil [394 3179])
+            ("draw_ball" function
+               (:pointer 1
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3201 3216])
+                    ("frame_num" variable (:type "int") (reparse-symbol arg-sub-list) [3217 3231]))                  
+                :type ("AVFrame" type (:type "class") nil nil))
+                nil [3182 3841])
+            ("convert" function
+               (:pointer 1
+                :arguments 
+                  ( ("frame" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3868 3883])
+                    ("format" variable (:type "int") (reparse-symbol arg-sub-list) [3884 3895]))                  
+                :type ("AVFrame" type (:type "class") nil nil))
+                nil [3851 4896])
+            ("writeFrame" function
+               (:arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type ("AVFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4935 4950])
+                    ("frameNumber" variable (:type "int") (reparse-symbol arg-sub-list) [4951 4967]))                  
+                :type "int")
+                nil [4919 5929])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5972 5981])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5982 5995]))                  
+                :type "int")
+                nil [5963 6395]))          
+      :file "video_encoding.c"
+      :pointmax 6396
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("INCLUDES" variable (:default-value ("@SNIPPETS_CFLAGS@")) nil [1 30])
+            ("bin_PROGRAMS" variable (:default-value ("cairo_snippets_png")) nil [31 120])
+            ("bin_PROGRAMS" variable (:default-value ("cairo_snippets_gtk")) nil [139 174])
+            ("bin_PROGRAMS" variable (:default-value ("cairo_snippets_pdf")) nil [194 229])
+            ("bin_PROGRAMS" variable (:default-value ("cairo_snippets_win32")) nil [251 288])
+            ("noinst_PROGRAMS" variable (:default-value ("prepare_snippets")) nil [295 336])
+            ("common_sources" variable (:default-value ("snippets.c")) nil [337 365])
+            ("cairo_snippets_gtk_SOURCES" variable (:default-value ("$(common_sources)" "cairo_snippets_gtk.c")) nil [366 434])
+            ("cairo_snippets_gtk_LDADD" variable (:default-value ("@SNIPPETS_LIBS@" "@GTKCAIRO_LIBS@")) nil [434 491])
+            ("cairo_snippets_gtk_CFLAGS" variable (:default-value ("@GTKCAIRO_CFLAGS@")) nil [491 535])
+            ("cairo_snippets_png_SOURCES" variable (:default-value ("$(common_sources)" "cairo_snippets_png.c")) nil [536 604])
+            ("cairo_snippets_png_LDADD" variable (:default-value ("@SNIPPETS_LIBS@")) nil [604 645])
+            ("cairo_snippets_ps_SOURCES" variable (:default-value ("$(common_sources)" "cairo_snippets_ps.c")) nil [646 712])
+            ("cairo_snippets_ps_LDADD" variable (:default-value ("@SNIPPETS_LIBS@")) nil [712 752])
+            ("cairo_snippets_html_SOURCES" variable (:default-value ("$(common_sources)" "cairo_snippets_html.c")) nil [753 823])
+            ("cairo_snippets_html_LDADD" variable (:default-value ("@SNIPPETS_LIBS@")) nil [823 865])
+            ("cairo_snippets_pdf_SOURCES" variable (:default-value ("$(common_sources)" "cairo_snippets_pdf.c")) nil [866 934])
+            ("cairo_snippets_pdf_LDADD" variable (:default-value ("@SNIPPETS_LIBS@")) nil [934 975])
+            ("cairo_snippets_win32_SOURCES" variable (:default-value ("$(common_sources)" "cairo_snippets_win32.c")) nil [976 1048])
+            ("cairo_snippets_win32_LDADD" variable (:default-value ("@SNIPPETS_LIBS@" "-lgdi32")) nil [1048 1099])
+            ("prepare_snippets_SOURCES" variable (:default-value ("prepare_snippets.c")) nil [1100 1146])
+            ("AM_CFLAGS" variable (:default-value ("-g" "-Wall")) nil [1147 1168])
+            ("snippets.c" function (:arguments ("prepare_snippets" "snippets/*.cairo")) nil [1169 1253])
+            ("BUILT_SOURCES" variable (:default-value ("snippets.c")) nil [1254 1281])
+            ("CLEANFILES" variable (:default-value ("*.html" "snippets.ps" "snippets.pdf" "*.png" "*.eps" "snippets.c")) nil [1281 1349])
+            ("html" function (:arguments ("pngs" "snippets.html")) nil [1399 1462])
+            ("snippets.html" function (:arguments ("cairo_snippets_html")) nil [1463 1522])
+            ("scp" function (:arguments ("html")) nil [1523 1613])
+            ("pngs" function (:arguments ("cairo_snippets_png")) nil [1614 1662])
+            ("epss" function (:arguments ("pngs")) nil [1709 1829]))          
+      :file "Makefile.am"
+      :pointmax 1829
+      :fsize 1828
+      :lastmodtime '(23153 11715 0 0)
+      :unmatched-syntax '((shell-command 1722 . 1828) (bol 1721 . 1721))))
+  :file "!home!karthik!Projects!Programming!cairo!cairo-demos!cairo_snippets!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

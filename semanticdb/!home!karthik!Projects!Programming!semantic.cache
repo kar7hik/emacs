@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [29 48])
+            ("vector" include (:system-flag t) nil [49 66])
+            ("opencv2/highgui.hpp" include (:system-flag t) nil [67 97])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [100 116])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [127 136])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137 150]))                  
+                :type "int")
+                nil [118 211]))          
+      :file "example.cpp"
+      :pointmax 212
+      :fsize 211
+      :lastmodtime '(23207 55533 315769 13000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("math.h" include (:system-flag t) nil [21 38])
+            ("cairo/cairo.h" include (:system-flag t) nil [39 63])
+            ("cairo/cairo-svg.h" include (:system-flag t) nil [64 92])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [103 112])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [113 126]))                  
+                :type "int")
+                nil [94 211]))          
+      :file "ex.c"
+      :pointmax 212
+      :fsize 211
+      :lastmodtime '(23205 42783 499082 964000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

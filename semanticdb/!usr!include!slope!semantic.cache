@@ -1,0 +1,321 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SLOPE_SLOPE_H" variable (:constant-flag t) nil [763 776])
+            ("slope/figure.h" include (:system-flag t) nil [884 909])
+            ("slope/item.h" include (:system-flag t) nil [910 933])
+            ("slope/scale.h" include (:system-flag t) nil [934 958])
+            ("slope/view.h" include (:system-flag t) nil [959 982])
+            ("slope/xyaxis.h" include (:system-flag t) nil [984 1009])
+            ("slope/xyscale.h" include (:system-flag t) nil [1010 1036])
+            ("slope/xyseries.h" include (:system-flag t) nil [1037 1064])
+            ("slope/chart.h" include (:system-flag t) nil [1066 1090]))          
+      :file "slope.h"
+      :pointmax 1119
+      :fsize 1118
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SLOPE_SLOPE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "figure.h"
+      :fsize 2886
+      :lastmodtime '(23128 41527 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "item.h"
+      :fsize 2952
+      :lastmodtime '(23128 41527 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "scale.h"
+      :fsize 4191
+      :lastmodtime '(23128 41527 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SLOPE_VIEW_H" variable (:constant-flag t) nil [762 774])
+            ("gtk/gtk.h" include (:system-flag t) nil [776 796])
+            ("slope/figure.h" include (:system-flag t) nil [797 822])
+            ("SLOPE_VIEW_TYPE" variable (:constant-flag t) nil [832 847])
+            ("SLOPE_VIEW" variable (:constant-flag t) nil [880 890])
+            ("SLOPE_VIEW_CLASS" variable (:constant-flag t) nil [972 988])
+            ("SLOPE_IS_VIEW" variable (:constant-flag t) nil [1076 1089])
+            ("SLOPE_IS_VIEW_CLASS" variable (:constant-flag t) nil [1156 1175])
+            ("SLOPE_VIEW_GET_CLASS" variable (:constant-flag t) nil [1247 1267])
+            ("_SlopeView" type
+               (:members 
+                  ( ("parent" variable (:type ("GtkDrawingArea" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1359 1381])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("gpointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1460 1480]))                  
+                :type "struct")
+                nil [1337 1483])
+            ("_SlopeViewClass" type
+               (:members 
+                  ( ("parent_class" variable (:type ("GtkDrawingAreaClass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1520 1553])
+                    ("set_figure" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("self" variable
+                               (:pointer 1
+                                :type ("SlopeView" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1576 1592])
+                            ("figure" variable
+                               (:pointer 1
+                                :type ("SlopeFigure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1593 1613]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1557 1614])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("gpointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1693 1713]))                  
+                :type "struct")
+                nil [1485 1731])
+            ("SlopeViewClass" type
+               (:typedef ("_SlopeViewClass" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1485 1731])
+            ("G_GNUC_CONST" variable (:type "int") nil [1765 1778])
+            ("slope_view_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1806 1811]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1780 1812])
+            ("slope_view_new_with_figure" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("figure" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1852 1872]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1814 1873])
+            ("slope_view_set_figure" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1902 1918])
+                    ("figure" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1919 1939]))                  
+                :type "void")
+                nil [1875 1940])
+            ("slope_view_redraw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1965 1981]))                  
+                :type "void")
+                nil [1942 1982])
+            ("slope_view_get_figure" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeFigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2037]))                  
+                :type ("SlopeFigure" type (:type "class") nil nil))
+                nil [1984 2038])
+            ("slope_view_write_to_png" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2069 2086])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2116 2137])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2167 2185])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2215 2234]))                  
+                :type "void")
+                nil [2040 2235]))          
+      :file "view.h"
+      :pointmax 2280
+      :fsize 2279
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax '((symbol 2237 . 2252) (semantic-list 1758 . 1764) (symbol 1739 . 1758) (symbol 1733 . 1738) (symbol 1318 . 1335))
+      :lexical-table 
+        '(("SLOPE_VIEW_H")
+          ("SLOPE_VIEW_TYPE" . ((semantic-list "(slope_view_get_type())" 848 . 871)))
+          ("SLOPE_IS_VIEW_CLASS" (spp-arg-list ("klass") 1175 . 1182) . ((semantic-list "(G_TYPE_CHECK_CLASS_TYPE((klass), SLOPE_VIEW_TYPE))" 1187 . 1238)))
+          ("SLOPE_VIEW_GET_CLASS" (spp-arg-list ("obj") 1267 . 1272) . ((semantic-list "(SLOPE_VIEW_CLASS(G_OBJECT_GET_CLASS(obj)))" 1273 . 1316)))
+          ("SLOPE_VIEW_CLASS" (spp-arg-list ("klass") 988 . 995) . ((semantic-list "(G_TYPE_CHECK_CLASS_CAST((klass), SLOPE_VIEW_TYPE, SlopeViewClass))" 1000 . 1067)))
+          ("SLOPE_VIEW" (spp-arg-list ("obj") 890 . 895) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_CAST((obj), SLOPE_VIEW_TYPE, SlopeView))" 900 . 963)))
+          ("SLOPE_IS_VIEW" (spp-arg-list ("obj") 1089 . 1094) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_TYPE((obj), SLOPE_VIEW_TYPE))" 1095 . 1147)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "xyaxis.h"
+      :fsize 3503
+      :lastmodtime '(23128 41527 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "xyscale.h"
+      :fsize 3025
+      :lastmodtime '(23128 41527 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "xyseries.h"
+      :fsize 3120
+      :lastmodtime '(23128 41527 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SLOPE_CHART_H" variable (:constant-flag t) nil [763 776])
+            ("slope/view.h" include (:system-flag t) nil [778 801])
+            ("SLOPE_CHART_TYPE" variable (:constant-flag t) nil [811 827])
+            ("SLOPE_CHART" variable (:constant-flag t) nil [861 872])
+            ("SLOPE_CHART_CLASS" variable (:constant-flag t) nil [956 973])
+            ("SLOPE_IS_CHART" variable (:constant-flag t) nil [1063 1077])
+            ("SLOPE_IS_CHART_CLASS" variable (:constant-flag t) nil [1149 1169])
+            ("SLOPE_CHART_GET_CLASS" variable (:constant-flag t) nil [1242 1263])
+            ("_SlopeChart" type
+               (:members 
+                  ( ("parent" variable (:type ("GtkWindow" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1365 1382])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("gpointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1461 1481]))                  
+                :type "struct")
+                nil [1334 1495])
+            ("SlopeChart" type
+               (:typedef ("_SlopeChart" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1334 1495])
+            ("_SlopeChartClass" type
+               (:members 
+                  ( ("parent_class" variable (:type ("GtkWindowClass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1533 1561])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("gpointer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1640 1660]))                  
+                :type "struct")
+                nil [1497 1679])
+            ("SlopeChartClass" type
+               (:typedef ("_SlopeChartClass" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1497 1679])
+            ("G_GNUC_CONST" variable (:type "int") nil [1714 1727])
+            ("slope_chart_new" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1729 1758])
+            ("slope_chart_new_detailed" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("title" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1796 1815])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [1816 1826])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [1827 1838]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1760 1839])
+            ("slope_chart_get_figure" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1877 1894]))                  
+                :type ("SlopeFigure" type (:type "class") nil nil))
+                nil [1841 1895])
+            ("slope_chart_get_header" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1931 1948]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1897 1949])
+            ("slope_chart_get_view" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1983 2000]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1951 2001])
+            ("slope_chart_redraw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2027 2044]))                  
+                :type "void")
+                nil [2003 2045])
+            ("slope_chart_add_scale" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2074 2091])
+                    ("scale" variable
+                       (:pointer 1
+                        :type ("SlopeScale" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2092 2110]))                  
+                :type "void")
+                nil [2047 2111])
+            ("slope_chart_write_to_png" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("SlopeChart" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2143 2160])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2191 2212])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [2243 2261])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [2292 2311]))                  
+                :type "void")
+                nil [2113 2312]))          
+      :file "chart.h"
+      :pointmax 2358
+      :fsize 2357
+      :lastmodtime '(23128 41527 0 0)
+      :unmatched-syntax '((symbol 2314 . 2329) (semantic-list 1707 . 1713) (symbol 1687 . 1707) (symbol 1681 . 1686) (symbol 1315 . 1332) (semantic-list 1707 . 1713) (symbol 1687 . 1707) (symbol 1681 . 1686) (symbol 1315 . 1332))
+      :lexical-table 
+        '(("SLOPE_CHART_H")
+          ("SLOPE_CHART_GET_CLASS" (spp-arg-list ("obj") 1263 . 1268) . ((semantic-list "(SLOPE_CHART_CLASS(G_OBJECT_GET_CLASS(obj)))" 1269 . 1313)))
+          ("SLOPE_CHART_TYPE" . ((semantic-list "(slope_chart_get_type())" 828 . 852)))
+          ("SLOPE_CHART" (spp-arg-list ("obj") 872 . 877) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_CAST((obj), SLOPE_CHART_TYPE, SlopeChart))" 882 . 947)))
+          ("SLOPE_IS_CHART" (spp-arg-list ("obj") 1077 . 1082) . ((semantic-list "(G_TYPE_CHECK_INSTANCE_TYPE((obj), SLOPE_CHART_TYPE))" 1087 . 1140)))
+          ("SLOPE_CHART_CLASS" (spp-arg-list ("klass") 973 . 980) . ((semantic-list "(G_TYPE_CHECK_CLASS_CAST((klass), SLOPE_CHART_TYPE, SlopeChartClass))" 985 . 1054)))
+          ("SLOPE_IS_CHART_CLASS" (spp-arg-list ("klass") 1169 . 1176) . ((semantic-list "(G_TYPE_CHECK_CLASS_TYPE((klass), SLOPE_CHART_TYPE))" 1181 . 1233)))
+          )
+))
+  :file "!usr!include!slope!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

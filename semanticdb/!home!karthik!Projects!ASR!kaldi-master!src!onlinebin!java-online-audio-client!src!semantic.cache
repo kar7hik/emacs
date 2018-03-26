@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.io.InputStream" include nil nil [774 801])
+            ("java.io.OutputStream" include nil nil [802 830])
+            ("java.nio.ByteBuffer" include nil nil [831 858])
+            ("java.nio.ByteOrder" include nil nil [859 885])
+            ("StreamSender" type
+               (:typemodifiers ("public")
+                :interfaces ("Runnable")
+                :members 
+                  ( ("input_stream" variable
+                       (:typemodifiers ("private")
+                        :type "InputStream")
+                        (reparse-symbol class_member_declaration) [937 970])
+                    ("input_size" variable
+                       (:typemodifiers ("private")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [972 996])
+                    ("output_stream" variable
+                       (:typemodifiers ("private")
+                        :type "OutputStream")
+                        (reparse-symbol class_member_declaration) [998 1033])
+                    ("StreamSender" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("input_stream" variable (:type "InputStream") (reparse-symbol formal_parameters) [1056 1080])
+                            ("input_size" variable (:type "long") (reparse-symbol formal_parameters) [1082 1097])
+                            ("output_stream" variable (:type "OutputStream") (reparse-symbol formal_parameters) [1099 1125]))                          )
+                        (reparse-symbol class_member_declaration) [1036 1237])
+                    ("run" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1251 1999]))                  
+                :type "class")
+                nil [887 2002]))          
+      :file "StreamSender.java"
+      :pointmax 2003
+      :fsize 2002
+      :lastmodtime '(23122 59217 0 0)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!ASR!kaldi-master!src!onlinebin!java-online-audio-client!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

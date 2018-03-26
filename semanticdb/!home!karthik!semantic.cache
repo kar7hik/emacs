@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("gtk/gtk.h" include (:system-flag t) nil [1 21])
+            ("math.h" include (:system-flag t) nil [22 39])
+            ("timeout" function
+               (:arguments 
+                  ( ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58 72]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [41 215])
+            ("configure" function
+               (:arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 278])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventConfigure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [279 304])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [305 319]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [241 381])
+            ("px" variable
+               (:default-value "10"
+                :type "double")
+                nil [415 430])
+            ("expose" function
+               (:arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [515 533])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventExpose" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [534 556])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [557 571]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [499 1522])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1653 1662])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1663 1676]))                  
+                :type "int")
+                nil [1644 7313]))          
+      :file "cairo_example.c"
+      :pointmax 7314
+      :fsize 7313
+      :lastmodtime '(23178 64665 889483 999000)
+      :unmatched-syntax '((punctuation 464 . 465) (punctuation 463 . 464) (punctuation 462 . 463) (number 461 . 462) (punctuation 460 . 461) (punctuation 459 . 460) (punctuation 457 . 458) (symbol 454 . 456) (DOUBLE 447 . 453)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("main" function (:type "int") nil [22 48]))          
+      :file "exa.c"
+      :pointmax 50
+      :fsize 49
+      :lastmodtime '(23192 4320 600598 921000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

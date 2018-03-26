@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [101 119])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [139 166])
+            ("algorithm" include (:system-flag t) nil [167 187])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [190 210])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [211 234])
+            ("GL/glut.h" include (:system-flag t) nil [252 272])
+            ("window_w" variable
+               (:default-value "640"
+                :type "int")
+                nil [274 293])
+            ("window_h" variable
+               (:default-value "480"
+                :type "int")
+                nil [294 313])
+            ("gl_texture" variable
+               (:pointer 1
+                :type ("OniRGB888Pixel" type (:type "class") nil nil))
+                nil [314 341])
+            ("selectedSensor" variable (:type ("VideoStream" type (:type "class") nil nil)) nil [342 369])
+            ("device" variable (:type ("Device" type (:type "class") nil nil)) nil [370 384])
+            ("ReadLastCharOfLine" function (:type "char") nil [386 621])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [641 655]))                  
+                :type "bool")
+                nil [623 830])
+            ("SetActiveSensor" function
+               (:arguments 
+                  ( ("sensorType" variable (:type ("SensorType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [853 875])
+                    ("device" variable
+                       (:pointer 1
+                        :type ("Device" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [876 891]))                  
+                :type "void")
+                nil [832 1969])
+            ("gl_KeyboardCallback" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1996 2014])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2015 2021])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2022 2028]))                  
+                :type "void")
+                nil [1971 2603])
+            ("gl_IdleCallback" function (:type "void") nil [2605 2656])
+            ("gl_DisplayCallback" function (:type "void") nil [2658 7083])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7094 7103])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7104 7117]))                  
+                :type "int")
+                nil [7085 8575]))          
+      :file "color_depth_test.cpp"
+      :pointmax 8577
+      :fsize 8827
+      :lastmodtime '(22995 54613 300082 667000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [25 43])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [63 90])
+            ("algorithm" include (:system-flag t) nil [92 112])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [114 137])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [138 158])
+            ("GL/glut.h" include (:system-flag t) nil [176 196])
+            ("window_w" variable
+               (:default-value "640"
+                :type "int")
+                nil [198 217])
+            ("window_h" variable
+               (:default-value "480"
+                :type "int")
+                nil [218 237])
+            ("gl_texture" variable
+               (:pointer 1
+                :type ("OniRGB888Pixel" type (:type "class") nil nil))
+                nil [238 265])
+            ("depthSensor" variable (:type ("VideoStream" type (:type "class") nil nil)) nil [266 290])
+            ("device" variable (:type ("Device" type (:type "class") nil nil)) nil [291 305])
+            ("histogram_enable" variable
+               (:default-value "false"
+                :type "bool")
+                nil [306 336])
+            ("color_enable" variable
+               (:default-value "false"
+                :type "bool")
+                nil [337 363])
+            ("blackfill_enable" variable
+               (:default-value "false"
+                :type "bool")
+                nil [364 394])
+            ("ReadLastCharOfLine" function (:type "char") nil [396 651])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [671 685]))                  
+                :type "bool")
+                nil [653 860])
+            ("gl_KeyboardCallback" function
+               (:arguments 
+                  ( ("key" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [887 905])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [906 912])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [913 919]))                  
+                :type "void")
+                nil [862 1450])
+            ("gl_IdleCallback" function (:type "void") nil [1452 1503])
+            ("gl_DisplayCallback" function (:type "void") nil [1505 9179])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9190 9199])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9200 9213]))                  
+                :type "int")
+                nil [9181 11398]))          
+      :file "depth_test.cpp"
+      :pointmax 11400
+      :fsize 11721
+      :lastmodtime '(22974 20273 239238 373000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Gesture_recognition!image_processing!motion_tracking!low_level_data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

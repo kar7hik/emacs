@@ -1,0 +1,689 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [77 95])
+            ("math.h" include (:system-flag t) nil [96 113])
+            ("cairo/cairo.h" include (:system-flag t) nil [114 138])
+            ("cairo/cairo-svg.h" include (:system-flag t) nil [139 167])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [179 188])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [189 202]))                  
+                :type "int")
+                nil [170 1117]))          
+      :file "arc_drawing.c"
+      :pointmax 1118
+      :fsize 1117
+      :lastmodtime '(23205 41876 401302 619000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [3 21])
+            ("cairo/cairo.h" include (:system-flag t) nil [22 46])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [59 68])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [69 82]))                  
+                :type "int")
+                nil [50 105]))          
+      :file "temp.c"
+      :pointmax 106
+      :fsize 105
+      :lastmodtime '(23204 14330 836935 517000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo/cairo.h" include (:system-flag t) nil [2 26])
+            ("gtk/gtk.h" include (:system-flag t) nil [27 47])
+            ("do_drawing" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73 83]))                  
+                :type "void")
+                nil [50 84])
+            ("on_draw_event" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116 134])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135 147])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [157 176]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [86 215])
+            ("do_drawing" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [241 253]))                  
+                :type "void")
+                nil [218 496])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [508 517])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [518 531]))                  
+                :type "int")
+                nil [499 1147]))          
+      :file "gtk_creator.c"
+      :pointmax 1149
+      :fsize 1148
+      :lastmodtime '(23204 22845 881425 839000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo/cairo.h" include (:system-flag t) nil [2 26])
+            ("/usr/include/gtk-3.0/gtk/gtk.h" include (:system-flag t) nil [51 92])
+            ("do_drawing" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118 128]))                  
+                :type "void")
+                nil [95 129])
+            ("glob" variable (:type ("" type
+                 (:members 
+                    ( ("count" variable (:type "int") (reparse-symbol classsubparts) [143 153])
+                      ("coordx" variable
+                         (:dereference 1
+                          :type "double")
+                          (reparse-symbol classsubparts) [156 175])
+                      ("coordy" variable
+                         (:dereference 1
+                          :type "double")
+                          (reparse-symbol classsubparts) [178 197]))                    
+                  :type "struct")
+                  nil nil)) nil [132 205])
+            ("on_draw_event" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [238 256])
+                    ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [257 269])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [279 298]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [208 337])
+            ("do_drawing" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [362 374]))                  
+                :type "void")
+                nil [339 710])
+            ("clicked" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [736 754])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [755 777])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [781 800]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [712 1003])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1015 1024])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1025 1038]))                  
+                :type "int")
+                nil [1006 1819]))          
+      :file "drawing_lines.c"
+      :pointmax 1820
+      :fsize 1819
+      :lastmodtime '(23204 24575 945229 141000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("gtk/gtk.h" include (:system-flag t) nil [1 21])
+            ("cairo.h" include (:system-flag t) nil [22 40])
+            ("math.h" include (:system-flag t) nil [41 58])
+            ("gdk/gdkkeysyms.h" include (:system-flag t) nil [59 86])
+            ("string.h" include (:system-flag t) nil [87 106])
+            ("WIDTH" variable (:constant-flag t) nil [116 121])
+            ("HEIGHT" variable (:constant-flag t) nil [135 141])
+            ("STRIDE" variable (:constant-flag t) nil [155 161])
+            ("MAX_COORDS" variable (:constant-flag t) nil [179 189])
+            ("USE_HINT" variable (:constant-flag t) nil [414 422])
+            ("USE_HINT" variable (:constant-flag t) nil [414 422])
+            ("USE_HINT" variable (:constant-flag t) nil [414 422])
+            ("canvas" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [424 449])
+            ("pen_color_is_black" variable
+               (:default-value "TRUE"
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [451 486])
+            ("pen_radius" variable
+               (:default-value "8"
+                :type ("gint" type (:type "class") nil nil))
+                nil [487 519])
+            ("coord_x" variable
+               (:dereference 1
+                :type ("gdouble" type (:type "class") nil nil))
+                nil [521 550])
+            ("coord_y" variable
+               (:dereference 1
+                :type ("gdouble" type (:type "class") nil nil))
+                nil [551 580])
+            ("coord_count" variable
+               (:default-value "0"
+                :type ("gint" type (:type "class") nil nil))
+                nil [581 605])
+            ("buffer" variable
+               (:dereference 1
+                :type ("guchar" type (:type "class") nil nil))
+                nil [607 643])
+            ("temp_buffer" variable
+               (:dereference 1
+                :type ("guchar" type (:type "class") nil nil))
+                nil [644 680])
+            ("back_surface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("cairo_surface_t" type (:type "class") nil nil))
+                nil [682 719])
+            ("temp_surface" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("cairo_surface_t" type (:type "class") nil nil))
+                nil [720 757])
+            ("cr_save" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("cairo_t" type (:type "class") nil nil))
+                nil [758 793])
+            ("pen_is_down" variable
+               (:default-value "FALSE"
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [795 824])
+            ("points_to_linear_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [952 964])
+                    ("coord_x" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [973 992])
+                    ("coord_y" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [993 1020])
+                    ("n_coords" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1029 1047]))                  
+                :type "void")
+                nil [917 1048])
+            ("points_to_bezier_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1084 1096])
+                    ("coord_x" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1105 1124])
+                    ("coord_y" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1125 1152])
+                    ("n_coords" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1161 1179]))                  
+                :type "void")
+                nil [1049 1180])
+            ("drawapp_render" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1211 1223]))                  
+                :type "void")
+                nil [1183 1733])
+            ("apply_coords" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("guchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1761 1776]))                  
+                :type "void")
+                nil [1735 1853])
+            ("coords_clear" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1881 1886]))                  
+                :type "void")
+                nil [1855 1908])
+            ("coords_add" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1934 1944])
+                    ("y" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1948 1958]))                  
+                :type "void")
+                nil [1910 2076])
+            ("paint" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2097 2120])
+                    ("eev" variable
+                       (:pointer 1
+                        :type ("GdkEventExpose" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2125 2145])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2150 2171]))                  
+                :type "void")
+                nil [2078 2273])
+            ("pen_motion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2299 2310])
+                    ("y" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2314 2325]))                  
+                :type "void")
+                nil [2275 2411])
+            ("pen_down" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2435 2445])
+                    ("y" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2450 2460]))                  
+                :type "void")
+                nil [2413 2537])
+            ("pen_up" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2559 2569])
+                    ("y" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2572 2582]))                  
+                :type "void")
+                nil [2539 2683])
+            ("init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2704 2709]))                  
+                :type "void")
+                nil [2686 3103])
+            ("event_press" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3170 3193])
+                    ("bev" variable
+                       (:pointer 1
+                        :type ("GdkEventButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3198 3218])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3223 3249]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [3141 3295])
+            ("event_release" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3328 3351])
+                    ("bev" variable
+                       (:pointer 1
+                        :type ("GdkEventButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3358 3378])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3385 3411]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [3297 3455])
+            ("event_motion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3487 3510])
+                    ("mev" variable
+                       (:pointer 1
+                        :type ("GdkEventMotion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3516 3536])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3542 3568]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [3457 3677])
+            ("event_keypress" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3711 3731])
+                    ("kev" variable
+                       (:pointer 1
+                        :type ("GdkEventKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3736 3753])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3758 3781]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [3679 3923])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3936 3949])
+                    ("argv" variable
+                       (:pointer 2
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3953 3966]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [3925 5269])
+            ("points_to_bezier_path" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5387 5399])
+                    ("coord_x" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5408 5427])
+                    ("coord_y" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5436 5455])
+                    ("n_coords" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5464 5482]))                  
+                :type "void")
+                nil [5352 7144])
+            ("points_to_linear_path" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7284 7296])
+                    ("coord_x" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7305 7324])
+                    ("coord_y" variable
+                       (:dereference 1
+                        :type ("gdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7333 7352])
+                    ("n_coords" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7361 7379]))                  
+                :type "void")
+                nil [7249 7543]))          
+      :file "paint_path.c"
+      :pointmax 7544
+      :fsize 7543
+      :lastmodtime '(23205 24781 271268 54000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_COORDS" . ((number "1024" 190 . 194)))
+          ("USE_HINT")
+          ("HEIGHT" . ((number "600" 142 . 145)))
+          ("WIDTH" . ((number "800" 123 . 126)))
+          ("STRIDE" . 
+              ((symbol "WIDTH" 162 . 167) (punctuation "*" 167 . 168) (number "4" 168 . 169)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo.h" include (:system-flag t) nil [2409 2427])
+            ("math.h" include (:system-flag t) nil [2428 2445])
+            ("stdint.h" include (:system-flag t) nil [2446 2465])
+            ("WIDTH" variable (:constant-flag t) nil [2475 2480])
+            ("HEIGHT" variable (:constant-flag t) nil [2493 2499])
+            ("STRIDE" variable (:constant-flag t) nil [2511 2517])
+            ("image" variable
+               (:dereference 1
+                :type "unsigned char")
+                nil [2531 2566])
+            ("hex_color" type
+               (:members 
+                  ( ("r" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2599 2616])
+                    ("g" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2599 2616])
+                    ("b" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2599 2616]))                  
+                :type "struct")
+                nil [2568 2631])
+            ("hex_color_t" type
+               (:typedef ("hex_color" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [2568 2631])
+            ("BG_COLOR" variable
+               (:default-value "{ 0xd4, 0xd0, 0xc8 }"
+                :type ("hex_color_t" type (:type "class") nil nil))
+                nil [2633 2678])
+            ("HI_COLOR_1" variable
+               (:default-value "{ 0xff, 0xff, 0xff }"
+                :type ("hex_color_t" type (:type "class") nil nil))
+                nil [2679 2725])
+            ("HI_COLOR_2" variable
+               (:default-value "{ 0xd4, 0xd0, 0xc8 }"
+                :type ("hex_color_t" type (:type "class") nil nil))
+                nil [2726 2772])
+            ("LO_COLOR_1" variable
+               (:default-value "{ 0x80, 0x80, 0x80 }"
+                :type ("hex_color_t" type (:type "class") nil nil))
+                nil [2773 2819])
+            ("LO_COLOR_2" variable
+               (:default-value "{ 0x40, 0x40, 0x40 }"
+                :type ("hex_color_t" type (:type "class") nil nil))
+                nil [2820 2866])
+            ("BLACK" variable
+               (:default-value "{ 0, 0, 0 }"
+                :type ("hex_color_t" type (:type "class") nil nil))
+                nil [2867 2900])
+            ("set_hex_color" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2929 2941])
+                    ("color" variable (:type ("hex_color_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2942 2960]))                  
+                :type "void")
+                nil [2902 3070])
+            ("bevel_box" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3095 3107])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3108 3114])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3115 3121])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3122 3132])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3133 3144]))                  
+                :type "void")
+                nil [3072 4086])
+            ("bevel_circle" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4114 4126])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [4127 4133])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [4134 4140])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [4141 4151]))                  
+                :type "void")
+                nil [4088 4936])
+            ("flat_box" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5034 5046])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5047 5053])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5054 5060])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [5061 5071])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [5072 5083]))                  
+                :type "void")
+                nil [5012 5455])
+            ("flat_circle" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5482 5494])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [5495 5501])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [5502 5508])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [5509 5519]))                  
+                :type "void")
+                nil [5457 5964])
+            ("groovy_box" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5990 6002])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [6003 6009])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [6010 6016])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [6017 6027])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [6028 6039]))                  
+                :type "void")
+                nil [5966 6446])
+            ("CHECK_BOX_SIZE" variable (:constant-flag t) nil [6456 6470])
+            ("CHECK_COLOR" variable (:constant-flag t) nil [6482 6493])
+            ("checked_status_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("UNCHECKED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6515 6525])
+                          ("CHECKED" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [6526 6534]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [6501 6552])
+            ("check_box" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6577 6589])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [6590 6596])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [6597 6603])
+                    ("checked" variable (:type ("checked_status_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6604 6629]))                  
+                :type "void")
+                nil [6554 7051])
+            ("RADIO_SIZE" variable (:constant-flag t) nil [7061 7071])
+            ("RADIO_DOT_COLOR" variable (:constant-flag t) nil [7095 7110])
+            ("radio_button" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7143 7155])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [7156 7162])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [7163 7169])
+                    ("checked" variable (:type ("checked_status_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7170 7195]))                  
+                :type "void")
+                nil [7117 7523])
+            ("draw_bevels" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cr" variable
+                       (:pointer 1
+                        :type ("cairo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7550 7562])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [7563 7573])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [7574 7585]))                  
+                :type "void")
+                nil [7525 8211])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8223 8228]))                  
+                :type "int")
+                nil [8213 8707]))          
+      :file "bevel.c"
+      :pointmax 8708
+      :fsize 8709
+      :lastmodtime '(23205 24988 40935 244000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RADIO_SIZE" . ((symbol "CHECK_BOX_SIZE" 7072 . 7086)))
+          ("RADIO_DOT_COLOR" . ((symbol "BLACK" 7111 . 7116)))
+          ("CHECK_COLOR" . ((symbol "BLACK" 6494 . 6499)))
+          ("HEIGHT" . ((number "70" 2500 . 2502)))
+          ("WIDTH" . ((number "100" 2481 . 2484)))
+          ("STRIDE" . ((semantic-list "(WIDTH * 4)" 2518 . 2529)))
+          ("CHECK_BOX_SIZE" . ((number "13" 6471 . 6473)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("cairo/cairo.h" include (:system-flag t) nil [2 26])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [36 45])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46 59]))                  
+                :type "int")
+                nil [27 570]))          
+      :file "png_image_creating.c"
+      :pointmax 571
+      :fsize 571
+      :lastmodtime '(23184 9364 0 0)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!cairo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

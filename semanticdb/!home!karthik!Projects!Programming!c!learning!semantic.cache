@@ -1,0 +1,142 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [48 66])
+            ("stdbool.h" include (:system-flag t) nil [67 87])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [99 108])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [109 122]))                  
+                :type "int")
+                nil [90 202]))          
+      :file "boolean_check.c"
+      :pointmax 203
+      :fsize 202
+      :lastmodtime '(23213 23085 156228 19000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [48 66])
+            ("stdbool.h" include (:system-flag t) nil [67 87])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("BOOL" variable (:constant-flag t) nil [111 115])
+            ("Bool" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [141 158])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [223 232])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [233 246]))                  
+                :type "int")
+                nil [214 620]))          
+      :file "basic.c"
+      :pointmax 621
+      :fsize 620
+      :lastmodtime '(23214 26190 344153 647000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOL" . ((INT "int" 116 . 119)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [30 48])
+            ("string.h" include (:system-flag t) nil [49 68])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [80 89])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90 103]))                  
+                :type "int")
+                nil [71 652]))          
+      :file "array_manipulation.c"
+      :pointmax 653
+      :fsize 652
+      :lastmodtime '(23214 22815 638264 263000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [22 40])
+            ("string.h" include (:system-flag t) nil [41 60])
+            ("math.h" include (:system-flag t) nil [61 78])
+            ("to_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "char") (reparse-symbol arg-sub-list) [122 128])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [130 134]))                  
+                :type "void")
+                nil [107 135])
+            ("to_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "char") (reparse-symbol arg-sub-list) [147 153]))                  
+                :type "int")
+                nil [136 155])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [168 177])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [178 191]))                  
+                :type "int")
+                nil [159 447])
+            ("to_string" function
+               (:arguments 
+                  ( ("str" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [465 476])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [477 485]))                  
+                :type "void")
+                nil [450 691])
+            ("to_int" function
+               (:arguments 
+                  ( ("str" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [705 716]))                  
+                :type "int")
+                nil [694 879]))          
+      :file "sn_print.c"
+      :pointmax 881
+      :fsize 157
+      :lastmodtime '(23219 61307 52246 111000)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Programming!c!learning!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

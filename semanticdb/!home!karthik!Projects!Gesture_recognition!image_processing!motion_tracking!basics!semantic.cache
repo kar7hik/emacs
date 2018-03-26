@@ -1,0 +1,150 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("OpenNI.h" include (:system-flag t) nil [41 60])
+            ("ctime" include (:system-flag t) nil [62 78])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [81 104])
+            ("ReadLastCharOfLine" function (:type "char") nil [106 329])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [351 365]))                  
+                :type "bool")
+                nil [333 521])
+            ("OurOpenNIEventMonitorer" type
+               (:superclasses 
+                  ( ("OpenNI::DeviceDisconnectedListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("OpenNI::DeviceConnectedListener" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("onDeviceConnected" function
+                       (:arguments 
+                          ( ("device" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("DeviceInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [673 698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [650 920])
+                    ("onDeviceDisconnected" function
+                       (:arguments 
+                          ( ("device" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("DeviceInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [949 974]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [923 1201]))                  
+                :type "struct")
+                nil [525 1205])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1218 1227])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1228 1241]))                  
+                :type "int")
+                nil [1209 1928]))          
+      :file "example.cpp"
+      :pointmax 1929
+      :fsize 1928
+      :lastmodtime '(22972 636 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [86 105])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [106 133])
+            ("nite2/NiTE.h" include (:system-flag t) nil [134 157])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [160 180])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [181 204])
+            ("ReadLastCharOfLine" function
+               (:prototype-flag t
+                :type "char")
+                nil [232 258])
+            ("HandleStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [277 291]))                  
+                :type "bool")
+                nil [259 292])
+            ("Readline" function
+               (:prototype-flag t
+                :type "char")
+                nil [293 309])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [320 329])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [330 343]))                  
+                :type "int")
+                nil [311 1845])
+            ("ReadLastCharOfLine" function (:type "char") nil [1848 2084])
+            ("Readline" function (:type "char") nil [2086 2210])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2231 2245]))                  
+                :type "bool")
+                nil [2213 2486]))          
+      :file "print_version.cpp"
+      :pointmax 2495
+      :fsize 2494
+      :lastmodtime '(22970 60722 140009 21000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("openni2/OpenNI.h" include (:system-flag t) nil [42 69])
+            ("openni" using (:type ("openni" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [74 97])
+            ("ReadLastCharOfLine" function (:type "char") nil [99 367])
+            ("HandleStatus" function
+               (:arguments 
+                  ( ("status" variable (:type ("Status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [389 403]))                  
+                :type "bool")
+                nil [371 586])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [599 608])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [609 622]))                  
+                :type "int")
+                nil [590 3768]))          
+      :file "retrieval_from_book.cpp"
+      :pointmax 3769
+      :fsize 3768
+      :lastmodtime '(22971 61702 0 0)
+      :unmatched-syntax nil))
+  :file "!home!karthik!Projects!Gesture_recognition!image_processing!motion_tracking!basics!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
